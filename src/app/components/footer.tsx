@@ -2,7 +2,7 @@
 import React from 'react'
 
 const Footer = () => {
-  return (<footer className='fixed bottom-0 left-0 z-50  bg-emerald-950 mt-5 w-full lg:mx-auto sm:max-w-screen-x'>
+  return (<footer className=' bottom-0 left-0 z-50  bg-emerald-950 mt-5 w-full lg:mx-auto sm:max-w-screen-x'>
     <div className=' flex md:p-5 justify-around'>
       <div className=' text-left md:text-center flex flex-col justify-center '>
           <h1 className='text-lg md:text-3xl '>Welcome to JamStore</h1>
