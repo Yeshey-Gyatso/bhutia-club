@@ -118,8 +118,7 @@ const Landing1 = () => {
     </span>
     <span
       className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-      >Previous</span
-    >
+      >Previous </span>
   </button>
   {/* <!-- Carousel controls - next item--> */}
   <button
@@ -143,8 +142,7 @@ const Landing1 = () => {
     </span>
     <span
       className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-      >Next</span
-    >
+      >Next</span >
   </button>
 </div>
 
