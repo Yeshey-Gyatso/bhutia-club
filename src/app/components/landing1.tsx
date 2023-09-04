@@ -10,8 +10,7 @@ import {
   initTE({ Carousel });
 
 const Landing1 = () => {
-  return (
-    <div>
+  return (<div>
             <div
   id="carouselDarkVariant"
   className="relative"
@@ -68,28 +67,28 @@ const Landing1 = () => {
       data-te-carousel-item>
       <img
         src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp"
-        class="block w-full"
+        className="block w-full"
         alt="Mountaintop" />
       <div
-        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block">
-        <h5 class="text-xl">Second slide label</h5>
+        className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block">
+        <h5 className="text-xl">Second slide label</h5>
         <p>
           Some representative placeholder content for the second slide.
         </p>
       </div>
     </div>
-    <!-- Third item -->
+    {/* <!-- Third item --> */}
     <div
-      class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+      className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
       data-te-carousel-fade
       data-te-carousel-item>
       <img
         src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp"
-        class="block w-full"
+        className="block w-full"
         alt="Woman Reading a Book" />
       <div
-        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block">
-        <h5 class="text-xl">Third slide label</h5>
+        className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block">
+        <h5 className="text-xl">Third slide label</h5>
         <p>
           Some representative placeholder content for the third slide.
         </p>
@@ -97,20 +96,20 @@ const Landing1 = () => {
     </div>
   </div>
 
-  <!-- Carousel controls - prev item-->
+  {/* <!-- Carousel controls - prev item--> */}
   <button
-    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    className="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
     type="button"
     data-te-target="#carouselDarkVariant"
     data-te-slide="prev">
-    <span class="inline-block h-8 w-8 dark:grayscale">
+    <span className="inline-block h-8 w-8 dark:grayscale">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="h-6 w-6">
+        className="h-6 w-6">
         <path
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -118,24 +117,24 @@ const Landing1 = () => {
       </svg>
     </span>
     <span
-      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
       >Previous</span
     >
   </button>
-  <!-- Carousel controls - next item-->
+  {/* <!-- Carousel controls - next item--> */}
   <button
-    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    className="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
     type="button"
     data-te-target="#carouselDarkVariant"
     data-te-slide="next">
-    <span class="inline-block h-8 w-8 dark:grayscale">
+    <span className="inline-block h-8 w-8 dark:grayscale">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="h-6 w-6">
+        className="h-6 w-6">
         <path
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -143,7 +142,7 @@ const Landing1 = () => {
       </svg>
     </span>
     <span
-      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
       >Next</span
     >
   </button>
