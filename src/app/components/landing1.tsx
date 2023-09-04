@@ -149,7 +149,7 @@ const Landing1 = () => {
 </div>
 
     </div>
-  )
-}
+  );
+};
 
-export default Landing1
+export default Landing1;
