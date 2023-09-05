@@ -9,6 +9,7 @@ import Footer from './footer'
 const PageSelector = () => {
   const [landing,setLanding]=useState(0);
 //   console.log(landing);
+//just got the data
     return (
     <div>
     <Navbar/>
