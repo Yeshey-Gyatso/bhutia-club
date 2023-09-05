@@ -1,17 +1,9 @@
-import Image from 'next/image'
-import Footer from './components/footer'
-import Landing1 from './components/landing1'
-import Landing2 from './components/landing2'
-import Landing3 from './components/landing3'
-import Navbar from './components/navbar'
+
+import PageSelector from './components/pageselector'
 
 export default function Home() {
   return (<div>
-    <Navbar/>
-    <Landing1/>
-    <Landing2/>
-    <Landing3/>
-    <Footer/>
+   <PageSelector/>
   </div>
   )
 }
