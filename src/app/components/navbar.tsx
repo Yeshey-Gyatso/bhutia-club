@@ -51,7 +51,7 @@ const Navbar = () => {
                    rounded-lg tracking-wider 
                    border-4 border-transparent 
                    active:border-white duration-300
-                   active:text-white
+                   
                    '
                    onClick={ ()=>setIsOpen((prev)=>!prev)}
                    >Language
@@ -63,6 +63,11 @@ const Navbar = () => {
                     )
                    }
                    </button>
+                  
+                  {isOpen &&(
+                    <div className=' bg-blue-400 absolute'></div>
+                  )}
+
                 </div>   
               </li>
             </ul>           
