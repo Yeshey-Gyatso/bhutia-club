@@ -12,7 +12,7 @@ import React, { useContext } from 'react'
 const Navbar = () => {
   return (
     <div className=' flex md:justify-between 
-    bg-emerald-950 
+    bg-rose-200
      w-full 
      fixed
       p-4
