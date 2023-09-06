@@ -33,7 +33,7 @@ const Navbar = () => {
             <h1><Link href={'/team' }className=' hover:text-gray-300'> Team</Link></h1>   
             </div>
         <div>
-            <ul className='flex   space-x-2 '>
+            <ul className='flex space-x-2 '>
               <li>
                <h1 className=' inline cursor-default'  
                >name</h1>
@@ -45,9 +45,8 @@ const Navbar = () => {
 
               <li>
               <div className=' relative flex items-center w-auto h-auto rounded-lg'>
-                  <button className=' bg-gray-300 p-1 flex 
+                  <button className=' bg-gray-300 flex 
                   items-center justify-between
-                   font-bold text-lg  
                    rounded-lg tracking-wider 
                    border-4 border-transparent 
                    active:border-white duration-300
@@ -65,17 +64,20 @@ const Navbar = () => {
                    </button>
                   
                   {isOpen &&(
-                    <div className=' bg-blue-400 absolute top-20 flex flex-col items-start rounded-lg p-2 w-auto'>
+                    <div className=' bg-blue-400 absolute top-14 flex flex-col items-start rounded-lg p-2 w-auto'>
 
-                      <div className=' flex w-auto justify-between hover:bg-slate-500 cursor-pointer 
-                      rounded-r-lg border-l-transparent '>
-                        <h3>english</h3>
+                      <div className=' flex w-full p-2 justify-between hover:bg-slate-500 cursor-pointer 
+                      rounded-r-lg border-l-transparent
+                      hover:border-l-white border-l-4
+                      '>
+                        <h3>English </h3>
                         <h3>icon</h3>
                       </div>
                       
-                      <div className=' flex w-auto justify-between hover:bg-slate-500 cursor-pointer 
-                      rounded-r-lg border-l-transparent '>
-                        <h3>bhutia</h3>
+                      <div className=' flex w-full justify-between hover:bg-slate-500 cursor-pointer 
+                      rounded-r-lg border-l-transparent 
+                      hover:border-l-white border-l-4'>
+                        <h3>Bhutia</h3>
                         <h3>icon</h3>
                       </div>
 
