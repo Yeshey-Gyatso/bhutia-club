@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className=' flex space-x-2  '>
             <h1><Link href={'/'} className=' hover:text-gray-300'>Home</Link></h1>   
             <h1><Link href={'/about' }className=' hover:text-gray-300'>About</Link></h1>
-            <h1><Link href={'/translator' }className=' hover:text-gray-300'> Translator</Link></h1>   
+            <h1><Link href={'/team' }className=' hover:text-gray-300'> Team</Link></h1>   
             </div>
         <div>
             <ul className='flex   space-x-2 '>
@@ -32,6 +32,14 @@ const Navbar = () => {
                <h1 className=' inline cursor-default'  
                >name</h1>
                 </li>
+
+              <li>
+              <h1><Link href={'/translator' }className=' hover:text-gray-300'> Translator</Link></h1>   
+              </li>
+
+              <li>
+              <h1><Link href={'/translator' }className=' hover:text-gray-300'> Translator</Link></h1>   
+              </li>
                 
            
                
