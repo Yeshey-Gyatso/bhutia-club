@@ -44,19 +44,19 @@ function Landing1() {
   };
 
   return (
-    <div className='pt-22 h-screen w-full m-auto py-16 px-4 relative group'>
+    <div className='pt-22 h-screen w-full m-auto py-16  relative group'>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className='w-full h-full rounded-full bg-center bg-cover duration-500 mt-1'
+        className='w-full h-full bg-center bg-cover duration-500 mt-1'
       >
         <div>
 
         </div>
-        <div className='absolute inset-x-96 inset-y-52 bg-white/30 opacity-90 w-1/2 h-1/4 flex flex-col items-center '>
-                        <p className=' cursor-default py-4 text-black md:text-2xl max-w-full sm:mx-auto 
+        <div className='absolute inset-x-96 inset-y-2/4 bg-black/50 opacity-90 w-4/6 h-1/4 flex flex-col items-center '>
+                        <p className=' cursor-default py-4 text-white md:text-2xl max-w-full sm:mx-auto 
                         z-10 
-                        '>
-                            <span className='text-6xl'>Welcome to Bhutia khayrab yargay tshogpo. </span>
+                        '>  
+                            <span className='text-6xl'>Bhutia khayrab yargay tshogpo. </span>
                         </p>
                      </div>
       </div>

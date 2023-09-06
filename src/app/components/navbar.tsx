@@ -16,13 +16,13 @@ const Navbar = () => {
 
   return (
     <div className=' flex md:justify-between 
-     bg-gradient-to-r from-rose-500 to-rose-200
+     bg-white
      w-full 
      fixed
       p-4
        z-10'>
         <div className=' brand'>
-            <h1 className='md:text-xl font-bold border-b-2 border-white
+            <h1 className='md:text-xl font-bold border-b-2 border-black
                      md:p-1 inline cursor-default '>BKYT</h1>
         </div>
         <div className=' flex space-x-2  '>
