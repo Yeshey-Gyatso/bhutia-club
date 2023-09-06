@@ -48,10 +48,16 @@ function Landing1() {
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full rounded-full bg-center bg-cover duration-500 mt-1'
-      ><div className=' absolute'>
-        <h1 className='  '> Welcome to Bhutia khayrab yargay tshogpo.</h1>
+      >
+        <div>
 
-      </div>
+        </div>
+        <div className='absolute inset-x-96 inset-y-52 bg-white/30 opacity-90 w-1/2 h-1/4 flex flex-row '>
+                        <p className=' cursor-default py-4 text-black md:text-2xl max-w-full sm:mx-auto z-10 font-light   
+                        '>
+                            <span className='text-6xl'>Welcome to Bhutia khayrab yargay tshogpo. </span>
+                        </p>
+                     </div>
       </div>
       {/* Left Arrow */}
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
