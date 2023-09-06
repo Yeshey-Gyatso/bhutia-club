@@ -4,13 +4,18 @@
 // import UserContext from '@/context/userContext';
 // import { logout } from '@/services/userService';
 import Link from 'next/link';
+import { List } from 'postcss/lib/list';
+import {AiOutlineCaretDown,AiOutlineCaretUp} from "react-icons/ai";
 import { useRouter } from 'next/navigation';
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 
 // import { toast } from 'react-toastify';
 
 
 const Navbar = () => {
+
+  const [isOpen,setIsOpen]=useState(false)
+
   return (
     <div className=' flex md:justify-between 
      bg-gradient-to-r from-rose-500 to-rose-200
@@ -44,8 +49,20 @@ const Navbar = () => {
                   items-center justify-between
                    font-bold text-lg  
                    rounded-lg tracking-wider 
-                   border-4 border-transparent
-                   '>Language</button>
+                   border-4 border-transparent 
+                   active:border-white duration-300
+                   active:text-white
+                   '
+                   onClick={ ()=>setIsOpen((prev)=>!prev)}
+                   >Language
+                   {
+                    !isOpen?(
+                      <AiOutlineCaretDown className="h-8"/>
+                    ):(
+                      <AiOutlineCaretUp className="h-8"/>
+                    )
+                   }
+                   </button>
                 </div>   
               </li>
             </ul>           
