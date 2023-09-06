@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {AiOutlineCaretDown,AiOutlineCaretUp} from "react-icons/ai";
 import {GrLanguage} from "react-icons/gr";
-import flag from '../assets/flag.svg';
+
 import { useRouter } from 'next/navigation';
 import React, { useContext, useState } from 'react'
 
@@ -76,7 +76,7 @@ const Navbar = () => {
                       rounded-r-lg border-l-transparent 
                       hover:border-l-white border-l-4'>
                         <h3>Bhutia</h3>
-                        <img src={flag} alt="img" />
+                        <img src="/flag.svg" alt="img" />
                       </div>
 
                     </div>
