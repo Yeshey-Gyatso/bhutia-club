@@ -12,7 +12,7 @@ import React, { useContext } from 'react'
 const Navbar = () => {
   return (
     <div className=' flex md:justify-between 
-    bg-rose-200
+     bg-gradient-to-r from-rose-500 to-rose-200
      w-full 
      fixed
       p-4
@@ -22,19 +22,14 @@ const Navbar = () => {
                      md:p-1 inline cursor-default '>BKYT</h1>
         </div>
         <div className=' flex space-x-2  '>
-            <h1><Link href={'/'} className=' hover:text-gray-300'>Home</Link></h1>
-            
-            <h1><Link href={'/courses' }className=' hover:text-gray-300'>Courses</Link></h1>
-            <h1><Link href={'/profile/user' }className=' hover:text-gray-300'> Purchases</Link></h1>   
-              
-            
+            <h1><Link href={'/'} className=' hover:text-gray-300'>Home</Link></h1>   
+            <h1><Link href={'/about' }className=' hover:text-gray-300'>About</Link></h1>
+            <h1><Link href={'/translator' }className=' hover:text-gray-300'> Translator</Link></h1>   
             </div>
         <div>
             <ul className='flex   space-x-2 '>
-           
-                   <li>
-               <h1 className=' inline cursor-default'
-                
+              <li>
+               <h1 className=' inline cursor-default'  
                >name</h1>
                 </li>
                 
