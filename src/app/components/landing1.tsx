@@ -53,10 +53,10 @@ function Landing1() {
 
         </div>
         <div className='absolute inset-x-96 inset-y-2/4 bg-black/50 opacity-90 w-4/6 h-1/4 flex flex-col items-center '>
-                        <p className=' cursor-default py-4 text-white md:text-2xl max-w-full sm:mx-auto 
+                        <p className=' cursor-default pt-16 text-white md:text-2xl max-w-full sm:mx-auto 
                         z-10 
                         '>  
-                            <span className='text-6xl'>Bhutia khayrab yargay tshogpo. </span>
+                            <span className='text-6xl'>Bhutia khayrab Yargay Tshogpo. </span>
                         </p>
                      </div>
       </div>
