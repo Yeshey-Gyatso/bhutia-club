@@ -6,7 +6,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useContext } from 'react'
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 
 
 const Navbar = () => {
@@ -31,39 +31,17 @@ const Navbar = () => {
             </div>
         <div>
             <ul className='flex   space-x-2 '>
-            {
-              context.user && (
-                <>
+           
                    <li>
                <h1 className=' inline cursor-default'
                 
-               >{context.user.username}</h1>
+               >name</h1>
                 </li>
-                <li>
-                  <button
-                  onClick={doLogout} 
-                  >logout</button>
-                </li>
-
-                </>
-              )
-            }
-            {
-              !context.user &&(
-                <>
-                  <li>
-               <Link href={'/login'} 
-               >login</Link>
-                </li>
-                <li>
-                  <Link href={'/signupUser'}
-                   
-                  >Signup</Link>
                 
-                </li>
-                </>
-              )
-            }
+           
+               
+               
+             
                
             </ul>
                   
