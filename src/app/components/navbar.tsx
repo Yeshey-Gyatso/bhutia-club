@@ -40,7 +40,12 @@ const Navbar = () => {
 
               <li>
               <div className=' relative flex items-center w-auto h-auto rounded-lg'>
-                  <button className=' bg-gray-300 p-1 flex items-center justify-between  '>Language</button>
+                  <button className=' bg-gray-300 p-1 flex 
+                  items-center justify-between
+                   font-bold text-lg  
+                   rounded-lg tracking-wider 
+                   border-4 border-transparent
+                   '>Language</button>
                 </div>   
               </li>
             </ul>           
