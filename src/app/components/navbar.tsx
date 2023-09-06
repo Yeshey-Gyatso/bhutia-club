@@ -1,11 +1,9 @@
 "use client";
 
-
-// import UserContext from '@/context/userContext';
-// import { logout } from '@/services/userService';
 import Link from 'next/link';
-import list, { List } from 'postcss/lib/list';
 import {AiOutlineCaretDown,AiOutlineCaretUp} from "react-icons/ai";
+import {GrLanguage} from "react-icons/gr";
+import flag from '../assets/flag.svg';
 import { useRouter } from 'next/navigation';
 import React, { useContext, useState } from 'react'
 
@@ -71,14 +69,14 @@ const Navbar = () => {
                       hover:border-l-white border-l-4
                       '>
                         <h3>English </h3>
-                        <h3>icon</h3>
+                        <GrLanguage className="ml-2 pt-1"/>
                       </div>
                       
                       <div className=' flex w-full justify-between hover:bg-slate-500 cursor-pointer 
                       rounded-r-lg border-l-transparent 
                       hover:border-l-white border-l-4'>
                         <h3>Bhutia</h3>
-                        <h3>icon</h3>
+                        <img src={flag} alt="img" />
                       </div>
 
                     </div>
