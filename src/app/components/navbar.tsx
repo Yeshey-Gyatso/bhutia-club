@@ -4,7 +4,7 @@
 // import UserContext from '@/context/userContext';
 // import { logout } from '@/services/userService';
 import Link from 'next/link';
-import { List } from 'postcss/lib/list';
+import list, { List } from 'postcss/lib/list';
 import {AiOutlineCaretDown,AiOutlineCaretUp} from "react-icons/ai";
 import { useRouter } from 'next/navigation';
 import React, { useContext, useState } from 'react'
@@ -65,7 +65,21 @@ const Navbar = () => {
                    </button>
                   
                   {isOpen &&(
-                    <div className=' bg-blue-400 absolute'></div>
+                    <div className=' bg-blue-400 absolute top-20 flex flex-col items-start rounded-lg p-2 w-auto'>
+
+                      <div className=' flex w-auto justify-between hover:bg-slate-500 cursor-pointer 
+                      rounded-r-lg border-l-transparent '>
+                        <h3>english</h3>
+                        <h3>icon</h3>
+                      </div>
+                      
+                      <div className=' flex w-auto justify-between hover:bg-slate-500 cursor-pointer 
+                      rounded-r-lg border-l-transparent '>
+                        <h3>bhutia</h3>
+                        <h3>icon</h3>
+                      </div>
+
+                    </div>
                   )}
 
                 </div>   
