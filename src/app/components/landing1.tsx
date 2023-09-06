@@ -44,7 +44,7 @@ function Landing1() {
   };
 
   return (
-    <div className='pt-10 h-[780px] w-screen m-auto py-16 px-4 relative group'>
+    <div className='pt-22 h-screen w-full m-auto py-16 px-4 relative group'>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full rounded-2xl bg-center bg-cover duration-500 mt-1'
