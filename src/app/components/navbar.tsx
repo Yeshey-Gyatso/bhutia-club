@@ -6,6 +6,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useContext } from 'react'
+
 // import { toast } from 'react-toastify';
 
 
@@ -38,22 +39,11 @@ const Navbar = () => {
               </li>
 
               <li>
-              <h1><Link href={'/translator' }className=' hover:text-gray-300'> Translator</Link></h1>   
+              <div className=' relative flex items-center w-auto h-auto rounded-lg'>
+                  <button className=' bg-gray-300 p-1 flex items-center justify-between  '>Language</button>
+                </div>   
               </li>
-                
-           
-               
-               
-             
-               
-            </ul>
-                  
-              
-                   
-                   
-                
-            
-                
+            </ul>           
         </div>
         </div>
   )
