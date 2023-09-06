@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {AiOutlineCaretDown,AiOutlineCaretUp} from "react-icons/ai";
 import {GrLanguage} from "react-icons/gr";
-import flag from '../assets/flag.svg';
+import Flag from '../assets/flag.svg';
 import { useRouter } from 'next/navigation';
 import React, { useContext, useState } from 'react'
 
@@ -68,15 +68,15 @@ const Navbar = () => {
                       rounded-r-lg border-l-transparent
                       hover:border-l-white border-l-4
                       '>
-                        <h3>English </h3>
-                        <GrLanguage className="ml-2 pt-1"/>
+                        <h3>English</h3>
+                        <GrLanguage className="ml-2 "/>
                       </div>
                       
                       <div className=' flex w-full justify-between hover:bg-slate-500 cursor-pointer 
                       rounded-r-lg border-l-transparent 
                       hover:border-l-white border-l-4'>
                         <h3>Bhutia</h3>
-                        <img src={flag} alt="img" />
+                        <Flag className="w-7 h-7" />
                       </div>
 
                     </div>
