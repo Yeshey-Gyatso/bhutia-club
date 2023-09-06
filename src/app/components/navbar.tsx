@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 import Link from 'next/link';
 import {AiOutlineCaretDown,AiOutlineCaretUp} from "react-icons/ai";
 import {GrLanguage} from "react-icons/gr";
