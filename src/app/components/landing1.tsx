@@ -6,6 +6,10 @@ import { RxDotFilled } from 'react-icons/rx';
 
 
 function Landing1() {
+
+  const [language,setLanguage]=useState(true),
+  
+
   const slides = [
     {
       url: 'https://images.unsplash.com/photo-1682685797365-41f45b562c0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
@@ -49,9 +53,7 @@ function Landing1() {
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full bg-center bg-cover duration-500 mt-1'
       >
-        <div>
-
-        </div>
+       
         <div className='absolute inset-x-40 inset-y-1/4 bg-white/60 opacity-90 w-1/4 h-1/5 flex flex-col items-center '>
                         <p className=' cursor-default pt-14 text-black md:text-2xl max-w-full sm:mx-auto 
                         z-10 
@@ -66,6 +68,26 @@ function Landing1() {
                             <span className='text-6xl'>Bhutia khayrab Yargay Tshogpo. </span>
                         </p>
                      </div>
+
+                     {/* ///////bhutia conversion///////////// */}
+                     <div className='absolute inset-x-40 inset-y-1/4 bg-white/60 opacity-90 w-1/4 h-1/5 flex flex-col items-center '>
+                        <p className=' cursor-default pt-14 text-black md:text-2xl max-w-full sm:mx-auto 
+                        z-10 
+                        '>  
+                            <span className='text-6xl'>Welcome To</span>
+                        </p>
+                     </div>
+        <div className='absolute inset-x-96 inset-y-2/4 bg-black/50 opacity-90 w-4/6 h-1/4 flex flex-col items-center '>
+                        <p className=' cursor-default pt-16 text-white md:text-2xl max-w-full sm:mx-auto 
+                        z-10 
+                        '>  
+                            <span className='text-6xl'>Bhutia khayrab Yargay Tshogpo. </span>
+                        </p>
+                     </div>
+      
+      
+      
+      
       </div>
       {/* Left Arrow */}
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
