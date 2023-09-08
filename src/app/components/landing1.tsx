@@ -7,8 +7,8 @@ import { RxDotFilled } from 'react-icons/rx';
 
 function Landing1() {
 
-  const [language,setLanguage]=useState(true),
-  
+  const [language,setLanguage]=useState(true);
+
 
   const slides = [
     {
