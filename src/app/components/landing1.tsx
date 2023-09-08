@@ -69,7 +69,7 @@ function Landing1() {
                         </p>
                      </div>
 
-                     {/* ///////bhutia conversion///////////// */}
+      {/* ///////bhutia conversion///////////// */}
                      <div className='absolute inset-x-40 inset-y-1/4 bg-white/60 opacity-90 w-1/4 h-1/5 flex flex-col items-center '>
                         <p className=' cursor-default pt-14 text-black md:text-2xl max-w-full sm:mx-auto 
                         z-10 
