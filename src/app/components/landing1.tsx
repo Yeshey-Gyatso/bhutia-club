@@ -55,14 +55,15 @@ function Landing1() {
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full bg-center bg-cover duration-500 mt-1'
       >
-       {/* //////english ///////////////////// */}
+       {/* //////english to bhutia change ///////////////////// */}
        
         <div className='absolute inset-x-40 inset-y-1/4 bg-white/60 opacity-90 w-1/4 h-1/5 flex flex-col items-center '>
                         <p className=' cursor-default pt-14 text-black md:text-2xl max-w-full sm:mx-auto 
                         z-10 
                         '>  
                            {
-                            language ?(<span className='text-6xl'>TASHI DELAY</span>):(<span className='text-6xl'>Welcome To</span>)
+                            language ?(<span className='text-6xl'>TASHI DELAY</span>):
+                            (<span className='text-6xl'>Welcome To</span>)
                            } 
                             
                         </p>
@@ -71,26 +72,19 @@ function Landing1() {
                         <p className=' cursor-default pt-16 text-white md:text-2xl max-w-full sm:mx-auto 
                         z-10 
                         '>  
-                            <span className='text-6xl'>Bhutia khayrab Yargay Tshogpo. </span>
+                            {
+                              language ?(
+                                <span className='text-6xl'>Bha shyapchu theya etc </span>
+
+                              ):(
+                                <span className='text-6xl'>Bhutia khayrab Yargay Tshogpo. </span>
+
+                              )
+                            }
+                        
                         </p>
                      </div>
 
-      {/* ///////bhutia conversion///////////// */}
-
-                     <div className='absolute inset-x-40 inset-y-1/4 bg-white/60 opacity-90 w-1/4 h-1/5 flex flex-col items-center '>
-                        <p className=' cursor-default pt-14 text-black md:text-2xl max-w-full sm:mx-auto 
-                        z-10 
-                        '>  
-                            <span className='text-6xl'>Welcome To</span>
-                        </p>
-                     </div>
-        <div className='absolute inset-x-96 inset-y-2/4 bg-black/50 opacity-90 w-4/6 h-1/4 flex flex-col items-center '>
-                        <p className=' cursor-default pt-16 text-white md:text-2xl max-w-full sm:mx-auto 
-                        z-10 
-                        '>  
-                            <span className='text-6xl'>Bhutia khayrab Yargay Tshogpo. </span>
-                        </p>
-                     </div>
       
       
       
