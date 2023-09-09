@@ -3,11 +3,13 @@
 import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
+import { useRecoilValue } from 'recoil';
+import { languageAtom } from '../recoil/atoms';
 
 
 function Landing1() {
 
-  const [language,setLanguage]=useState(true);
+  const language=useRecoilValue(languageAtom);
 
 
   const slides = [
@@ -53,6 +55,7 @@ function Landing1() {
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full bg-center bg-cover duration-500 mt-1'
       >
+       {/* //////english ///////////////////// */}
        
         <div className='absolute inset-x-40 inset-y-1/4 bg-white/60 opacity-90 w-1/4 h-1/5 flex flex-col items-center '>
                         <p className=' cursor-default pt-14 text-black md:text-2xl max-w-full sm:mx-auto 
@@ -70,6 +73,7 @@ function Landing1() {
                      </div>
 
       {/* ///////bhutia conversion///////////// */}
+
                      <div className='absolute inset-x-40 inset-y-1/4 bg-white/60 opacity-90 w-1/4 h-1/5 flex flex-col items-center '>
                         <p className=' cursor-default pt-14 text-black md:text-2xl max-w-full sm:mx-auto 
                         z-10 
