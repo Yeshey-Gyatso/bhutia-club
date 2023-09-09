@@ -61,7 +61,10 @@ function Landing1() {
                         <p className=' cursor-default pt-14 text-black md:text-2xl max-w-full sm:mx-auto 
                         z-10 
                         '>  
-                            <span className='text-6xl'>Welcome To</span>
+                           {
+                            language ?(<span className='text-6xl'>TASHI DELAY</span>):(<span className='text-6xl'>Welcome To</span>)
+                           } 
+                            
                         </p>
                      </div>
         <div className='absolute inset-x-96 inset-y-2/4 bg-black/50 opacity-90 w-4/6 h-1/4 flex flex-col items-center '>
