@@ -8,6 +8,7 @@ import Footer from './footer'
 import { RecoilRoot } from 'recoil'
 import Page1 from './page1'
 import Page2 from './page2'
+import About from './about'
 const PageSelector = () => {
   const [landing,setLanding]=useState(0);
 //   console.log(landing);
@@ -18,6 +19,7 @@ const PageSelector = () => {
       <RecoilRoot>
       <Navbar/>
       <Landing1/>
+      <About/>
       <Page1/>
       <Page2/>
       <Landing2/>
