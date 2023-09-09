@@ -12,6 +12,7 @@ import React, { useContext, useState } from 'react'
 
 const Navbar = () => {
 
+  const [language,setLanguage]=useState(true);
   const [isOpen,setIsOpen]=useState(false)
 
   return (
