@@ -6,13 +6,15 @@ import {GrLanguage} from "react-icons/gr";
 import Flag from '../assets/flag.svg';
 import { useRouter } from 'next/navigation';
 import React, { useContext, useState } from 'react'
+import { useRecoilState } from 'recoil';
+import { languageAtom } from '../recoil/atoms';
 
 // import { toast } from 'react-toastify';
 
 
 const Navbar = () => {
 
-  const [language,setLanguage]=useState(true);
+  const [language,setLanguage]=useRecoilState(languageAtom);
   const [isOpen,setIsOpen]=useState(false)
 
   return (

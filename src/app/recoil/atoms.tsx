@@ -1,6 +1,6 @@
 import { atom } from "recoil";
 
 export const languageAtom = atom({
-    key:"languages",
+    key:"language",
     default:false,
 })
