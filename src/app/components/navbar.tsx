@@ -67,20 +67,24 @@ const Navbar = () => {
                   {isOpen &&(
                     <div className=' bg-blue-400 absolute top-12 flex flex-col items-start rounded-lg p-2 w-auto'>
 
-                      <div className=' flex w-full p-2 justify-between hover:bg-slate-500 cursor-pointer 
+                      <button 
+                      onClick={() => setLanguage(false)}
+                      className=' flex w-full p-2 justify-between hover:bg-slate-500 cursor-pointer 
                       rounded-r-lg border-l-transparent
                       hover:border-l-white border-l-4
                       '>
                         <h3>English</h3>
                         <GrLanguage className="ml-2 "/>
-                      </div>
+                      </button>
                       
-                      <div className=' flex w-full justify-between hover:bg-slate-500 cursor-pointer 
+                      <button
+                      onClick={() => setLanguage(true)}
+                      className=' flex w-full justify-between hover:bg-slate-500 cursor-pointer 
                       rounded-r-lg border-l-transparent 
                       hover:border-l-white border-l-4'>
                         <h3 className=' ml-2'>Bhutia</h3>
                         <Flag className="w-7 h-7" />
-                      </div>
+                      </button>
                     </div>
                   )}
                 </div>   
