@@ -15,6 +15,7 @@ import { languageAtom } from '../recoil/atoms';
 const Navbar = () => {
 
   const [language,setLanguage]=useRecoilState(languageAtom);
+  console.log(language);
   const [isOpen,setIsOpen]=useState(false)
 
   return (
