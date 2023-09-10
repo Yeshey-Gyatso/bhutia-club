@@ -43,7 +43,7 @@ const Navbar = () => {
           {
             language?
             (
-            <h1><Link href={'/about' }className=' hover:text-gray-300'>About</Link></h1>
+            <h1><Link href={'/about' }className=' hover:text-gray-300  text-3xl'>སྐོར་ལོ།</Link></h1>
 
             ):
             (
