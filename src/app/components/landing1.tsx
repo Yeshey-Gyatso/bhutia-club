@@ -63,7 +63,7 @@ function Landing1() {
                         '>  
                            {
                             language ?(
-                            <span className='text-7xl'>བཀྲ་ཤིས་བདེ་ལེགས</span>
+                            <span className='text-7xl'>བཀྲ་ཤིས་བདེ་ལེགས།</span>
                             ):
                             (
                               <div className= ' pt-6'>
@@ -81,7 +81,7 @@ function Landing1() {
                         '>  
                             {
                               language ?(
-                                <span className=' text-8xl'>བྷོ ་ཊི་ཡ་    སྐད་རབས་     ཡར་རྒྱས་     
+                                <span className=' text-8xl'>བྷོ་ ཊི་ཡ་    སྐད་རབས་     ཡར་རྒྱས་     
                                 ཚོགས་པོ།</span>
 
                               ):(
