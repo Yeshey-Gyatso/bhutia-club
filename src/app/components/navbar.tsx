@@ -50,7 +50,10 @@ const Navbar = () => {
           {
             language?
             (
-            <h1><Link href={'/about' }className=' hover:text-gray-300  text-3xl'>སྐོར་ལོ།</Link></h1>
+              <div className=' -mt-2'>
+                  <h1><Link href={'/about' }className=' hover:text-gray-300  text-3xl'>སྐོར་ལོ།</Link></h1>
+
+              </div>
 
             ):
             (
@@ -63,7 +66,10 @@ const Navbar = () => {
 
           {
             language?(
-            <h1><Link href={'/team' }className=' hover:text-gray-300 text-3xl'>ཆོ༹གས་ཆུང།</Link></h1>   
+              <div className=' -mt-2'>
+                <h1><Link href={'/team' }className=' hover:text-gray-300 text-3xl'>ཆོ༹གས་ཆུང།</Link></h1>   
+
+              </div>
 
             ):(
             <h1><Link href={'/team' }className=' hover:text-gray-300 text-lg'> Team</Link></h1>   
