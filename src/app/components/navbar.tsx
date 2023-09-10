@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className=' flex space-x-2  '>
             {
               language?(
-            <h1><Link href={'/'} className=' hover:text-gray-300'>ཁྱིམ།</Link></h1>   
+            <h1><Link href={'/'} className=' hover:text-gray-300 text-3xl'>ཁྱིམ།</Link></h1>   
 
               ):(
             <h1><Link href={'/'} className=' hover:text-gray-300'>Home</Link></h1>   
