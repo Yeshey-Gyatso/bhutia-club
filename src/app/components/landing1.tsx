@@ -63,7 +63,7 @@ function Landing1() {
                         '>  
                            {
                             language ?(
-                            <span className='text-7xl'>བཀྲ་ཤིས་བདེ་ལེགས།</span>
+                            <span className='text-7xl'>༈ བྱོན་པ་ ལེགས་སོ།</span>
                             ):
                             (
                               <div className= ' pt-6'>
@@ -76,13 +76,13 @@ function Landing1() {
                         </p>
                      </div>
         <div className='absolute inset-x-96 inset-y-2/4 bg-black/50 opacity-90 w-4/6 h-1/4 flex flex-col items-center '>
-                        <p className=' cursor-default pt-10 text-white md:text-2xl max-w-full sm:mx-auto 
+                        <p className=' cursor-default pt-8 text-white md:text-2xl max-w-full sm:mx-auto 
                         z-10 
                         '>  
                             {
                               language ?(
-                                <span className=' text-8xl'>བྷོ་ ཊི་ཡ་    སྐད་རབས་     ཡར་རྒྱས་     
-                                ཚོགས་པོ།</span>
+                                <span className=' text-8xl'>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
+                                </span>
 
                               ):(
                                 <div className=' pt-8'>
