@@ -34,7 +34,10 @@ const Navbar = () => {
           {/* /////home */}
             {
               language?(
-            <h1><Link href={'/'} className=' hover:text-gray-300 text-3xl'>ཁྱིམ།</Link></h1>   
+                <div className=' -mt-2'> 
+                    <h1><Link href={'/'} className=' hover:text-gray-300 text-3xl'>ཁྱིམ།</Link></h1>   
+
+                </div>
 
               ):(
             <h1><Link href={'/'} className=' hover:text-gray-300 text-lg'>Home</Link></h1>   
