@@ -13,7 +13,7 @@ import { languageAtom } from '../recoil/atoms';
 
 
 const Navbar = () => {
-
+  
   const [language,setLanguage]=useRecoilState(languageAtom);
   console.log(language);
   const [isOpen,setIsOpen]=useState(false)
@@ -30,8 +30,27 @@ const Navbar = () => {
                      md:p-1 inline cursor-default '>BKYT</h1>
         </div>
         <div className=' flex space-x-2  '>
+            {
+              language?(
+            <h1><Link href={'/'} className=' hover:text-gray-300'>ཁྱིམ།</Link></h1>   
+
+              ):(
             <h1><Link href={'/'} className=' hover:text-gray-300'>Home</Link></h1>   
+
+              )
+              
+            }
+          {
+            language?
+            (
             <h1><Link href={'/about' }className=' hover:text-gray-300'>About</Link></h1>
+
+            ):
+            (
+            <h1><Link href={'/about' }className=' hover:text-gray-300'>About</Link></h1>
+
+            )
+          }
             <h1><Link href={'/team' }className=' hover:text-gray-300'> Team</Link></h1>   
             </div>
         <div>
