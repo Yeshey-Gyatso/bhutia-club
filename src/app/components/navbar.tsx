@@ -30,6 +30,8 @@ const Navbar = () => {
                      md:p-1 inline cursor-default '>BKYT</h1>
         </div>
         <div className=' flex space-x-2  '>
+
+          {/* /////home */}
             {
               language?(
             <h1><Link href={'/'} className=' hover:text-gray-300 text-3xl'>ཁྱིམ།</Link></h1>   
@@ -40,6 +42,8 @@ const Navbar = () => {
               )
               
             }
+
+            {/* //about */}
           {
             language?
             (
@@ -51,12 +55,14 @@ const Navbar = () => {
 
             )
           }
+
+
             <h1><Link href={'/team' }className=' hover:text-gray-300'> Team</Link></h1>   
             </div>
         <div>
             <ul className='flex space-x-2 '>
               {/* <li>
-               <h1 className=' inline cursor-default'  
+               <h1 className=' inline cursor-default'  ཆོ༹གས་ཆུང།
                >name</h1>
                 </li> */}
 
