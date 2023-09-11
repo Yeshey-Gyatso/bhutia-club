@@ -31,7 +31,10 @@ const Navbar = () => {
                      md:p-1 inline cursor-default '>BKYT</h1> */}
 
             <Image 
-              src={logoT} alt='pic of logo'
+              src={logoT} 
+              alt='pic of logo'
+              width={60}
+              height={60}
             />
         </div>
         <div className=' flex space-x-10 '>
