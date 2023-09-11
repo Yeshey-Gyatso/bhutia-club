@@ -9,6 +9,7 @@ import { RecoilRoot } from 'recoil'
 import Page1 from './page1'
 import Page2 from './page2'
 import About from './about'
+import Team from './team'
 const PageSelector = () => {
   const [landing,setLanding]=useState(0);
 //   console.log(landing);
@@ -23,7 +24,9 @@ const PageSelector = () => {
       </div>
       <div className='snap-start'>
       <About/>
-
+      </div>
+      <div className='snap-start'>
+      <Team/>
       </div>
       <Page1/>
       <Page2/>

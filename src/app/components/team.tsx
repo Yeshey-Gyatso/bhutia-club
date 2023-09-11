@@ -2,7 +2,9 @@ import React from 'react'
 
 const Team = () => {
   return (
-    <div className=' bg-gradient-to-b from-inherit to-white'>Team</div>
+    <div className=' bg-gradient-to-b from-sky-500 to-white
+    w-full h-screen
+    '>Team</div>
   )
 }
 
