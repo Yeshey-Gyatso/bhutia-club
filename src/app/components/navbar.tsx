@@ -4,6 +4,7 @@ import Link from 'next/link';
 import {AiOutlineCaretDown,AiOutlineCaretUp} from "react-icons/ai";
 import {GrLanguage} from "react-icons/gr";
 import Flag from '../assets/flag.svg';
+import logoT from '../public/logoT.png';
 import { useRouter } from 'next/navigation';
 import React, { useContext, useState } from 'react'
 import { useRecoilState } from 'recoil';
@@ -26,8 +27,12 @@ const Navbar = () => {
       p-4
        z-10'>
         <div className=' brand'>
-            <h1 className='md:text-xl font-bold border-b-2 border-black
-                     md:p-1 inline cursor-default '>BKYT</h1>
+            {/* <h1 className='md:text-xl font-bold border-b-2 border-black
+                     md:p-1 inline cursor-default '>BKYT</h1> */}
+
+            <Image 
+              src={logoT} alt='pic of logo'
+            />
         </div>
         <div className=' flex space-x-10 '>
 
