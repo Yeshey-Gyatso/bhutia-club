@@ -99,7 +99,15 @@ const Navbar = () => {
                    
                    '
                    onClick={ ()=>setIsOpen((prev)=>!prev)}
-                   >Language
+                   >
+                    {
+                      language?(
+                          <p className='-mt-2 text-3xl'>སྐད་རབས།</p>
+                      ):(
+                        <h1>language</h1>
+                      )
+                    }
+                   
                    {
                     !isOpen?(
                       <AiOutlineCaretDown className="h-8"/>
