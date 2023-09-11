@@ -86,7 +86,7 @@ const Navbar = () => {
           }
 
             </div>
-        <div>
+        <div className='pr-1'>
             <ul className='flex space-x-2 '>
               {/* <li>
                <h1 className=' inline cursor-default' 
@@ -126,7 +126,9 @@ const Navbar = () => {
                    </button>
                   
                   {isOpen &&(
-                    <div className=' bg-blue-400 absolute top-12 flex flex-col items-start rounded-lg p-2 w-auto'>
+                    <div className=' bg-blue-400 absolute
+                     top-12 flex flex-col items-start rounded-lg 
+                     p-2 w-auto'>
 
                       <button 
                       onClick={() => setLanguage(false)}
