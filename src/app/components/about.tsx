@@ -1,5 +1,6 @@
-import React from 'react'
-
+import React from 'react';
+import Image from 'next/image';
+import logoT from '../public/logoT.png';
 const About = () => {
   return (
     <div className='
@@ -10,12 +11,19 @@ const About = () => {
             <h1 className=' ml-28 py-4 text-2xl font-bold'> Based in Gangtok with team from all over Sikkim to ... ?
               </h1>
             </div>
-      <div className=' flex flex-row '>
-          <div className=' bg-red-600'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio omnis sequi quaerat voluptates aut
-           harum mollitia soluta fugit eum atque, 
-           ipsa velit ea non voluptatem facere explicabo laboriosam cum.</div>
-          <div className=' h-100 w-100 bg-yellow-600'>
-            
+      <div className=' flex flex-row justify-center items-center'>
+          <div className=' bg-red-600'>  <Image 
+              src={logoT} 
+              alt='pic of logo'
+              width={500}
+              height={500}
+            /></div>
+          <div className='w-auto h-auto
+           bg-yellow-600 flex flex-col justify-center 
+          items-center text-center'>
+            <p className="align-middle"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis quae facilis a quaerat eaque esse! Maxime libero aperiam nostrum 
+              debitis provident facilis sequi suscipit quo pariatur, similique, quidem error!</p>
+         
             </div>
       </div>
     </div>
