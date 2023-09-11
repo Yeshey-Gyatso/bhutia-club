@@ -13,9 +13,10 @@ const About = () => {
             </div>
       <div className=' flex w-full relative '>
           <div className=' inset-x-1/2 absolute w-40 bg-red-600'>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio omnis sequi quaerat voluptates aut
-           harum mollitia soluta fugit eum atque, 
-           ipsa velit ea non voluptatem facere explicabo laboriosam cum.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Unde distinctio omnis sequi quaerat voluptates aut
+                harum mollitia soluta fugit eum atque, 
+               ipsa velit ea non voluptatem facere explicabo laboriosam cum.</p>
              </div>
           
       </div>
