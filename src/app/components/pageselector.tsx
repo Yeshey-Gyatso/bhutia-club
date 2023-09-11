@@ -15,11 +15,16 @@ const PageSelector = () => {
 //just got the data
 
     return (
-    <div>
+    <div className=' snap-y snap-mandatory h-screen w-screen scrollbar-none overflow-x-hidden '>
       <RecoilRoot>
       <Navbar/>
-      <Landing1/>
+      <div  className=" snap-start">
+        <Landing1 />
+      </div>
+      <div className='snap-start'>
       <About/>
+
+      </div>
       <Page1/>
       <Page2/>
       <Landing2/>
