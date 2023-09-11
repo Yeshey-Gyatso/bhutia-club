@@ -19,7 +19,7 @@ const About = () => {
              </div>
           
       </div>
-      <div className=' inset-x-10 relative  w-1/3 h-96'>
+      <div className=' inset-x-24 relative  w-1/3 h-96'>
             
           <Image 
               src={logoT} 
