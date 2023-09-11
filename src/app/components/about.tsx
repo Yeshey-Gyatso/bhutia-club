@@ -7,11 +7,10 @@ const About = () => {
     
     h-screen w-full
     bg-gradient-to-b from-white via-blue-100 to-sky-500'>
-      <div className='pl-10 pt-20 flex flex-col'>
+      <div className='pl-32 pt-8 flex flex-col'>
             <h1 className=' text-6xl font-extrabold border-b-8'>WHO WE ARE </h1>
             <h1 className=' ml-6 py-8 text-2xl font-bold'> Based in Gangtok with team from all over Sikkim to ... ? </h1>
-            
-            </div>
+          </div>
       <div className=' flex w-full relative '>
           <div className=' inset-x-1/2 absolute w-1/3'>
               <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
