@@ -11,8 +11,12 @@ const About = () => {
               </h1>
             </div>
       <div className=' flex flex-row '>
-          <div className=' bg-red-600'> para 1</div>
-          <div className=' bg-yellow-600'> image</div>
+          <div className=' bg-red-600'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio omnis sequi quaerat voluptates aut
+           harum mollitia soluta fugit eum atque, 
+           ipsa velit ea non voluptatem facere explicabo laboriosam cum.</div>
+          <div className=' h-100 w-100 bg-yellow-600'>
+            
+            </div>
       </div>
     </div>
   )
