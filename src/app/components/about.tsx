@@ -11,20 +11,23 @@ const About = () => {
             <h1 className=' ml-28 py-4 text-2xl font-bold'> Based in Gangtok with team from all over Sikkim to ... ?
               </h1>
             </div>
-      <div className=' flex flex-row '>
-          <div className=' bg-red-600'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio omnis sequi quaerat voluptates aut
+      <div className=' flex w-full relative '>
+          <div className=' inset-x-1/2 absolute w-40 bg-red-600'>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio omnis sequi quaerat voluptates aut
            harum mollitia soluta fugit eum atque, 
-           ipsa velit ea non voluptatem facere explicabo laboriosam cum.</div>
-          <div className=' h-100 w-100 bg-yellow-600'>
+           ipsa velit ea non voluptatem facere explicabo laboriosam cum.</p>
+             </div>
+          
+      </div>
+      <div className=' inset-x-10 relative  w-1/3 h-96'>
             
           <Image 
               src={logoT} 
               alt='pic of logo'
-              width={60}
-              height={60}
+              width={1000}
+              height={1000}
             />
             </div>
-      </div>
     </div>
   )
 }
