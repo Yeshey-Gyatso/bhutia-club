@@ -50,7 +50,7 @@ function Landing1() {
   };
 
   return (
-    <div className='pt-22 h-screen w-full m-auto py-16  relative group'>
+    <div className=' h-screen w-full m-auto pb-16  relative group'>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full bg-center bg-cover duration-500 mt-1'

@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div className=' flex md:justify-between 
-     bg-white
+    bg-transparent
      w-full 
      fixed
       p-4
