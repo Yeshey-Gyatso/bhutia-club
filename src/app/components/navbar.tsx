@@ -59,13 +59,13 @@ const Navbar = () => {
             language?
             (
               <div className=' -mt-2'>
-                  <h1><Link href={'/about' }className=' hover:text-gray-300  text-3xl'>སྐོར་ལོ།</Link></h1>
+                  <h1><Link href={'/About' }className=' hover:text-gray-300  text-3xl'>སྐོར་ལོ།</Link></h1>
 
               </div>
 
             ):
             (
-            <h1><Link href={'/about' }className=' hover:text-gray-300 text-lg'>About</Link></h1>
+            <h1><Link href={'/About' }className=' hover:text-gray-300 text-lg'>About</Link></h1>
 
             )
           }
