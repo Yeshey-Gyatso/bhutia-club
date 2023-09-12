@@ -29,11 +29,11 @@ const PageSelector = () => {
       <div className='snap-start'>
       <Team/>
       </div>
-      <Page1/>
+      {/* <Page1/>
       <Page2/>
       <Landing2/>
-      <Landing3/>
-      <Footer/>
+      <Landing3/> */}
+      {/* <Footer/> */}
       </RecoilRoot>
     
   </div>
