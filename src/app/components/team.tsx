@@ -10,7 +10,7 @@ const Team = () => {
 
       1 level div
       <div>
-          inner div
+          inner div~
       </div>
       </div> 
     </div>
