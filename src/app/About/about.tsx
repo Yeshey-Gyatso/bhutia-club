@@ -1,14 +1,28 @@
+"use client";
+
 import React from 'react'
 import Image from 'next/image';
 import logoT from '../public/logoT.png';
+import { useRecoilValue } from 'recoil';
+import { languageAtom } from '../recoil/atoms';
+
 const About = () => {
+  const language=useRecoilValue(languageAtom);
   return (
     <div className='
-    
     h-screen w-full
     bg-gradient-to-b from-white via-blue-100 to-sky-500'>
       <div className='pl-32 pt-8 flex flex-col'>
-            <h1 className=' text-6xl font-extrabold border-b-8'>WHO WE ARE </h1>
+        
+      {
+        language?(
+          <h1 className=' text-6xl font-extrabold border-b-8'>ང་ཅག་ ཀ་ འབོ </h1>
+
+        ):(
+          <h1 className=' text-6xl font-extrabold border-b-8'>WHO WE ARE </h1>
+
+        )
+      }
             <h1 className=' ml-6 py-8 text-2xl font-bold'> Based in Gangtok with team from all over Sikkim to ... ? </h1>
           </div>
       <div className=' flex w-full relative '>
