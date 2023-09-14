@@ -38,19 +38,31 @@ const About = () => {
           </div>
       <div className=' flex w-full relative '>
           <div className=' inset-x-1/2 absolute w-1/3'>
-              <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Unde distinctio omnis sequi quaerat voluptates aut
-                harum mollitia soluta fugit eum atque, 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, magnam vel maiores necessitatibus, optio sed commodi voluptates consequatur, iste incidunt voluptate soluta 
-                saepe deleniti molestias cupiditate facilis impedit 
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus nulla harum sit velit. In non quia eius placeat aperiam atque illo fuga? Omnis velit laudantium quasi ullam sit saepe similique.
-                numquam minus?
-               ipsa velit ea non voluptatem facere explicabo laboriosam cum.</p>
+
+            {
+              language?(
+                <p className=' text-2xl'>བྷོ་ཊི་ཡ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ་ ཕྱི༹་ལོ་ ༡༩༨༣  ལས་ འགོ་བཅུ༹ག་ཀོ་ སྦད། ཆོ༹གས་པོ་ འདི་ འགོ་བཅུ༹གས་ཀོའི་ དམིགས་ཡུལ་ གཅོ༹་བོ་ འབྲས་ལྗོངས་ སྟོང་ གང་གི་ སྐད་རིགས་ དང་ རིག་གཞུང་ལོ་  ཡར་རྒྱས་ བཏང་ཤད་ དང་  སྲུང་སྐྱོབ་ བྱ༹ས་བའི་ དོན་ལོ་ ཨིན། ཆོ༹གས་པོ་ འདི་ གཞི་གྱིང་མཁན་ བསྟེན་འཇི༹ན་ སྐྱེ་བུ་ དམ་པ་ སྐུ་ཞབས་ ནོར་ལྡན་ ཆེ༹་རིང་ དང་ པད་མ་ རིག་འཇི༹ན་ མཆོག་གི་ དབུ་བཅུ༹གས་ཀོ་ གནང་བོ་ སྦད།
+                   འདེས་རྔ་ ཁོང་མཉམ་པོ་ འབྲས་ལྗོངས་ སྟོང་ གང་གི་ སྐད་ྲརིགས་ སློབ་དཔོན་ཅུ༹་ཀི་ཡང་ ཐུགས་འགན་ རྒྱ་ཆེ་དྲགས་
+                    བཞེས་པོ་སྦད།
                 <br /><br />
-               <p>
+               
+                བྷོ་ཊི་ཡ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ་ ཕྱི༹་ལོ་ ༡༩༨༣  ལས་ འགོ་བཅུ༹ག་ཀོ་ སྦད། ཆོ༹གས་པོ་ འདི་ འགོ་བཅུ༹གས་ཀོའི་ དམིགས་ཡུལ་ གཅོ༹་བོ་ འབྲས་ལྗོངས་ སྟོང་ གང་གི་ སྐད་རིགས་ དང་ རིག་གཞུང་ལོ་  ཡར་རྒྱས་ བཏང་ཤད་ དང་  སྲུང་སྐྱོབ་ བྱ༹ས་བའི་ དོན་ལོ་ ཨིན། ཆོ༹གས་པོ་ འདི་ གཞི་གྱིང་མཁན་ བསྟེན་འཇི༹ན་ སྐྱེ་བུ་ དམ་པ་ སྐུ་ཞབས་ ནོར་ལྡན་ ཆེ༹་རིང་ དང་ པད་མ་ རིག་འཇི༹ན་ མཆོག་གི་ དབུ་བཅུ༹གས་ཀོ་ གནང་བོ་ སྦད།
+                   འདེས་རྔ་ 
+                </p>
+              ):(
+                <p >Bhutia Khayrab Yargay Tshogpo is an association which was formed in the year 1983 with its main goal and purpose is to develope and protect the language and the traditions of the  
+                Bhutia people of Sikkim. This association was first formed by Mr Norden Tshering Bhutia and Pema Tshering Bhutia along with the esteemed Bhutia teachers of Sikkim  
+                Unde distinctio omnis sequi quaerat voluptates aut
+                
+               ipsa velit ea non voluptatem facere explicabo laboriosam cum.
+                <br /><br />
+               
                 Lorem ipsum d Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda amet quisquam beatae voluptatum, facere ab deserunt porro accusamus id labore consequuntur placeat vitae sint eaque! Itaque a expedita repellat nemo?
                 olor sit amet, consectetur adipisicing elit. Mollitia possimus amet repellat est sapiente suscipit quod, voluptatem minima odio alias accusamus numquam consectetur quibusdam praesentium aliquid, adipisci fugiat enim nostrum.
-               </p>
+                </p>
+              )
+            }
+              
              </div>
           
       </div>
