@@ -16,14 +16,25 @@ const About = () => {
         
       {
         language?(
-          <h1 className=' text-6xl font-extrabold border-b-8'>ང་ཅག་ ཀ་ འབོ </h1>
+          <h1 className=' text-8xl -mt-9  font-extrabold border-b-8'>ང་ཅག་ ཀ་ འབོ </h1>
 
         ):(
           <h1 className=' text-6xl font-extrabold border-b-8'>WHO WE ARE </h1>
 
         )
       }
-            <h1 className=' ml-6 py-8 text-2xl font-bold'> Based in Gangtok with team from all over Sikkim to ... ? </h1>
+        {
+          language?(
+            <h1 className=' ml-6 py-8 text-4xl -mt-2 font-bold'> རྒྱལ་ས་ སྒང་ཏོག་ན་ ཡོད་པའི་ འབྲས་ལྗོངས་ སྟོང་ གང་གི་ འཐུད་མི་ ཆོ༹གས་ཆུང
+          རྒྱལ་ས་ སྒང་ཏོག་ན་ ཡོད་པའི་ འབྲས་ལྗོངས་ སྟོང་ གང་གི་ འཐུད་མི་ ཆོ༹གས་ཆུང
+            </h1>
+            
+          ):(
+            <h1 className=' ml-6 py-8 text-2xl font-bold'> Based in Gangtok with team from all over Sikkim </h1>
+
+          )
+        }
+      
           </div>
       <div className=' flex w-full relative '>
           <div className=' inset-x-1/2 absolute w-1/3'>
