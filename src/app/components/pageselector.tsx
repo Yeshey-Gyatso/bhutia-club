@@ -10,7 +10,8 @@ import Page1 from './page1'
 import Page2 from './page2'
 
 import Team from './team'
-import AboutPage from '../About/page'
+
+import About from './about'
 const PageSelector = () => {
   const [landing,setLanding]=useState(0);
 //   console.log(landing);
@@ -24,7 +25,7 @@ const PageSelector = () => {
         <Landing1 />
       </div>
       <div className='snap-start'>
-      <AboutPage/>
+      <About/>
       </div>
       <div className='snap-start'>
       <Team/>

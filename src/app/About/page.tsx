@@ -1,4 +1,4 @@
-import About from './about'
+import About from './aboutdemo'
 
 import React from 'react'
 
