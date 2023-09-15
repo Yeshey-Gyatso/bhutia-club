@@ -12,7 +12,7 @@ const Team = () => {
       <div>
           inner div~ hmmm thinking waht to do
           should this be a circular ?
-          
+          and responsvie ?
       </div>
       </div> 
     </div>
