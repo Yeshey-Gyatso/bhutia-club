@@ -11,6 +11,8 @@ const Team = () => {
       1 level div
       <div>
           inner div~ hmmm thinking waht to do
+          should this be a circular ?
+          
       </div>
       </div> 
     </div>
