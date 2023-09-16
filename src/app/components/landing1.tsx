@@ -57,13 +57,13 @@ function Landing1() {
       >
        {/* //////english to bhutia change ///////////////////// */}
        
-        <div className='absolute lg:inset-x-40 inset-y-1/4 lg:bg-white/60 opacity-90 lg:w-1/4 h-1/5 flex flex-col items-center '>
+        <div className='absolute lg:inset-x-40 inset-y-1/4 bg-white/60 opacity-90 lg:w-1/4 h-1/5 flex flex-col items-center '>
                         <div className=' cursor-default pt-6 text-black md:text-2xl max-w-full sm:mx-auto 
                         z-10 
                         '>  
                            {
                             language ?(
-                            <span className=' text-4xl lg:text-7xl'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
+                            <span className=' text-5xl lg:text-7xl'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
                             ):
                             (
                               <div className= ' pt-6'>
@@ -81,12 +81,12 @@ function Landing1() {
                         '>  
                             {
                               language ?(
-                                <span className=' text-8xl'>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
+                                <span className='text-5xl lg:text-8xl'>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
                                 </span>
 
                               ):(
                                 <div className=' pt-8'>
-                                <span className='text-6xl'>Bhutia khayrab Yargay Tshogpo. </span>
+                                <span className='text-3xl lg:text-6xl'>Bhutia khayrab Yargay Tshogpo. </span>
 
                                 </div>
 
