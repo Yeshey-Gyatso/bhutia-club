@@ -24,7 +24,7 @@ const Navbar = () => {
     bg-transparent
      w-full 
      fixed
-      p-4
+      md:p-4
        z-10'>
         <div className=' brand'>
             {/* <h1 className='md:text-xl font-bold border-b-2 border-black
