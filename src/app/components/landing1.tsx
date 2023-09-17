@@ -63,11 +63,11 @@ function Landing1() {
                         '>  
                            {
                             language ?(
-                            <span className=' text-5xl lg:text-7xl'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
+                            <span className=' ml-1 text-5xl lg:text-7xl'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
                             ):
                             (
                               <div className= ' pt-6'>
-                                <span className='text-3xl lg:text-6xl'>Welcome To</span>
+                                <span className='  text-3xl lg:text-6xl'>Welcome To</span>
 
                               </div>
                               )
@@ -81,7 +81,7 @@ function Landing1() {
                         '>  
                             {
                               language ?(
-                                <span className='text-5xl lg:text-8xl'>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
+                                <span className=' ml-2  text-5xl lg:text-8xl'>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
                                 </span>
 
                               ):(
