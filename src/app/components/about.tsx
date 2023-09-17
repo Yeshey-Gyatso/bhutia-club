@@ -16,10 +16,10 @@ const About = () => {
         
       {
         language?(
-          <h1 className='  lg:text-8xl -mt-9  font-extrabold border-b-8'>ང་ཅག་ ཀ་ འབོ </h1>
+          <h1 className=' text-3xl lg:text-8xl lg:-mt-9  font-extrabold border-b-8'>ང་ཅག་ ཀ་ འབོ </h1>
 
         ):(
-          <h1 className=' lg:text-6xl font-extrabold border-b-8'>WHO WE ARE </h1>
+          <h1 className='text-xl lg:text-6xl font-extrabold border-b-8'>WHO WE ARE </h1>
 
         )
       }
