@@ -21,13 +21,13 @@ const PageSelector = () => {
     <div className=' snap-y snap-mandatory h-screen w-screen scrollbar-none overflow-x-hidden '>
       <RecoilRoot>
       <Navbar/>
-      <div  className=" snap-start">
+      <div  className=" ">
         <Landing1 />
       </div>
-      <div className='snap-start'>
+      <div className=''>
       <About/>
       </div>
-      <div className='snap-start'>
+      <div className=''>
       <Team/>
       </div>
    
