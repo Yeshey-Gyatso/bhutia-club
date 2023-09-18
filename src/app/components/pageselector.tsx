@@ -18,7 +18,7 @@ const PageSelector = () => {
 //just got the data
 
     return (
-    <div className=' snap-y snap-mandatory h-screen w-screen scrollbar-none overflow-x-hidden '>
+    <div className=''>
       <RecoilRoot>
       <Navbar/>
       <div  className=" ">
