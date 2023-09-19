@@ -11,7 +11,7 @@ const Landing2 = () => {
   return (
     <section  
     className=' h-screen w-full
-     bg-black/5
+    bg-white/40
      height: 20px
      flex items-center
      bg-cover
@@ -42,11 +42,11 @@ const Landing2 = () => {
                     
                     {
                             language ?(
-                            <span className=' ml-1 text-3xl lg:text-7xl'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
+                            <span className=' ml-1  text-3xl lg:text-8xl text-black'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
                             ):
                             (
                               <div className= 'pt-4'>
-                                <span className='  ml-2 lg:text-6xl'>Welcome To</span>
+                                <span className='  ml-2 lg:text-7xl text-black'>Welcome To</span>
 
                               </div>
                               )
@@ -62,7 +62,7 @@ const Landing2 = () => {
                              {
                               language ?(
                                 <div className=' ml-2'>
-                                       <span className=' leading-loose text-3xl lg:text-8xl'>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
+                                       <span className=' leading-loose text-3xl lg:text-8xl '>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
                                 </span>
                                 </div>
                                
