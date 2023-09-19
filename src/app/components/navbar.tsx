@@ -98,7 +98,7 @@ const Navbar = () => {
               </li> */}
 
               <li>
-              <div className=' relative ml-20 md:ml-auto flex items-center w-auto h-auto rounded-lg'>
+              <div className=' relative mt-2 md:mt-auto ml-48 md:ml-auto flex items-center w-auto h-auto rounded-lg'>
                   <button className=' bg-gray-300 flex 
                   items-center justify-between
                    rounded-lg tracking-wider 
