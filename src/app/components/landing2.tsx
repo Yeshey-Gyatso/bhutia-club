@@ -4,10 +4,6 @@ import React from 'react';
 import { useRecoilValue } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
 
-
-
-
-
 const Landing2 = () => {  
   
   const language=useRecoilValue(languageAtom);
@@ -45,11 +41,22 @@ const Landing2 = () => {
               <div 
                 className='relative z-10 flex flex-col items-center bottom-0 mt-40'>
                 <div className='relative flex flex-row items-center'>
-                <h2 
+                <div 
                 className='cursor-default text-2xl sm:text-4xl font-bold md:6xl text-white'>
-                    WELCOME TO MY SITE 
                     
-                </h2>
+                    {
+                            language ?(
+                            <span className=' ml-1 text-5xl lg:text-7xl'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
+                            ):
+                            (
+                              <div className= ' pt-6'>
+                                <span className='  ml-2 text-3xl lg:text-6xl'>Welcome To</span>
+
+                              </div>
+                              )
+                           }
+                    
+                </div>
                   
                   <h2 
                      className='text-4xl text-opacity-0 md:text-opacity-100 font-bold  text-white pl-2'  
