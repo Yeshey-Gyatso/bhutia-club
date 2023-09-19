@@ -63,7 +63,7 @@ function Landing1() {
                         '>  
                            {
                             language ?(
-                            <span className=' ml-1 text-5xl lg:text-7xl'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
+                            <span className=' mx-4 md:ml-1 text-5xl lg:text-7xl'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
                             ):
                             (
                               <div className= ' pt-6'>
@@ -81,14 +81,14 @@ function Landing1() {
                         '>  
                             {
                               language ?(
-                                <div className=' ml-2'>
+                                <div className=' mx-4 md:ml-2'>
                                        <span className='  text-5xl lg:text-8xl'>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
                                 </span>
                                 </div>
                                
 
                               ):(
-                                <div className=' ml-2 pt-8'>
+                                <div className=' mx-4 md:ml-2 pt-8'>
                                 <span className=' text-3xl lg:text-6xl'>Bhutia khayrab Yargay Tshogpo. </span>
 
                                 </div>
