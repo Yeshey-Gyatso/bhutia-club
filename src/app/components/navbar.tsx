@@ -26,7 +26,7 @@ const Navbar = () => {
      fixed
       md:p-4
        z-10'>
-        <div className=' brand'>
+        <div className='p-1 md:p-0 brand'>
             {/* <h1 className='md:text-xl font-bold border-b-2 border-black
                      md:p-1 inline cursor-default '>BKYT</h1> */}
 
