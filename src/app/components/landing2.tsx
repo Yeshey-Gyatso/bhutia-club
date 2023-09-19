@@ -11,7 +11,7 @@ const Landing2 = () => {
   return (
     <section  
     className=' h-screen w-full
-    bg-white/40
+    
      height: 20px
      flex items-center
      bg-cover
