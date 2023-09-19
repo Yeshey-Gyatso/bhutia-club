@@ -38,7 +38,7 @@ const Landing2 = () => {
                 className='relative z-10 flex flex-col items-center bottom-0 mt-40'>
                 <div className='relative flex flex-row items-center'>
                 <div 
-                className='cursor-default text-2xl sm:text-4xl font-bold md:6xl text-white'>
+                className='cursor-default -mt-28 md:mt-auto text-2xl sm:text-4xl font-bold md:6xl text-white'>
                     
                     {
                             language ?(
