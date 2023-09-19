@@ -64,7 +64,7 @@ const About = () => {
              </div>
           
       </div>
-      <div className='hidden md:relative  md:inset-x-24  w-1/3 h-96'>
+      <div className=' hidden md:block relative  md:inset-x-24  w-1/3 h-96'>
             
           <Image 
               src={logoT} 
@@ -72,7 +72,9 @@ const About = () => {
               width={1000}
               height={1000}
             />
+            
             </div>
+
 
     </div>
   )
