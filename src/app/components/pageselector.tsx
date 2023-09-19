@@ -33,6 +33,7 @@ const PageSelector = () => {
       <div className=''>
       <About/>
       </div>
+      <Page2/>
       <div className=''>
       <Team/>
       </div>

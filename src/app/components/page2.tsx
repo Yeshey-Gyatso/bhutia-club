@@ -13,7 +13,7 @@ const Page2 = () => {
      
      '
      style={{
-        backgroundImage: 'url("/bg6.jpg")'
+        backgroundImage: 'url("/bg3.jpg")'
      }}
      >       
         <div className='
