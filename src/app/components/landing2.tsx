@@ -63,10 +63,25 @@ const Landing2 = () => {
                     >!</h2> 
                 </div>      
                      <div className=' my-10  py-10  bg-gray-800 opacity-70 w-full px-8 flex flex-col items-center '>
-                        <p className=' cursor-default py-4 text-white md:text-2xl max-w-full sm:mx-auto z-10 font-light   
+                        <div className=' cursor-default py-4 text-white md:text-2xl max-w-full sm:mx-auto z-10 font-light   
                         '>
-                            <span className=' font-quote'>"Creativity is contagious. Pass it on." </span><span className='  font-mono font-bold'>- Albert Einstein</span>
-                        </p>
+                             {
+                              language ?(
+                                <div className=' ml-2'>
+                                       <span className='  text-5xl lg:text-8xl'>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
+                                </span>
+                                </div>
+                               
+
+                              ):(
+                                <div className=' ml-2 pt-8'>
+                                <span className=' text-3xl lg:text-6xl'>Bhutia khayrab Yargay Tshogpo. </span>
+
+                                </div>
+
+                              )
+                            }
+                        </div>
                      </div>
                      
 
