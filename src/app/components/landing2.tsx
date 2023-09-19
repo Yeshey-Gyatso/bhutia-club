@@ -10,7 +10,7 @@ const Landing2 = () => {
   return (
     <section  
     className=' h-screen w-full
-     bg-black/50
+     bg-black/20
      height: 20px
      flex items-center
      bg-cover
@@ -19,7 +19,7 @@ const Landing2 = () => {
      
      '
      style={{
-        backgroundImage: 'url("/bg1.jpg")'
+        backgroundImage: 'url("/bg4.jpg")'
      }}
      >
 
