@@ -63,7 +63,7 @@ function Landing1() {
                         '>  
                            {
                             language ?(
-                            <span className=' mx-4 md:ml-1 text-3xl md:text-5xl lg:text-7xl'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
+                            <span className=' mx-4 md:ml-1 text-2xl md:text-5xl lg:text-7xl'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
                             ):
                             (
                               <div className= ' md:pt-6'>
