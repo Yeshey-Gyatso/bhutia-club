@@ -1,12 +1,17 @@
 "use client"
 
 import React from 'react';
+import { useRecoilValue } from 'recoil';
+import { languageAtom } from '../recoil/atoms';
 
 
 
 
 
-const Landing2 = () => {                        
+const Landing2 = () => {  
+  
+  const language=useRecoilValue(languageAtom);
+  
   return (
     <section  
     className=' h-screen w-full
