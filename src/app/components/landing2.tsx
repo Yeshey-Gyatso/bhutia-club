@@ -3,7 +3,7 @@
 import React from 'react';
 import {GiMailbox} from 'react-icons/gi';
 import bgT from '../assets/portfolio/bgT.png';
-import { Link } from 'react-scroll';
+
 
 
 
@@ -60,16 +60,7 @@ const Landing2 = () => {
                      
 
                       <div className=' mt-auto'>
-                    <Link to='contact' smooth duration={800} className='group text-white w-fit px-6 py-3 my-2 flex 
-                     items-center rounded-md
-                     bg-gradient-to-r from-orange-400 to to-orange-800
-                     cursor-pointer'>
-                        Contact Me <span
-                        className=' group-hover:skew-y-12 group-hover:rotate-12 duration-200'
-                        >
-                        <GiMailbox size={40} className=' ml-1'/>
-                        </span>
-                    </Link>
+                   
                 </div>
                 </div>
                 
