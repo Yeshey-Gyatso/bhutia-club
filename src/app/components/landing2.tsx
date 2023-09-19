@@ -70,7 +70,7 @@ const Landing2 = () => {
                                
 
                               ):(
-                                <div className=' ml-2 pt-8'>
+                                <div className=' ml-2 '>
                                 <span className=' text-3xl lg:text-6xl'>Bhutia khayrab Yargay Tshogpo. </span>
 
                                 </div>
