@@ -22,11 +22,7 @@ const Landing2 = () => {
      style={{
         backgroundImage: 'url("/bg4.jpg")'
      }}
-     >
-
-       
-            
-       
+     >       
         <div className='
         
         max-w-screen-lg mx-auto 
@@ -46,7 +42,7 @@ const Landing2 = () => {
                     
                     {
                             language ?(
-                            <span className=' ml-1 text-5xl lg:text-7xl'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
+                            <span className=' ml-1 text-6xl lg:text-7xl'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
                             ):
                             (
                               <div className= ' pt-6'>
