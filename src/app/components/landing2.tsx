@@ -2,7 +2,6 @@
 
 import React from 'react';
 
-import bgT from '../assets/flag.svg';
 
 
 
@@ -20,7 +19,7 @@ const Landing2 = () => {
      
      '
      style={{
-        backgroundImage:`url(${bgT})`
+        backgroundImage: 'url("/bg1.jpg")'
      }}
      >
 
