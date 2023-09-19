@@ -81,14 +81,14 @@ function Landing1() {
                         '>  
                             {
                               language ?(
-                                <div className=' mx-4 md:ml-2'>
+                                <div className=' mx-4 md:ml-2 pt-8 md:pt-0'>
                                        <span className='leading-loose text-xl md:text-5xl lg:text-8xl'>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
                                 </span>
                                 </div>
                                
 
                               ):(
-                                <div className=' mx-4 md:ml-2 pt-8'>
+                                <div className=' mx-4 md:ml-2 pt-8 '>
                                 <span className=' leading-loose text-2xl md:text-3xl lg:text-6xl'>Bhutia khayrab Yargay Tshogpo. </span>
 
                                 </div>

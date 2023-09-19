@@ -30,7 +30,7 @@ const About = () => {
             </h1>
             
           ):(
-            <h1 className=' -ml-16 md:ml-6 py-8 text-xl md:text-2xl font-bold'> Based in Gangtok with team from all over Sikkim </h1>
+            <h1 className=' -ml-16 md:ml-6 py-8 text-xl md:text-2xl font-bold'> Based in Gangtok with members from all over Sikkim </h1>
 
           )
         }
@@ -48,7 +48,7 @@ const About = () => {
                    འདེས་རྔ་ 
                 </p>
               ):(
-                <p >Bhutia Khayrab Yargay Tshogpo is an association which was formed in the year 1983 with its main goal and purpose is to develope and protect the language and the traditions of the  
+                <p >Bhutia Khayrab Yargay Tshogpo is an association which was formed in the year 1983 with its main goal and purpose being to develop and protect the language and traditions of the  
                 Bhutia people of Sikkim. This association was first formed by Mr Norden Tshering Bhutia and Pema Tshering Bhutia along with the esteemed Bhutia teachers of Sikkim  
                 Unde distinctio omnis sequi quaerat voluptates aut
                 
