@@ -21,6 +21,9 @@ const PageSelector = () => {
     <div className=''>
       <RecoilRoot>
       <Navbar/>
+
+      <Landing2/>
+      <About/>
       <div  className=" ">
         <Landing1 />
       </div>

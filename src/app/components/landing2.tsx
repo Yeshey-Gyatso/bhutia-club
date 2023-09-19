@@ -1,8 +1,8 @@
 "use client"
 
 import React from 'react';
-import {GiMailbox} from 'react-icons/gi';
-import bgT from '../assets/portfolio/bgT.png';
+
+import bgT from '../assets/flag.svg';
 
 
 
@@ -20,7 +20,7 @@ const Landing2 = () => {
      
      '
      style={{
-        // backgroundImage:`url(${bgT})`
+        backgroundImage:`url(${bgT})`
      }}
      >
 
