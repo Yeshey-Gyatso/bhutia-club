@@ -54,9 +54,7 @@ const Landing2 = () => {
                     
                 </div>
                   
-                  <h2 
-                     className='text-4xl text-opacity-0 md:text-opacity-100 font-bold  text-white pl-2'  
-                    >!</h2> 
+               
                 </div>      
                      <div className=' my-10  py-10  bg-gray-800 opacity-70 w-full px-8 flex flex-col items-center '>
                         <div className=' cursor-default py-4 text-white md:text-2xl max-w-full sm:mx-auto z-10 font-light   
