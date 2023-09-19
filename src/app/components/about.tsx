@@ -16,10 +16,10 @@ const About = () => {
         
       {
         language?(
-          <h1 className=' text-2xl lg:text-8xl lg:-mt-9  font-extrabold border-b-8'>ང་ཅག་ ཀ་ འབོ </h1>
+          <h1 className=' text-3xl lg:text-8xl lg:-mt-9  font-extrabold border-b-8'>ང་ཅག་ ཀ་ འབོ </h1>
 
         ):(
-          <h1 className='text-xl lg:text-6xl font-extrabold border-b-8'>WHO WE ARE </h1>
+          <h1 className='text-2xl lg:text-6xl font-extrabold border-b-8'>WHO WE ARE </h1>
 
         )
       }
@@ -30,7 +30,7 @@ const About = () => {
             </h1>
             
           ):(
-            <h1 className=' -ml-16 md:ml-6 py-8 text-2xl font-bold'> Based in Gangtok with team from all over Sikkim </h1>
+            <h1 className=' -ml-16 md:ml-6 py-8 text-xl md:text-2xl font-bold'> Based in Gangtok with team from all over Sikkim </h1>
 
           )
         }
