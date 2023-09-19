@@ -37,7 +37,7 @@ const Navbar = () => {
               height={60}
             />
         </div>
-        <div className=' flex space-x-10 '>
+        <div className=' hidden md:flex space-x-10 '>
 
           {/* /////home */}
             {
