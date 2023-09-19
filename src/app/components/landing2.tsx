@@ -59,9 +59,6 @@ const Landing2 = () => {
                      </div>
                      
 
-                      <div className=' mt-auto'>
-                   
-                </div>
                 </div>
                 
                
