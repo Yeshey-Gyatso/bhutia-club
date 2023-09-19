@@ -67,7 +67,7 @@ function Landing1() {
                             ):
                             (
                               <div className= ' pt-6'>
-                                <span className='  ml-2 text-3xl lg:text-6xl'>Welcome To</span>
+                                <span className=' mx-6 md:ml-2 text-3xl lg:text-6xl'>Welcome To</span>
 
                               </div>
                               )
