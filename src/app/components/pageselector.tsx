@@ -12,6 +12,7 @@ import Page2 from './page2'
 import Team from './team'
 
 import About from './about'
+import Page4 from './page4'
 const PageSelector = () => {
   const [landing,setLanding]=useState(0);
 //   console.log(landing);
