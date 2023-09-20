@@ -26,7 +26,7 @@ const PageSelector = () => {
       <About/>
       <Page1/>
       <Team/>
-      
+      <Page4/>
       <div  className=" ">
         <Landing1 />
       </div>
