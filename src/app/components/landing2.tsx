@@ -1,8 +1,9 @@
 "use client"
-
+import Image from 'next/image';
 import React from 'react';
 import { useRecoilValue } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
+
 
 const Landing2 = () => {  
   
@@ -10,18 +11,23 @@ const Landing2 = () => {
   
   return (
     <section  
-    className=' h-screen w-full
-     height: 20px
+    className='h-screen
+     w-full
      flex items-center
+     bg-bg-image
      bg-cover
      bg-fixed
      bg-blend-overlay
-     
      '
-     style={{
-        backgroundImage: 'url("/bg4.jpg")'
-     }}
-     >       
+     >        
+     {/* <Image
+     className='relative'
+      src="/bg4.jpg"
+       alt="Background Image"
+        width={1920}
+        height={1080}
+        
+      /> */}
         <div className='
         
         max-w-screen-lg mx-auto 
