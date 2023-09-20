@@ -4,33 +4,24 @@ import React from 'react';
 import { useRecoilValue } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
 
-
 const Landing2 = () => {  
-  const bgImage = "/bg4.jpg";
-
+  
   const language=useRecoilValue(languageAtom);
   
   return (
-    <div  
-    
-    className='h-screen
-     w-full
+    <section  
+    className=' h-screen w-full
+     height: 20px
      flex items-center
-     
      bg-cover
      bg-fixed
      bg-blend-overlay
+     
      '
-     >        
-     <Image
-     className='relative'
-      src="/bg4.jpg"
-      alt="Background Image"
-      layout='responsive'
-      width={1920}
-      height={1080}
-        
-      />
+     style={{
+        backgroundImage: 'url("/bg4.jpg")'
+     }}
+     >       
         <div className='
         
         max-w-screen-lg mx-auto 
@@ -93,7 +84,7 @@ const Landing2 = () => {
             
         </div>
         
-    </div>
+    </section>
   )
 }
 export default Landing2;
