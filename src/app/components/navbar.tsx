@@ -125,7 +125,7 @@ const Navbar = () => {
                    
                    '
                    onMouseEnter={ ()=>setIsOpen((prev)=>!prev)}
-                   onMouseLeave={()=>setIsOpen(false)}
+                   
                    >
                     {
                       language?(
@@ -148,9 +148,12 @@ const Navbar = () => {
                     <div className=' bg-blue-400 absolute
                      top-12 flex flex-col items-start rounded-lg 
                      p-2 w-auto'>
-
+                      
                       <button 
-                      onClick={() => setLanguage(false)}
+                      onClick={() => {setLanguage(false);
+                                      setIsOpen(false);}
+                      }
+
                       className=' flex w-full p-2 justify-between hover:bg-slate-500 cursor-pointer 
                       rounded-r-lg border-l-transparent
                       hover:border-l-white border-l-4
@@ -160,7 +163,7 @@ const Navbar = () => {
                       </button>
                       
                       <button
-                      onClick={() => setLanguage(true)}
+                      onClick={() => {setLanguage(true);setIsOpen(false);}}
                       className=' flex w-full justify-between hover:bg-slate-500 cursor-pointer 
                       rounded-r-lg border-l-transparent 
                       hover:border-l-white border-l-4'>
