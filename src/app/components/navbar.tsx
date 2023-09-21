@@ -11,14 +11,10 @@ import { useRecoilState } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
 import { Link, Element } from 'react-scroll'
 // import { toast } from 'react-toastify';
-
-
 const Navbar = () => {
-  
   const [language,setLanguage]=useRecoilState(languageAtom);
   console.log(language);
   const [isOpen,setIsOpen]=useState(false)
-
   return (
     <div className=' flex md:justify-between 
     lg:bg-white bg-transparent
@@ -45,7 +41,6 @@ const Navbar = () => {
               </div> ):( <div className='-ml-3 mt-4 '>
                 <h1 className=' text-base'>Bhutia Khayrab</h1>
                 <h1 className=' text-base'>Yargay Tshogpo</h1>
-            
               </div> )
             }
             
@@ -103,7 +98,25 @@ const Navbar = () => {
             )
           }
 
-            </div>
+
+            {/* ?//////////VOCAB//////// */}
+
+            {
+            language?
+            (
+              <div className=' -mt-2'>
+                  <h1><a href='https://data-storage-sable.vercel.app/' className='cursor-pointer hover:text-gray-300  text-3xl'>BHUV</a></h1>
+
+              </div>
+
+            ):
+            (
+            <h1><a href='https://data-storage-sable.vercel.app/' className='cursor-pointer hover:text-gray-300 text-lg'>Vocab</a></h1>
+
+            )
+          }
+
+        </div>
         <div className='pr-1'>
             <ul className='flex space-x-2 '>
               {/* <li>
