@@ -9,7 +9,9 @@ import { languageAtom } from '../recoil/atoms';
 const About2 = () => {
   const language=useRecoilValue(languageAtom);
   return (
-    <div className='
+    <div
+    id=''
+    className='
     h-screen w-full
     bg-gradient-to-b from-white via-white to-amber-500'>
       <div className=' pl-20 md:pl-32 pt-8 flex flex-col'>
