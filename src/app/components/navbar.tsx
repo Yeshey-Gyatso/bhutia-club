@@ -83,7 +83,7 @@ const Navbar = () => {
 
             ):
             (
-            <h1><Link href to ='about' spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer hover:text-gray-300 text-lg'>About</Link></h1>
+            <h1><Link to ='about' spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer hover:text-gray-300 text-lg'>About</Link></h1>
 
             )
           }
