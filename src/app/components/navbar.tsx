@@ -21,11 +21,11 @@ const Navbar = () => {
 
   return (
     <div className=' flex md:justify-between 
-    bg-white
+    lg:bg-white bg-transparent
      w-full 
      fixed
-      md:p-4
-       z-10'>
+     md:p-4
+      z-10'>
         <div className='p-1 md:p-0 grid grid-cols-12'>
            <div className=' col-span-6'>
            <Image 
