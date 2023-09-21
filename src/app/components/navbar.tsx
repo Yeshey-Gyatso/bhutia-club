@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 import {AiOutlineCaretDown,AiOutlineCaretUp} from "react-icons/ai";
 import {GrLanguage} from "react-icons/gr";
 import Flag from '../assets/flag.svg';
@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation';
 import React, { useContext, useState } from 'react'
 import { useRecoilState } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
-
+import { Link, Element } from 'react-scroll'
 // import { toast } from 'react-toastify';
 
 
@@ -43,12 +43,12 @@ const Navbar = () => {
             {
               language?(
                 <div className=' -mt-2'> 
-                    <h1><Link href={'/'} className=' hover:text-gray-300 text-3xl'>ཁྱིམ།</Link></h1>   
+                    <h1><Link to="home"  spy={true} smooth={true} offset={-70} duration={500} className=' cursor-pointer hover:text-gray-300 text-3xl '>ཁྱིམ།</Link></h1>   
 
                 </div>
 
               ):(
-            <h1><Link href={'/'} className=' hover:text-gray-300 text-lg'>Home</Link></h1>   
+            <h1><Link to="home"  spy={true} smooth={true} offset={-70} duration={500}  className=' cursor-pointer hover:text-gray-300 text-lg'>Home</Link></h1>   
 
               )
               

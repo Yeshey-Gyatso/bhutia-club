@@ -10,6 +10,7 @@ const Landing2 = () => {
   
   return (
     <section  
+    id='home'
     className=' h-screen w-full
      height: 20px
      flex items-center
