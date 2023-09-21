@@ -56,7 +56,8 @@ const About = () => {
                 <br /><br />
                
                 Lorem ipsum d Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda amet quisquam beatae voluptatum, facere ab deserunt porro accusamus id labore consequuntur placeat vitae sint eaque! Itaque a expedita repellat nemo?
-                olor sit amet, consectetur adipisicing elit. Mollitia possimus amet repellat est sapiente suscipit quod, voluptatem minima odio alias accusamus numquam consectetur quibusdam praesentium aliquid, adipisci fugiat enim nostrum.
+                olor sit amet, consectetur adipisicing elit. 
+                sentium aliquid, adipisci fugiat enim nostrum.
                 </p>
               )
             }
