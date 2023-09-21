@@ -21,23 +21,29 @@ const Navbar = () => {
 
   return (
     <div className=' flex md:justify-between 
-    bg-transparent
+    bg-white
      w-full 
      fixed
       md:p-4
        z-10'>
-        <div className='p-1 md:p-0 brand'>
-            {/* <h1 className='md:text-xl font-bold border-b-2 border-black
-                     md:p-1 inline cursor-default '>BKYT</h1> */}
-
-            <Image 
+        <div className='p-1 md:p-0 grid grid-cols-12'>
+           <div className=' pl-3 col-span-6'>
+           <Image 
               src={logoT} 
               alt='pic of logo'
-              width={60}
-              height={60}
+              width={100}
+              height={100}
             />
+           </div>
+           <div className='  col-span-6  justify-center '>
+            <br />
+          <h1 className=' text-lg'>Bhutia Khayrab</h1>
+          <h1 className=' text-lg'>Yargay Tshogpo</h1>
+        
+           </div>
         </div>
-        <div className=' hidden md:flex space-x-10 '>
+
+        <div className='pt-8 hidden md:flex space-x-10 '>
 
           {/* /////home */}
             {

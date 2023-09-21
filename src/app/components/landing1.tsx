@@ -12,7 +12,6 @@ const Landing1 = () => {
     <section  
     id='home'
     className=' h-screen w-full
-     height: 20px
      flex items-center
      bg-cover
      bg-fixed
@@ -35,7 +34,7 @@ const Landing1 = () => {
         '>
             
               <div 
-                className='relative z-10 flex flex-col items-center bottom-0 mt-40'>
+                className='relative flex flex-col items-center bottom-0 mt-40'>
                 <div className='relative flex flex-row items-center'>
                 <div 
                 className='cursor-default -mt-28 md:mt-auto text-2xl sm:text-4xl font-bold md:6xl text-white'>

@@ -5,7 +5,7 @@ const Page2 = () => {
     <section  
     className=' h-screen w-full
     
-     height: 20px
+     
      flex items-center
      bg-cover
      bg-fixed

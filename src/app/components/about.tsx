@@ -10,12 +10,14 @@ const About = () => {
   const language=useRecoilValue(languageAtom);
   return (
     <div 
+
     id='about'
     className='
+   
     h-screen w-full
     bg-gradient-to-b from-white via-blue-100 to-sky-500'>
-      <div className=' pl-20 md:pl-32 pt-8 flex flex-col'>
-        
+      <div 
+      className=' pl-20 md:pl-32 pt-8 flex flex-col'>
       {
         language?(
           <h1 className=' text-3xl lg:text-8xl lg:-mt-9  font-extrabold border-b-8'>ང་ཅག་ ཀ་ འབོ </h1>
