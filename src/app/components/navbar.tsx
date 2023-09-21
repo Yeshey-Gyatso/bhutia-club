@@ -142,9 +142,9 @@ const Navbar = () => {
                    >
                     {
                       language?(
-                          <p className='-mt-3 text-xl md:text-3xl'>བྷོ་ཊི་ཡ།</p>
+                          <h1 className='md:-mt-3 text-xl md:text-3xl'>སྐད་རབས།</h1>
                       ):(
-                        <h1>English</h1>
+                        <h1>Language</h1>
                       )
                     }
                    
