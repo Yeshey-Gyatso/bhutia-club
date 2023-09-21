@@ -12,7 +12,7 @@ const About = () => {
     <div 
     id='about'
     className='
-    h-screen w-full
+    h-screen w-full pt-4
     bg-gradient-to-b from-white via-blue-100 to-sky-500'>
       <div 
       className=' pl-20 md:pl-32 pt-8 flex flex-col'>

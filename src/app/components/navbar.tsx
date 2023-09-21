@@ -36,9 +36,19 @@ const Navbar = () => {
             />
            </div>
            <div className='col-span-6  justify-center '>
-            <div className='-ml-3  mt-4'>
-            <h1 className=' text-base'>Bhutia Khayrab</h1>
-           <h1 className=' text-base'>Yargay Tshogpo</h1>
+            <div className=' '>
+            {
+              language?( <div className=' -ml-3 mt-2'>
+                <h1 className=' text-2xl'>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ </h1>
+                <h1 className=' text-2xl'>ཡར་རྒྱས་ ཆོ༹གས་པོ།</h1>
+            
+              </div> ):( <div className='-ml-3 mt-4 '>
+                <h1 className=' text-base'>Bhutia Khayrab</h1>
+                <h1 className=' text-base'>Yargay Tshogpo</h1>
+            
+              </div> )
+            }
+            
             </div>
           
         
@@ -106,7 +116,7 @@ const Navbar = () => {
               </li> */}
 
               <li>
-              <div className=' relative mt-2 md:mt-auto ml-52 md:ml-auto flex items-center w-auto h-auto rounded-lg'>
+              <div className=' relative  lg:mt-4 md:mt-auto ml-52 md:ml-auto flex items-center w-auto h-auto rounded-lg'>
                   <button className=' bg-gray-300 flex 
                   items-center justify-between
                    rounded-lg tracking-wider 
