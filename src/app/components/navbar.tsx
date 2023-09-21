@@ -124,7 +124,8 @@ const Navbar = () => {
                    active:border-white duration-300
                    
                    '
-                   onClick={ ()=>setIsOpen((prev)=>!prev)}
+                   onMouseEnter={ ()=>setIsOpen((prev)=>!prev)}
+                   onMouseLeave={()=>setIsOpen(false)}
                    >
                     {
                       language?(
