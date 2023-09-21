@@ -11,7 +11,7 @@ const About2 = () => {
   return (
     <div className='
     h-screen w-full
-    bg-gradient-to-b from-white via-blue-100 to-sky-500'>
+    bg-gradient-to-b from-white via-white to-amber-500'>
       <div className=' pl-20 md:pl-32 pt-8 flex flex-col'>
         
       {
