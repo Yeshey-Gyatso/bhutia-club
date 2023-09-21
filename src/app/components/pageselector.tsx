@@ -13,6 +13,7 @@ import Team from './team'
 
 import About from './about'
 import Page4 from './page4'
+import About2 from './about2'
 const PageSelector = () => {
   const [landing,setLanding]=useState(0);
 //   console.log(landing);
@@ -32,7 +33,7 @@ const PageSelector = () => {
         <Landing1 />
       </div>
       <div className=''>
-      <About/>
+      <About2/>
       </div>
       <Page2/>
       <div className=''>
