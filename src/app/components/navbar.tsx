@@ -105,13 +105,13 @@ const Navbar = () => {
             language?
             (
               <div className=' -mt-2'>
-                  <h1><a href='https://data-storage-sable.vercel.app/' className='cursor-pointer hover:text-gray-300  text-3xl'>BHUV</a></h1>
+                  <h1><a href='https://data-storage-sable.vercel.app/' className='cursor-pointer hover:text-gray-300  text-3xl text-fuchsia-800 font-bold'>BHUV</a></h1>
 
               </div>
 
             ):
             (
-            <h1><a href='https://data-storage-sable.vercel.app/' className='cursor-pointer hover:text-gray-300 text-lg'>Vocab</a></h1>
+            <h1><a href='https://data-storage-sable.vercel.app/' className='cursor-pointer hover:text-gray-300 text-lg text-fuchsia-800 font-bold '>Vocab</a></h1>
 
             )
           }
