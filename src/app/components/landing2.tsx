@@ -1,91 +1,133 @@
 "use client"
-import Image from 'next/image';
-import React from 'react';
+//will add in grid way now
+import React, { useState } from 'react';
+import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+import { RxDotFilled } from 'react-icons/rx';
 import { useRecoilValue } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
 
-const Landing2 = () => {  
-  
+
+function Landing1() {
+
   const language=useRecoilValue(languageAtom);
-  
+
+
+  const slides = [
+    {
+      url:'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    },
+    {
+      url:'https://images.unsplash.com/photo-1682685797365-41f45b562c0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    },
+
+    {
+      url: 'https://images.unsplash.com/photo-1485160497022-3e09382fb310?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1472791108553-c9405341e398?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1874&q=80',
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex: React.SetStateAction<number>) => {
+    setCurrentIndex(slideIndex);
+  };
+
   return (
-    <section  
-    id='home'
-    className=' h-screen w-full
-     height: 20px
-     flex items-center
-     bg-cover
-     bg-fixed
-     bg-blend-overlay
-     
-     '
-     style={{
-        backgroundImage: 'url("/bg4.jpg")'
-     }}
-     >       
-        <div className='
-        
-        max-w-screen-lg mx-auto 
-        flex 
-        items-center 
-        justify-center 
-        max-w-responsive
-        px-4 md:flex-row
-        
-        '>
-            
-              <div 
-                className='relative z-10 flex flex-col items-center bottom-0 mt-40'>
-                <div className='relative flex flex-row items-center'>
-                <div 
-                className='cursor-default -mt-28 md:mt-auto text-2xl sm:text-4xl font-bold md:6xl text-white'>
-                    
-                    {
+    <div 
+      id='home2'
+    className=' h-screen w-full m-auto pb-16  relative group'>
+      <div
+
+        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+        className='w-full h-full bg-center bg-cover duration-500 mt-1'
+      >
+       {/* //////english to bhutia change ///////////////////// */}
+       
+        <div className='absolute lg:inset-x-40 inset-y-1/4 bg-white/60 opacity-90 lg:w-1/4 h-1/5 flex flex-col items-center '>
+                        <div className=' cursor-default pt-6 text-black md:text-2xl max-w-full sm:mx-auto 
+                        z-10 
+                        '>  
+                           {
                             language ?(
-                            <span className=' ml-1  text-3xl lg:text-8xl text-black'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
+                            <span className=' mx-4 md:ml-1 text-2xl md:text-5xl lg:text-7xl'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
                             ):
                             (
-                              <div className= 'pt-4'>
-                                <span className='  ml-2   text-3xl lg:text-7xl text-black'>Welcome To</span>
-
+                              <div className= 'pt-6'>
+                                <span className=' mx-6 md:ml-2 text-3xl lg:text-5xl 
+                                '>Welcome To</span>
                               </div>
                               )
-                           }
-                    
-                </div>
-                  
-               
-                </div>      
-                     <div className=' my-10  py-10  bg-gray-800 opacity-70 w-full px-8 flex flex-col items-center '>
-                        <div className=' cursor-default py-4 text-white md:text-2xl max-w-full sm:mx-auto z-10 font-light   
-                        '>
-                             {
+                           } 
+                            
+                        </div>
+                     </div>
+        <div className='absolute lg:inset-x-96 inset-y-2/4 bg-black/50 opacity-90 w-4/6 h-1/4 flex flex-col items-center '>
+                        <div className=' cursor-default pt-8 text-white md:text-2xl max-w-full sm:mx-auto 
+                        z-10 
+                        '>  
+                            {
                               language ?(
-                                <div className=' ml-2'>
-                                       <span className=' leading-loose text-3xl lg:text-8xl '>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
+                                <div className=' mx-4 md:ml-2 pt-8 md:pt-0'>
+                                       <span className='leading-loose text-xl md:text-5xl lg:text-8xl'>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
                                 </span>
                                 </div>
                                
 
                               ):(
-                                <div className=' ml-2 '>
-                                <span className=' text-3xl lg:text-6xl'>Bhutia Khayrab Yargay Tshogpo. </span>
+                                <div className=' mx-4 md:ml-2 pt-4 md:pt-8 '>
+                                <span className=' leading-loose text-2xl md:text-3xl lg:text-6xl'>Bhutia Khayrab Yargay Tshogpo. </span>
 
                                 </div>
 
                               )
                             }
+                        
                         </div>
                      </div>
-                     
 
-                </div>
-                
-               
-            
-        </div>
-        
-    </section>
-  )
+      
+      
+      
+      
+      </div>
+      {/* Left Arrow */}
+      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+        <BsChevronCompactLeft onClick={prevSlide} size={30} />
+      </div>
+      {/* Right Arrow */}
+      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+        <BsChevronCompactRight onClick={nextSlide} size={30} />
+      </div>
+      <div className='flex top-4 justify-center py-2'>
+        {slides.map((slide, slideIndex) => (
+          <div
+            key={slideIndex}
+            onClick={() => goToSlide(slideIndex)}
+            className='text-2xl cursor-pointer'
+          >
+            <RxDotFilled />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
-export default Landing2;
+
+export default Landing1;

@@ -10,7 +10,7 @@ const About2 = () => {
   const language=useRecoilValue(languageAtom);
   return (
     <div
-    id=''
+     id='about2'
     className='
     h-screen w-full
     bg-gradient-to-b from-white via-white to-amber-500'>
