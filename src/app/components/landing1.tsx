@@ -4,7 +4,7 @@ import React from 'react';
 import { useRecoilValue } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
 
-const Landing2 = () => {  
+const Landing1 = () => {  
   
   const language=useRecoilValue(languageAtom);
   
@@ -88,4 +88,4 @@ const Landing2 = () => {
     </section>
   )
 }
-export default Landing2;
+export default Landing1;

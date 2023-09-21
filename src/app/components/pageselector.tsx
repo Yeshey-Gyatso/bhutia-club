@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from 'react'
-import Landing1 from './landing2'
+import Landing1 from './landing1'
 import Navbar from './navbar'
-import Landing2 from './landing1'
+import Landing2 from './landing2'
 import Landing3 from './landing3'
 import Footer from './footer'
 import { RecoilRoot } from 'recoil'
@@ -30,10 +30,10 @@ const PageSelector = () => {
       <Team/>
       <Page4/>
       <div className=''>
-        <Navbar/>
+      
       </div>
       <div  className=" ">
-        <Landing2 />
+      <Landing2 />
       </div>
       <div className=''>
       <About2/>

@@ -1,5 +1,5 @@
 "use client"
-//will add in grid way now
+
 import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
@@ -7,7 +7,7 @@ import { useRecoilValue } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
 
 
-function Landing1() {
+function Landing2() {
 
   const language=useRecoilValue(languageAtom);
 
@@ -51,10 +51,9 @@ function Landing1() {
 
   return (
     <div 
-      id='home2'
+      id=''
     className=' h-screen w-full m-auto pb-16  relative group'>
       <div
-
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full bg-center bg-cover duration-500 mt-1'
       >
@@ -130,4 +129,4 @@ function Landing1() {
   );
 }
 
-export default Landing1;
+export default Landing2;
