@@ -10,10 +10,8 @@ const About = () => {
   const language=useRecoilValue(languageAtom);
   return (
     <div 
-
     id='about'
     className='
-   
     h-screen w-full
     bg-gradient-to-b from-white via-blue-100 to-sky-500'>
       <div 

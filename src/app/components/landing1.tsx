@@ -16,7 +16,6 @@ const Landing1 = () => {
      bg-cover
      bg-fixed
      bg-blend-overlay
-     
      '
      style={{
         backgroundImage: 'url("/bg4.jpg")'

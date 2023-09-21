@@ -27,23 +27,25 @@ const Navbar = () => {
       md:p-4
        z-10'>
         <div className='p-1 md:p-0 grid grid-cols-12'>
-           <div className=' pl-3 col-span-6'>
+           <div className=' col-span-6'>
            <Image 
               src={logoT} 
               alt='pic of logo'
-              width={100}
-              height={100}
+              width={80}
+              height={80}
             />
            </div>
-           <div className='  col-span-6  justify-center '>
-            <br />
-          <h1 className=' text-lg'>Bhutia Khayrab</h1>
-          <h1 className=' text-lg'>Yargay Tshogpo</h1>
+           <div className='col-span-6  justify-center '>
+            <div className='-ml-3  mt-4'>
+            <h1 className=' text-base'>Bhutia Khayrab</h1>
+           <h1 className=' text-base'>Yargay Tshogpo</h1>
+            </div>
+          
         
            </div>
         </div>
 
-        <div className='pt-8 hidden md:flex space-x-10 '>
+        <div className=' pt-4 hidden md:flex space-x-10 '>
 
           {/* /////home */}
             {
