@@ -59,13 +59,13 @@ const Navbar = () => {
             language?
             (
               <div className=' -mt-2'>
-                  <h1><Link to='about2' className=' hover:text-gray-300  text-3xl'>སྐོར་ལོ།</Link></h1>
+                  <h1><Link to='about2' spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer hover:text-gray-300  text-3xl'>སྐོར་ལོ།</Link></h1>
 
               </div>
 
             ):
             (
-            <h1><Link href to ='about2' className=' hover:text-gray-300 text-lg'>About</Link></h1>
+            <h1><Link href to ='about2' spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer hover:text-gray-300 text-lg'>About</Link></h1>
 
             )
           }
@@ -75,12 +75,12 @@ const Navbar = () => {
           {
             language?(
               <div className=' -mt-2'>
-                <h1><Link to = "team2" className=' hover:text-gray-300 text-3xl'>ཆོ༹གས་ཆུང།</Link></h1>   
+                <h1><Link to = "team2" spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer hover:text-gray-300 text-3xl'>ཆོ༹གས་ཆུང།</Link></h1>   
 
               </div>
 
             ):(
-            <h1><Link to = "team2" className=' hover:text-gray-300 text-lg'> Team</Link></h1>   
+            <h1><Link to = "team2" spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer hover:text-gray-300 text-lg'> Team</Link></h1>   
 
             )
           }
