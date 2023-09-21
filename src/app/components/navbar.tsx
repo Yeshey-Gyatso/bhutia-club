@@ -35,7 +35,7 @@ const Navbar = () => {
               height={80}
             />
            </div>
-           <div className='col-span-6  justify-center '>
+           <div className='hidden md:block col-span-6  justify-center '>
             <div className=' '>
             {
               language?( <div className=' -ml-3 mt-2'>
