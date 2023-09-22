@@ -50,7 +50,7 @@ const Navbar = () => {
            </div>
         </div>
 
-        <div className=' pt-4 hidden md:flex space-x-10 '>
+        <div className=' pt-6 hidden md:flex space-x-10 '>
 
           {/* /////home */}
             {
@@ -148,7 +148,7 @@ const Navbar = () => {
                       language?(
                           <h1 className='md:-mt-3 text-xl md:text-3xl'>བྷོ་ཊི་ཡ།</h1>
                       ):(
-                        <h1 className='font-extralight'>Language</h1>
+                        <h1 className='font-mono'>Language</h1>
                       )
                     }
                    
