@@ -95,7 +95,7 @@ const Landing1 = () => {
                        
                      </div>
                      <div className=' absolute inset-x-96 inset-y-64 pl-7 pt-4'>
-                     <Link href='#!' className='group
+                     <Link href='contactUs' className='group
                       text-white w-fit px-6 py-3 my-2 flex 
                      items-center rounded-md  bg-black
                      shadow-md
