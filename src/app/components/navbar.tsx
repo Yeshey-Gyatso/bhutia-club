@@ -148,7 +148,7 @@ const Navbar = () => {
                       language?(
                           <h1 className='md:-mt-3 text-xl md:text-3xl'>བྷོ་ཊི་ཡ།</h1>
                       ):(
-                        <h1 className=''>English</h1>
+                        <h1 className='font-extralight'>Language</h1>
                       )
                     }
                    
@@ -175,7 +175,7 @@ const Navbar = () => {
                       rounded-r-lg border-l-transparent
                       hover:border-l-white border-l-4
                       '>
-                        <h3>English</h3>
+                        <h3 className=' font-serif'>English</h3>
                         <GrLanguage className="ml-2 "/>
                       </button>
                       
