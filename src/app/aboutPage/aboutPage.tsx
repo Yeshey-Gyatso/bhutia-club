@@ -1,11 +1,12 @@
 import React from 'react'
 import logoT from '../public/logoT.png';
 import Image from 'next/image'
+import Navbar from '../components/navbar';
 const AboutPage = () => {
   return (
     <div>
         
-         <div className=' flex flex-col justify-center items-center'>
+         <div className=' flex flex-row justify-center items-center mt-40'>
         <div className=' p-2 '>
 
         <Image 
@@ -32,7 +33,7 @@ const AboutPage = () => {
             At Your Company Name, our mission is to provide innovative solutions that meet our customers' needs. We strive for excellence in everything we do and are committed to making a positive impact on the world.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-8 mb-4">Our Team</h2>
+          <h2 className="text-2xl font-semibold mt-8 mb-4">Our Vision</h2>
           <p className="text-gray-700">
             Our team is comprised of experienced professionals who bring diverse skills and expertise to the table. We work collaboratively to achieve our goals and exceed our customers' expectations.
           </p>

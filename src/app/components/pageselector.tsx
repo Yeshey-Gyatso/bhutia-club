@@ -45,7 +45,6 @@ const PageSelector = () => {
       </div>
       <div className=' hidden'>
       <AboutPage/>
-
       </div>
       </RecoilRoot>
     
