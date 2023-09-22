@@ -8,16 +8,18 @@ const Team = () => {
     
     const {scrollYProgress}= useScroll({
         target:ref,
-        offset:["0 1","0.9 1"]
+        offset:["0 1","0.8 1"]
     })
    const scaleProgress= useTransform(scrollYProgress,[0, 1],[0.2, 1]);
-  return (<motion.section 
+   const opacityProgress= useTransform(scrollYProgress,[0, 1],[0.2, 1]);
+   return (<motion.section 
+    id='team'
     ref={ref}
     style={{
         scale:scaleProgress,
-        opacity:scaleProgress
+        opacity:opacityProgress
     }}
-  id='team'
+  
   className=" bg-white dark:bg-gray-900">
   <div className=" py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
       <div className=" mx-auto mb-8 max-w-screen-sm lg:mb-16">
