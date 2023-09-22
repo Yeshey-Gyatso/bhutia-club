@@ -1,5 +1,7 @@
 "use client"
 import Image from 'next/image';
+import {GiMailbox} from 'react-icons/gi'
+import Link from 'next/link';
 import logoT from '../public/logoT.png';
 import React from 'react';
 import { useRecoilValue } from 'recoil';
@@ -54,13 +56,13 @@ const Landing1 = () => {
                     {
                             language ?(
                               <div>
-                            <span className=' md:ml-32  text-2xl lg:text-6xl text-black'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
+                            <span className=' md:ml-48   text-2xl lg:text-6xl text-black'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
 
                               </div>
                             ):
                             (
                               <div className= 'pt-4'>
-                                <span className='md:ml-32  text-3xl lg:text-4xl text-black'>Welcome To</span>
+                                <span className='md:ml-48  text-3xl lg:text-4xl text-black'>Welcome To</span>
 
                               </div>
                               )
@@ -90,7 +92,23 @@ const Landing1 = () => {
                               )
                             }
                         </div>
+                       
                      </div>
+                     <div className=' absolute inset-x-96 inset-y-64 pl-7 pt-4'>
+                     <Link href='#!' className='group
+                      text-white w-fit px-6 py-3 my-2 flex 
+                     items-center rounded-md
+                     bg-gradient-to-r from-blue-600 to to-blue-300
+                     
+                     cursor-pointer'>
+                        Contact Us <span
+                        className=' group-hover:skew-y-12 group-hover:rotate-12 duration-200'
+                        >
+                        <GiMailbox size={40} className=' ml-1'/>
+                        </span>
+                    </Link>
+                     </div>
+                     
 
                 {/* end of div */}
                 </div>
