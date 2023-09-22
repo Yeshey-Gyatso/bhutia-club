@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import React, { useRef } from 'react'
 
 const Team = () => {
@@ -8,13 +8,14 @@ const Team = () => {
     
     const {scrollYProgress}= useScroll({
         target:ref,
-        offset:["0 1","0.7 1"]
+        offset:["0 1","0.9 1"]
     })
+   const scaleProgress= useTransform(scrollYProgress,[0, 1],[0.2, 1]);
   return (<motion.section 
     ref={ref}
     style={{
-        scale:scrollYProgress,
-        opacity:scrollYProgress
+        scale:scaleProgress,
+        opacity:scaleProgress
     }}
   id='team'
   className=" bg-white dark:bg-gray-900">
