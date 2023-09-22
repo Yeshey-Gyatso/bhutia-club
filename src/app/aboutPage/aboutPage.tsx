@@ -1,8 +1,32 @@
 import React from 'react'
-
+import Image from 'next/image'
 const AboutPage = () => {
   return (
-    <div>AboutPage</div>
+    <div>
+      
+       
+        <title>About Us - Your Company Name</title>
+      
+
+      <main className="bg-gray-100 p-8">
+        <section className="max-w-4xl mx-auto p-4 bg-white rounded-lg shadow-md">
+          <h1 className="text-3xl font-semibold mb-4">About Us</h1>
+          <p className="text-gray-700">
+            Welcome to Your Company Name! We are a dedicated team of professionals passionate about delivering high-quality products and services to our customers.
+          </p>
+
+          <h2 className="text-2xl font-semibold mt-8 mb-4">Our Mission</h2>
+          <p className="text-gray-700">
+            At Your Company Name, our mission is to provide innovative solutions that meet our customers' needs. We strive for excellence in everything we do and are committed to making a positive impact on the world.
+          </p>
+
+          <h2 className="text-2xl font-semibold mt-8 mb-4">Our Team</h2>
+          <p className="text-gray-700">
+            Our team is comprised of experienced professionals who bring diverse skills and expertise to the table. We work collaboratively to achieve our goals and exceed our customers' expectations.
+          </p>
+        </section>
+      </main>
+      </div>
   )
 }
 
