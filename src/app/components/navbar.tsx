@@ -133,7 +133,7 @@ const Navbar = () => {
                   <button className=' bg-gray-300 flex 
                   items-center justify-between
                    rounded-lg tracking-wider 
-                   border-4 border-transparent 
+                   border-4 border-transparent md:mr-10
                    active:border-white duration-300
                    
                    '
@@ -142,9 +142,9 @@ const Navbar = () => {
                    >
                     {
                       language?(
-                          <h1 className='md:-mt-3 text-xl md:text-3xl'>སྐད་རབས།</h1>
+                          <h1 className='md:-mt-3 text-xl md:text-3xl'>བྷོ་ཊི་ཡ།</h1>
                       ):(
-                        <h1>Language</h1>
+                        <h1 className=''>English</h1>
                       )
                     }
                    
