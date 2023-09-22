@@ -3,6 +3,7 @@
 import React from 'react'
 import Image from 'next/image';
 import logoT from '../public/logoT.png';
+import Link from 'next/link';
 import { useRecoilValue } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
 
@@ -59,8 +60,8 @@ const About = () => {
                ipsa velit ea non voluptatem facere explicabo laboriosam cum.
                 <br /><br />
                 </p>
-                <a
-            href="#portfolio" // Replace "portfolio" with the actual ID of the target section
+                <Link
+            href="aboutPage" // Replace "portfolio" with the actual ID of the target section
               className="group text-white w-fit 
               px-6 py-3 
               my-2 flex 
@@ -70,7 +71,7 @@ const About = () => {
              hover:bg-gradient-to-r from-orange-500 to-amber-400 transition duration-200
              shadow-gray-900
              cursor-pointer"
-              >Click here to know more about Us</a>
+              >Click here to know more about Us</Link>
               </div>
 
               )
