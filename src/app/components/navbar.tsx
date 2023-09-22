@@ -39,8 +39,8 @@ const Navbar = () => {
                 <h1 className=' text-2xl'>ཡར་རྒྱས་ ཆོ༹གས་པོ།</h1>
             
               </div> ):( <div className='-ml-3 mt-4 '>
-                <h1 className=' text-base'>Bhutia Khayrab</h1>
-                <h1 className=' text-base'>Yargay Tshogpo</h1>
+                <h1 className=' text-base font-serif'>Bhutia Khayrab</h1>
+                <h1 className=' text-base font-serif'>Yargay Tshogpo</h1>
               </div> )
             }
             
@@ -61,7 +61,9 @@ const Navbar = () => {
                 </div>
 
               ):(
-            <h1><Link to="home"  spy={true} smooth={true} offset={-70} duration={500}  className=' cursor-pointer hover:text-gray-300 text-lg'>Home</Link></h1>   
+            <h1><Link to="home"  spy={true} smooth={true} offset={-70} duration={500}  className=' cursor-pointer hover:text-gray-300
+            
+            text-lg font-serif'>Home</Link></h1>   
 
               )
               
@@ -78,7 +80,7 @@ const Navbar = () => {
 
             ):
             (
-            <h1><Link to ='about' spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer hover:text-gray-300 text-lg'>About</Link></h1>
+            <h1><Link to ='about' spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer hover:text-gray-300  font-serif text-lg'>About</Link></h1>
 
             )
           }
@@ -93,7 +95,9 @@ const Navbar = () => {
               </div>
 
             ):(
-            <h1><Link to = "team" spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer hover:text-gray-300 text-lg'> Team</Link></h1>   
+            <h1><Link to = "team" spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer
+             hover:text-gray-300 
+             text-lg font-serif'> Team</Link></h1>   
 
             )
           }
@@ -111,7 +115,7 @@ const Navbar = () => {
 
             ):
             (
-            <h1><a href='https://data-storage-sable.vercel.app/' className='cursor-pointer hover:text-gray-300 text-lg text-fuchsia-800 font-bold '>Vocab</a></h1>
+            <h1><a href='https://data-storage-sable.vercel.app/' className='cursor-pointer hover:text-gray-300 text-lg text-fuchsia-800 font-bold font-serif '>Vocab</a></h1>
 
             )
           }
