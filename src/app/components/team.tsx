@@ -1,9 +1,21 @@
 "use client";
 
-import React from 'react'
+import { motion, useScroll } from 'framer-motion';
+import React, { useRef } from 'react'
 
 const Team = () => {
-  return (<section 
+    const ref = useRef<HTMLElement>(null);
+    
+    const {scrollYProgress}= useScroll({
+        target:ref,
+        offset:["0 1","0.7 1"]
+    })
+  return (<motion.section 
+    ref={ref}
+    style={{
+        scale:scrollYProgress,
+        opacity:scrollYProgress
+    }}
   id='team'
   className=" bg-white dark:bg-gray-900">
   <div className=" py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
@@ -247,7 +259,7 @@ const Team = () => {
           </div>
       </div>  
   </div>
-</section>
+</motion.section>
   
    
   )
