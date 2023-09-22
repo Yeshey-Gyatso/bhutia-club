@@ -15,6 +15,7 @@ import About from './about'
 import Page4 from './page4'
 import About2 from './about2'
 import Team2 from './team2'
+import AboutPage from '../aboutPage/aboutPage'
 const PageSelector = () => {
   const [landing,setLanding]=useState(0);
 //   console.log(landing);
@@ -42,7 +43,10 @@ const PageSelector = () => {
       <div className=''>
       <Team2/>
       </div>
-   
+      <div className=' hidden'>
+      <AboutPage/>
+
+      </div>
       </RecoilRoot>
     
   </div>

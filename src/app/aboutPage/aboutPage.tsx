@@ -1,9 +1,21 @@
 import React from 'react'
+import logoT from '../public/logoT.png';
 import Image from 'next/image'
 const AboutPage = () => {
   return (
     <div>
-      
+        
+         <div className=' flex flex-col justify-center items-center'>
+        <div className=' p-2 '>
+
+        <Image 
+              src={logoT} 
+              alt='pic of logo'
+              width={400}
+              height={400}
+               />     
+        </div>
+       
        
         <title>About Us - Your Company Name</title>
       
@@ -27,6 +39,8 @@ const AboutPage = () => {
         </section>
       </main>
       </div>
+    </div>
+   
   )
 }
 
