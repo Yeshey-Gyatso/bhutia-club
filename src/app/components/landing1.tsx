@@ -1,5 +1,6 @@
 "use client"
 import Image from 'next/image';
+import logoT from '../public/logoT.png';
 import React from 'react';
 import { useRecoilValue } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
@@ -31,43 +32,58 @@ const Landing1 = () => {
         px-4 md:flex-row
         
         '>
-            
+          {/* this div is only for white line */}
+            <div className=' absolute inset-y-72 -mt-4 bg-white/50 w-full h-[25rem]'></div>
               <div 
-                className='relative flex flex-col items-center bottom-0 mt-40'>
-                <div className='relative flex flex-row items-center'>
-                <div 
-                className='cursor-default -mt-28 md:mt-auto text-2xl sm:text-4xl font-bold md:6xl text-white'>
+                className='relative
+                grid grid-cols-12 gap-32 items-center 
+                bottom-0 mt-40 w-auto
+                
+                '>
+                <div className=' col-span-6'>
+                    {/* start of div for titles */}
+                <div>  
+                <div className='  items-center '>
+                  <div 
+                  className='  cursor-default -mt-28 
+                  md:mt-auto text-2xl sm:text-4xl 
+                  font-bold md:6xl 
+                  
+                  text-white'>
                     
                     {
                             language ?(
-                            <span className=' ml-1  text-3xl lg:text-8xl text-black'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
+                              <div>
+                            <span className=' md:ml-32  text-2xl lg:text-6xl text-black'>༈ བྱོན་བོ་ ལེགས་སོ།</span>
+
+                              </div>
                             ):
                             (
                               <div className= 'pt-4'>
-                                <span className='  ml-2   text-3xl lg:text-7xl text-black'>Welcome To</span>
+                                <span className='md:ml-32  text-3xl lg:text-4xl text-black'>Welcome To</span>
 
                               </div>
                               )
                            }
                     
-                </div>
-                  
-               
-                </div>      
-                     <div className=' my-10  py-10  bg-gray-800 opacity-70 w-full px-8 flex flex-col items-center '>
+                  </div>
+                  </div>  
+                  <div className=' 
+                     grid-row-auto
+                     my-10  py-10  bg-gray-800 opacity-70 w-full px-8 flex flex-col items-center '>
                         <div className=' cursor-default py-4 text-white md:text-2xl max-w-full sm:mx-auto z-10 font-light   
                         '>
                              {
                               language ?(
                                 <div className=' ml-2'>
-                                       <span className=' leading-loose text-3xl lg:text-8xl '>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
+                                       <span className=' leading-loose text-2xl lg:text-5xl '>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
                                 </span>
                                 </div>
                                
 
                               ):(
                                 <div className=' ml-2 '>
-                                <span className=' text-3xl lg:text-6xl'>Bhutia Khayrab Yargay Tshogpo. </span>
+                                <span className=' leading-loose text-2xl lg:text-4xl'>Bhutia Khayrab Yargay Tshogpo. </span>
 
                                 </div>
 
@@ -75,6 +91,21 @@ const Landing1 = () => {
                             }
                         </div>
                      </div>
+
+                {/* end of div */}
+                </div>
+                </div>
+                <div className=' col-span-6'> 
+                <Image 
+              src={logoT} 
+              alt='pic of logo'
+              width={400}
+              height={400}
+               /> 
+                </div>
+                
+                    
+                     
                      
 
                 </div>
