@@ -49,7 +49,19 @@ const About = () => {
                     བཞེས་པོ་སྦད།
                 <br /><br />
                 </p>
-                
+                <Link
+            href="aboutPage" // Replace "portfolio" with the actual ID of the target section
+              className="group text-white w-fit 
+              px-6 py-3 
+              my-2 flex 
+             items-center rounded-3xl
+             bg-black
+             shadow-md
+             hover:bg-gradient-to-r from-orange-500 to-amber-400 transition duration-200
+             shadow-gray-900
+             cursor-pointer"
+              >Click here to know more about bhu Us</Link>
+
                 </div>
                 
               ):(
