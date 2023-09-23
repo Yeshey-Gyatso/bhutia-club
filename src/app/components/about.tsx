@@ -10,16 +10,15 @@ import { languageAtom } from '../recoil/atoms';
 const About = () => {
   const ref = useRef<HTMLDivElement>(null);
     
-  const {scrollYProgress}= useScroll({
-      target:ref,
-  })
+  const {scrollYProgress}= useScroll({target:ref})
   
-  const x = useTransform(scrollYProgress, [-1, -0.6, 1], [-100, -100, 100]);
+  const x = useTransform(scrollYProgress, [-1, 0, 1], [-100, 200, -100]);
 
 
   const language=useRecoilValue(languageAtom);
   return (
     <div 
+    
     id='about'
     className='
     h-screen w-full pt-4
@@ -106,9 +105,8 @@ const About = () => {
       </div>
       <motion.div 
        ref={ref}
-       initial={{ x: -100 }} // Start the element at -100px on the x-axis
-       style={{
-         x,       }}
+      initial={{ x: -100 }} // Start the element at -100px on the x-axis
+       style={{x,}}
       className=' hidden md:block relative pt-6  md:inset-x-24  w-1/3 h-96'>
             
           <Image 
