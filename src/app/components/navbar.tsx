@@ -1,6 +1,5 @@
 "use client";
 import Image from 'next/image';
-// import Link from 'next/link';
 import {AiOutlineCaretDown,AiOutlineCaretUp} from "react-icons/ai";
 import {GrLanguage} from "react-icons/gr";
 import Flag from '../assets/flag.svg';
@@ -11,7 +10,6 @@ import { useRecoilState } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
 import { Link, Element } from 'react-scroll'
 import NavP from './navbarPhone';
-// import { toast } from 'react-toastify';
 const Navbar = () => {
   const [language,setLanguage]=useRecoilState(languageAtom);
   console.log(language);
@@ -53,7 +51,7 @@ const Navbar = () => {
 
         <div className=' pt-6 hidden md:flex space-x-10 '>
 
-          {/* /////home */}
+{/* /////home */}
             {
               language?(
                 <div className=' -mt-2'> 
@@ -70,7 +68,7 @@ const Navbar = () => {
               
             }
 
-            {/* //about */}
+{/* //about */}
           {
             language?
             (
@@ -86,7 +84,7 @@ const Navbar = () => {
             )
           }
 
-          {/* ////Team */}
+{/* ////Team */}
 
           {
             language?(
@@ -102,7 +100,7 @@ const Navbar = () => {
 
             )
           }
-          {/* //Contact us */}
+{/* //Contact us */}
           {
             language?(
               <div className=' -mt-2'>
@@ -121,7 +119,7 @@ const Navbar = () => {
           }
 
 
-            {/* ?//////////VOCAB//////// */}
+{/* ?//////////VOCAB//////// */}
 
             {
             language?
@@ -151,7 +149,7 @@ const Navbar = () => {
               </li> */}
 
               <li className=' hidden md:block'>
-      {/* //for desktop language change */}
+{/* //for desktop language change */}
               <div className=' relative 
               lg:mt-4 md:mt-auto ml-52 md:ml-auto flex items-center w-auto h-auto rounded-lg'>
                   <button className=' bg-gray-300 flex 
@@ -211,9 +209,9 @@ const Navbar = () => {
                   )}
                 </div>   
               </li>
-     {/* ///////////phone nav bar here ///////// */}
+{/* ///////////phone nav bar here ///////// */}
               <li className='block md:hidden'>
-              <NavP/>
+              <NavP />
               </li>
             </ul>           
         </div>
