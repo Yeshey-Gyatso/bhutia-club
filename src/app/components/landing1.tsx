@@ -62,7 +62,7 @@ const Landing1 = () => {
                             ):
                             (
                               <div className= 'pt-4'>
-                                <span className='md:ml-48  text-3xl lg:text-4xl text-black'>Welcome To</span>
+                                <span className='md:ml-48  text-3xl lg:text-4xl text-black font-sans'>Welcome To</span>
 
                               </div>
                               )
@@ -85,7 +85,7 @@ const Landing1 = () => {
 
                               ):(
                                 <div className=' ml-2 '>
-                                <span className=' leading-loose text-2xl lg:text-4xl'>Bhutia Khayrab Yargay Tshogpo. </span>
+                                <span className=' leading-loose text-2xl lg:text-4xl font-serif'>Bhutia Khayrab Yargay Tshogpo. </span>
 
                                 </div>
 
