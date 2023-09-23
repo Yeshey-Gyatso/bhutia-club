@@ -1,5 +1,5 @@
 "use client";
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useRef } from 'react'
 import Image from 'next/image';
 import logoT from '../public/logoT.png';
@@ -12,8 +12,10 @@ const About = () => {
     
   const {scrollYProgress}= useScroll({
       target:ref,
-      offset:["0 1","1.2 1"]
   })
+  
+  const x = useTransform(scrollYProgress, [-1, 0, 1], [-100, 0, 100]);
+
 
   const language=useRecoilValue(languageAtom);
   return (
@@ -104,10 +106,9 @@ const About = () => {
       </div>
       <motion.div 
        ref={ref}
-
+       initial={{ x: -100 }} // Start the element at -100px on the x-axis
        style={{
-         opacity: scrollYProgress,
-       }}
+         x,       }}
       className=' hidden md:block relative pt-6  md:inset-x-24  w-1/3 h-96'>
             
           <Image 
