@@ -1,26 +1,28 @@
 import React from 'react'
 import { FacebookIcon, InstagramIcon, Mail, Phone } from "lucide-react"
-import logoT from '../public/logoT.png';
-import Image from 'next/image'
-import Navbar from '../components/navbar';
 import Link from 'next/link';
 const Contact = () => {
   return (
     <div 
     id='contact'
-    className=' bg-gray-200'>
-      <div className=' '>
+    className=' bg-gray-200 w-screen h-full'>
+      {/* just for design */}
+      <div className=' absolute  '>
         
       </div>
-        <div className="container my-24 mx-auto md:px-6">
+        <div className="container  mx-auto md:px-6">
 
-<section className="mb-32 text-center">
+<section className=" text-center">
   <div className="py-12 md:px-12">
     <div className="container mx-auto xl:px-32">
       <div className="grid items-center lg:grid-cols-2">
         <div className="mb-12 md:mt-12 lg:mt-0 lg:mb-0">
           <div
-            className="relative z-[1] block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:px-12 lg:-mr-14">
+            className="relative z-[1] block
+             rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] 
+             backdrop-blur-[30px] 
+             dark:bg-[hsla(0,0%,5%,0.7)]
+              dark:shadow-black/20 md:px-12 lg:-mr-14">
             <h2 className="mb-12 text-3xl font-bold">Contact us</h2>
             {/* inside contact */}
             <div  className="bg-white p-2">

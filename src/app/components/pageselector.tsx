@@ -16,20 +16,23 @@ import Page4 from './page4'
 import About2 from './about2'
 import Team2 from './team2'
 import AboutPage from '../aboutPage/aboutPage'
+import Contact from './contactUs'
 const PageSelector = () => {
   const [landing,setLanding]=useState(0);
 //   console.log(landing);
 //just got the data
 
     return (
-    <div className=''>
+    <div className="overflow-x-hidden ">
       <RecoilRoot>
       <Navbar/>
       <Landing1/>
       <About/>
       <Page1/>
       <Team/>
+      <Contact/>
       <Page4/>
+
       <div className=''>
       
       </div>
