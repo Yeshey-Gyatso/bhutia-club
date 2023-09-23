@@ -1,6 +1,6 @@
 "use client";
-
-import React from 'react'
+import { motion, useScroll } from "framer-motion";
+import React, { useRef } from 'react'
 import Image from 'next/image';
 import logoT from '../public/logoT.png';
 import Link from 'next/link';
@@ -8,6 +8,13 @@ import { useRecoilValue } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
 
 const About = () => {
+  const ref = useRef<HTMLDivElement>(null);
+    
+  const {scrollYProgress}= useScroll({
+      target:ref,
+      offset:["0 1","1.2 1"]
+  })
+
   const language=useRecoilValue(languageAtom);
   return (
     <div 
@@ -95,7 +102,13 @@ const About = () => {
              </div>
           
       </div>
-      <div className=' hidden md:block relative pt-6  md:inset-x-24  w-1/3 h-96'>
+      <motion.div 
+       ref={ref}
+
+       style={{
+         opacity: scrollYProgress,
+       }}
+      className=' hidden md:block relative pt-6  md:inset-x-24  w-1/3 h-96'>
             
           <Image 
               src={logoT} 
@@ -103,7 +116,7 @@ const About = () => {
               width={400}
               height={400}
                />          
-            </div>
+            </motion.div>
     </div>
   )
 }
