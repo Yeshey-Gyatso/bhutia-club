@@ -148,7 +148,7 @@ const Navbar = () => {
                       language?(
                           <h1 className='md:-mt-3 text-xl md:text-3xl'>བྷོ་ཊི་ཡ།</h1>
                       ):(
-                        <h1 className='font-mono'>Language</h1>
+                        <h1 className='font-mono'>English</h1>
                       )
                     }
                    
