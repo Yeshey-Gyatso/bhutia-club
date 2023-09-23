@@ -18,7 +18,7 @@ const Landing1 = () => {
      flex items-center
      bg-cover
      bg-fixed
-     bg-blend-overlay
+     md:bg-blend-overlay
      '
      style={{
         backgroundImage: 'url("/bg4.jpg")'
@@ -35,10 +35,10 @@ const Landing1 = () => {
         
         '>
           {/* this div is only for white line */}
-            <div className=' absolute inset-y-72 -mt-4 bg-white/50 w-full h-[25rem]'></div>
+            <div className=' md:absolute inset-y-72 -mt-4 md:bg-white/50 w-full h-[25rem]'></div>
               <div 
                 className='relative
-                grid grid-cols-12 gap-32 items-center 
+                md:grid grid-cols-12 gap-32 items-center 
                 bottom-0 mt-40 w-auto
                 
                 '>
@@ -48,6 +48,7 @@ const Landing1 = () => {
                 <div className='  items-center '>
                   <div 
                   className='  cursor-default -mt-28 
+                  -ml-40 md:ml-auto
                   md:mt-auto text-2xl sm:text-4xl 
                   font-bold md:6xl 
                   
@@ -71,21 +72,25 @@ const Landing1 = () => {
                   </div>
                   </div>  
                   <div className=' 
-                     grid-row-auto
-                     my-10  py-10  bg-gray-800 opacity-70 w-full px-8 flex flex-col items-center '>
+                     md:grid-row-auto
+                     my-10  py-10  bg-gray-800 
+                     -ml-28 md:ml-auto
+                     opacity-70 w-full px-8 flex flex-col items-center '>
                         <div className=' cursor-default py-4 text-white md:text-2xl max-w-full sm:mx-auto z-10 font-light   
                         '>
                              {
                               language ?(
                                 <div className=' ml-2 -mt-2'>
                                        <span className=' leading-loose text-2xl lg:text-5xl '>༈ བྷོ་ཊི་ཡ་ སྐད་རབས་ ཡར་རྒྱས་ ཆོ༹གས་པོ།
+
                                 </span>
+                                
                                 </div>
                                
 
                               ):(
                                 <div className=' ml-2 '>
-                                <span className=' leading-loose text-2xl lg:text-4xl font-serif'>Bhutia Khayrab Yargay Tshogpo. </span>
+                                <span className=' leading-loose text-3xl lg:text-4xl font-serif'>Bhutia Khayrab Yargay Tshogpo. </span>
 
                                 </div>
 
@@ -114,7 +119,7 @@ const Landing1 = () => {
                 {/* end of div */}
                 </div>
                 </div>
-                <div className=' col-span-6'> 
+                <div className=' hidden md:block col-span-6'> 
                 <Image 
               src={logoT} 
               alt='pic of logo'
