@@ -10,6 +10,7 @@ import React, { useContext, useState } from 'react'
 import { useRecoilState } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
 import { Link, Element } from 'react-scroll'
+import NavP from './navbarPhone';
 // import { toast } from 'react-toastify';
 const Navbar = () => {
   const [language,setLanguage]=useRecoilState(languageAtom);
@@ -150,7 +151,7 @@ const Navbar = () => {
               </li> */}
 
               <li className=' hidden md:block'>
-                {/* //for desktop language change */}
+      {/* //for desktop language change */}
               <div className=' relative 
               lg:mt-4 md:mt-auto ml-52 md:ml-auto flex items-center w-auto h-auto rounded-lg'>
                   <button className=' bg-gray-300 flex 
@@ -210,10 +211,10 @@ const Navbar = () => {
                   )}
                 </div>   
               </li>
-              {/* navbar for phone */}
-              {/* <li className=''>
-              
-              </li> */}
+     {/* ///////////phone nav bar here ///////// */}
+              <li className='block md:hidden'>
+              <NavP/>
+              </li>
             </ul>           
         </div>
         </div>

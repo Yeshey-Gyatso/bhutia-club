@@ -1,4 +1,4 @@
-import { Flag } from 'lucide-react';
+import Flag from '../assets/flag.svg';
 import React, { useState } from 'react'
 import { AiOutlineCaretDown, AiOutlineCaretUp } from 'react-icons/ai';
 import { GrLanguage } from 'react-icons/gr';
