@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 import {GiMailbox} from 'react-icons/gi'
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 import logoT from '../public/logoT.png';
 import React from 'react';
 import { useRecoilValue } from 'recoil';
@@ -95,7 +95,7 @@ const Landing1 = () => {
                        
                      </div>
                      <div className=' absolute inset-x-96 inset-y-64 pl-7 pt-4'>
-                     <Link href='contactUs' className='group
+                     <Link to ='contact' spy={true} smooth={true} offset={-70} duration={500}  className='group
                       text-white w-fit px-6 py-3 my-2 flex 
                      items-center rounded-md  bg-black
                      shadow-md

@@ -32,7 +32,8 @@ const Contact = () => {
             <Link
               href="https://www.facebook.com/p/Bhutia-kayrab-yargay-Tshokpo-100025627511936/"
               target="_blank"
-              className="bg-gradient-to-r from-teal-400 to-red-700 bg-clip-text leading-relaxed text-transparent shadow-inner"
+              className="bg-gradient-to-r from-red-400 to-teal-600 bg-clip-text leading-relaxed text-transparent shadow-inner"
+
             >
               Bhutia Khayrab Yargay Tshogpo
             </Link>
