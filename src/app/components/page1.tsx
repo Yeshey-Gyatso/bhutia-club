@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Paragraph from './paragraph'
+import { useScroll, useTransform } from 'framer-motion';
 
 const Page1 = () => {
+  const ref = useRef<HTMLDivElement>(null);
+    
+  const {scrollYProgress}= useScroll({target:ref})
+  
+  const x = useTransform(scrollYProgress, [-1, 0, 1], [-100, 100, -500]);
+
   return (
     <section  
     className=' h-screen w-full
