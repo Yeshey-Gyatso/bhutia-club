@@ -27,10 +27,16 @@ const About = () => {
       className=' pl-20 md:pl-32 pt-8 flex flex-col'>
       {
         language?(
-          <h1 className=' text-3xl lg:text-7xl lg:-mt-6  font-extrabold border-b-8'>ང་ཅག་ ཀ་ འབོ </h1>
+          <h1 className=' text-3xl lg:text-7xl
+           lg:-mt-6  
+           shadow-2xl
+           font-extrabold border-b-8'>ང་ཅག་ ཀ་ འབོ </h1>
 
         ):(
-          <h1 className='text-2xl lg:text-5xl font-extrabold border-b-8'>WHO WE ARE </h1>
+          <h1 className='text-2xl lg:text-5xl
+             shadow-2xl 
+          font-extrabold 
+           border-b-8'>WHO WE ARE </h1>
 
         )
       }

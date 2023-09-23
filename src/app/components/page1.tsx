@@ -43,7 +43,11 @@ const Page1 = () => {
                 <div className='relative flex flex-row items-center'>
                 <div className=' 
                      grid-row-auto
-                     my-10  py-10  bg-gray-800 opacity-70 w-full px-8 flex flex-col items-center '>
+                     my-10  py-10 
+                      bg-gray-800 opacity-70 w-full 
+                      px-8 flex flex-col 
+                     shadow-lg shadow-white
+                      items-center '>
                         <div
                         
                         className=' cursor-default py-4 text-white md:text-2xl w-full

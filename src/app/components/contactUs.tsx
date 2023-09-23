@@ -28,11 +28,12 @@ const Contact = () => {
             <div  className="bg-white p-2">
             <div className="flex w-full flex-col  items-start justify-center  gap-y-5 sm:gap-y-10 md:text-2xl  ">
           <span className="on flex flex-row items-center justify-evenly gap-5 p-1">
-            <FacebookIcon className="h-10 w-10 shadow-lg " />
+            <FacebookIcon className="h-10 w-10 shadow-lg shadow-black/40 " />
             <Link
               href="https://www.facebook.com/p/Bhutia-kayrab-yargay-Tshokpo-100025627511936/"
               target="_blank"
-              className="bg-gradient-to-r from-red-400 to-teal-600 bg-clip-text leading-relaxed text-transparent shadow-inner"
+              className="bg-gradient-to-r  from-red-400 to-teal-600 bg-clip-text leading-relaxed text-transparent 
+              shadow-md hover:shadow-black/80 transition duration-300 p-2"
 
             >
               Bhutia Khayrab Yargay Tshogpo
@@ -40,15 +41,19 @@ const Contact = () => {
           </span>
          
           <div className="flex flex-row items-center justify-center gap-5 p-1">
-            <Mail className="h-10 w-10 shadow-lg" />
-            <Link href="mailto:example@gmail.com" className="pb-1 shadow-inner">
+            <Mail className="h-10 w-10 shadow-lg shadow-black/40" />
+            <Link href="mailto:example@gmail.com" className="p-2
+            shadow-md hover:shadow-black/80 transition duration-300
+            
+            ">
               example@gmail.com
             </Link>
           </div>
           <div className="flex flex-row items-center justify-center gap-5 p-1">
-            <Phone className="h-10 w-10 shadow-lg " />
-            <Link href="tel:+911234567890">
-              <span className=' shadow-inner'> +91 123-4567-890</span>
+            <Phone className="h-10 w-10 shadow-lg shadow-black/40 " />
+            <Link
+             href="tel:+911234567890">
+              <span className='p-2 shadow-md hover:shadow-black/80 transition duration-300'> +91 123-4567-890</span>
             </Link>
           </div>
         </div>
