@@ -1,4 +1,5 @@
 import React from 'react'
+import Paragraph from './paragraph'
 
 const Page1 = () => {
   return (
@@ -30,11 +31,17 @@ const Page1 = () => {
               <div 
                 className='relative z-10 flex flex-col items-center bottom-0 mt-40'>
                 <div className='relative flex flex-row items-center'>
-               
-                               
-
-                             hello
-                     
+                <div className=' 
+                     grid-row-auto
+                     my-10  py-10  bg-gray-800 opacity-70 w-full px-8 flex flex-col items-center '>
+                        <div className=' cursor-default py-4 text-white md:text-2xl max-w-full sm:mx-auto z-10 font-light   
+                        '>
+                            
+                          "Welcome to our literary club, where words come alive and stories unfold!"
+                        </div>
+                       
+                     </div>
+                         
                 
                
                 </div> 
