@@ -6,7 +6,9 @@ import Navbar from '../components/navbar';
 import Link from 'next/link';
 const Contact = () => {
   return (
-    <div className=' bg-gray-200'>
+    <div 
+    id='contact'
+    className=' bg-gray-200'>
       <div className=' '>
         
       </div>

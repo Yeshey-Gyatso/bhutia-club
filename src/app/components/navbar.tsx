@@ -101,6 +101,23 @@ const Navbar = () => {
 
             )
           }
+          {/* //Contact us */}
+          {
+            language?(
+              <div className=' -mt-2'>
+                <h1><Link to = "contact" spy={true} smooth={true} offset={-70} duration={500}  
+                className='cursor-pointer hover:text-gray-300 text-3xl'>ཆོ༹གས་ཆུང།</Link></h1>   
+
+              </div>
+
+            ):(
+            <h1><Link to = "contact" spy={true} smooth={true} offset={-70} duration={500}
+              className='cursor-pointer
+             hover:text-gray-300 
+             text-lg font-serif'> Contact</Link></h1>   
+
+            )
+          }
 
 
             {/* ?//////////VOCAB//////// */}
