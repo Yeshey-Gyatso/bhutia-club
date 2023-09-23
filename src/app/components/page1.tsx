@@ -46,7 +46,8 @@ const Page1 = () => {
                      my-10  py-10  bg-gray-800 opacity-70 w-full px-8 flex flex-col items-center '>
                         <div
                         
-                        className=' cursor-default py-4 text-white md:text-2xl max-w-full sm:mx-auto z-10 font-light   
+                        className=' cursor-default py-4 text-white md:text-2xl w-full
+                          font-serif font-thin    
                         '>
                             
                           "Welcome to our literary club, where words come alive and stories unfold!"
