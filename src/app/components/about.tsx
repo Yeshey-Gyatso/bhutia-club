@@ -14,7 +14,7 @@ const About = () => {
       target:ref,
   })
   
-  const x = useTransform(scrollYProgress, [-1, 0, 1], [-100, 0, 100]);
+  const x = useTransform(scrollYProgress, [-1, -0.6, 1], [-100, -100, 100]);
 
 
   const language=useRecoilValue(languageAtom);
