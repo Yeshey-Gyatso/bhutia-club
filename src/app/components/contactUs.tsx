@@ -4,7 +4,7 @@ import logoT from '../public/logoT.png';
 import Image from 'next/image'
 import Navbar from '../components/navbar';
 import Link from 'next/link';
-const ContactUs = () => {
+const Contact = () => {
   return (
     <div className=' bg-gray-200'>
       <div className=' '>
@@ -74,4 +74,4 @@ const ContactUs = () => {
   )
 }
 
-export default ContactUs
+export default Contact
