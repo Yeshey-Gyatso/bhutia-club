@@ -12,7 +12,7 @@ const About = () => {
     
   const {scrollYProgress}= useScroll({target:ref})
   
-  const x = useTransform(scrollYProgress, [-1, 0, 1], [-100, 200, -100]);
+  const x = useTransform(scrollYProgress, [-1, 0, 1], [-100, 100, -500]);
 
 
   const language=useRecoilValue(languageAtom);
@@ -34,14 +34,25 @@ const About = () => {
 
         )
       }
+
+
         {
+          
           language?(
-            <h1 className='-ml-16 md:ml-6 py-8 md:text-4xl -mt-2 font-bold'> རྒྱལ་ས་ སྒང་ཏོག་ན་ ཡོད་པའི་ འབྲས་ལྗོངས་ སྟོང་ གང་གི་ འཐུད་མི་ ཆོ༹གས་ཆུང
+            
+            <motion.div
+            ref={ref}
+            initial={{ x: -100 }} style={{x}}
+             className='-ml-16 md:ml-6 py-8 md:text-4xl -mt-2 font-bold'> རྒྱལ་ས་ སྒང་ཏོག་ན་ ཡོད་པའི་ འབྲས་ལྗོངས་ སྟོང་ གང་གི་ འཐུད་མི་ ཆོ༹གས་ཆུང
           རྒྱལ་ས་ སྒང་ཏོག་ན་ ཡོད་པའི་ འབྲས་ལྗོངས་ སྟོང་ གང་གི་ འཐུད་མི་ ཆོ༹གས་ཆུང
-            </h1>
+            </motion.div>
             
           ):(
-            <h1 className=' -ml-16 md:ml-6 py-8 text-xl md:text-2xl font-bold'> Based in Gangtok with members from all over Sikkim </h1>
+            <motion.div 
+            ref={ref}
+            initial={{ x: -100 }} style={{x}}
+            className=' -ml-16 md:ml-6 py-8 text-xl md:text-2xl font-bold'> Based in Gangtok with members from all over Sikkim 
+            </motion.div>
 
           )
         }
@@ -103,11 +114,9 @@ const About = () => {
              </div>
           
       </div>
-      <motion.div 
-       ref={ref}
-      initial={{ x: -100 }} // Start the element at -100px on the x-axis
-       style={{x,}}
-      className=' hidden md:block relative pt-6  md:inset-x-24  w-1/3 h-96'>
+      <div 
+      
+      className=' hidden md:block relative pt-6  md:inset-x-40  w-1/3 h-96'>
             
           <Image 
               src={logoT} 
@@ -115,7 +124,7 @@ const About = () => {
               width={400}
               height={400}
                />          
-            </motion.div>
+            </div>
     </div>
   )
 }
