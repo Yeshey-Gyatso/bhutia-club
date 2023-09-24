@@ -23,7 +23,7 @@ const Contact = () => {
              backdrop-blur-[30px] 
              dark:bg-[hsla(0,0%,5%,0.7)]
               dark:shadow-black/20 md:px-12 lg:-mr-14">
-            <h2 className="mb-12 text-3xl font-bold">Contact us</h2>
+            <h2 className="mb-12 text-3xl font-bold">Contact Us</h2>
             {/* inside contact */}
             <div  className="bg-white p-2">
             <div className="flex w-full flex-col  items-start justify-center  gap-y-5 sm:gap-y-10 md:text-2xl  ">
