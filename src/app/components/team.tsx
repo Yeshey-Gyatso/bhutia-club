@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import React, { useRef } from 'react'
 
 const Team = () => {
-    const ref = useRef<HTMLElement>(null);
+    const ref = useRef<HTMLDivElement>(null);
     
     const {scrollYProgress}= useScroll({
         target:ref,
@@ -12,17 +12,21 @@ const Team = () => {
     })
    const scaleProgress= useTransform(scrollYProgress,[0, 1],[0.2, 1]);
    const opacityProgress= useTransform(scrollYProgress,[0, 1],[0.2, 1]);
-   return (<motion.section 
+   return (<section 
     id='team'
-    ref={ref}
-    style={{
-        scale:scaleProgress,
-        opacity:opacityProgress
-    }}
+   
   
   className=" bg-white dark:bg-gray-900">
-  <div className=" py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-      <div className=" mx-auto mb-8 max-w-screen-sm lg:mb-16">
+  <motion.div
+   ref={ref}
+   style={{
+       scale:scaleProgress,
+       opacity:opacityProgress
+   }}
+    className=" py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+      <div
+      
+      className=" mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 className=" mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Executive Body</h2>
           <p className=" font-light text-gray-500 sm:text-xl dark:text-gray-400">
             We are the executive body of Bhutia Khayrab Yargay Tshogpo </p>
@@ -261,8 +265,8 @@ const Team = () => {
               </ul>
           </div>
       </div>  
-  </div>
-</motion.section>
+  </motion.div>
+</section>
   
    
   )

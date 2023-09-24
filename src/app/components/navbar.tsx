@@ -89,12 +89,12 @@ const Navbar = () => {
           {
             language?(
               <div className=' -mt-2'>
-                <h1><Link to = "team" spy={true} smooth={true} offset={10} duration={500}  className='cursor-pointer hover:text-gray-300 text-3xl'>ཆོ༹གས་ཆུང།</Link></h1>   
+                <h1><Link to = "team" spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer hover:text-gray-300 text-3xl'>ཆོ༹གས་ཆུང།</Link></h1>   
 
               </div>
 
             ):(
-            <h1><Link to = "team" spy={true} smooth={true} offset={90} duration={500}  className='cursor-pointer
+            <h1><Link to = "team" spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer
              hover:text-gray-300 
              text-lg font-serif'> Team</Link></h1>   
 
