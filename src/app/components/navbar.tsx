@@ -151,11 +151,14 @@ const Navbar = () => {
               <li className=' hidden md:block'>
 {/* //for desktop language change */}
               <div className=' relative 
-              lg:mt-4 md:mt-auto ml-52 md:ml-auto flex items-center w-auto h-auto rounded-lg'>
+              lg:mt-4 md:mt-auto ml-52 md:ml-auto 
+              flex items-center 
+              w-auto  md: h-auto rounded-lg'>
                   <button className=' bg-gray-300 flex 
                   items-center justify-between
                    rounded-lg tracking-wider 
                    border-4 border-transparent md:mr-10
+                   
                    active:border-white duration-300
                    
                    '
