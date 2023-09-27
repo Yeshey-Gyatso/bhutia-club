@@ -38,8 +38,8 @@ const Navbar = () => {
                 <h1 className=' text-2xl'>ཡར་རྒྱས་ ཆོ༹གས་པོ།</h1>
             
               </div> ):( <div className='-ml-3 mt-4 '>
-                <h1 className=' text-base font-serif'>Bhutia Khayrab</h1>
-                <h1 className=' text-base font-serif'>Yargay Tshogpo</h1>
+                <h1 className=' text-base font-serif cursor-default'>Bhutia Khayrab</h1>
+                <h1 className=' text-base font-serif cursor-default'>Yargay Tshogpo</h1>
               </div> )
             }
             
