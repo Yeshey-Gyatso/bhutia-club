@@ -66,8 +66,8 @@ const Contact = () => {
             className="relative h-[700px] rounded-lg shadow-lg shadow-black/20">
             <iframe
               src="https://maps.google.com/maps?q=MAKHIM - Bhutia Kay-Rab Yargay Tshogpo Centre, Sadar PS Road, Gangtok, Sikkim 737101&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              className="absolute left-0 top-0 h-full w-full rounded-lg"
-              frameBorder="0"
+              className="absolute md:left-0 md:top-0 md:h-full w-full rounded-lg"
+             
               allowFullScreen></iframe>
           </div>
         </div>
