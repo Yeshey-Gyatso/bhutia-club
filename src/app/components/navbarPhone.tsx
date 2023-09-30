@@ -5,7 +5,7 @@ import { GrLanguage } from 'react-icons/gr';
 import { useRecoilState } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
 
-const NavP = () => {
+const Navp = () => {
     const [language,setLanguage]=useRecoilState(languageAtom);
   console.log(language);
   const [isOpen,setIsOpen]=useState(false)
@@ -71,4 +71,4 @@ const NavP = () => {
   )
 }
 
-export default NavP
+export default Navp

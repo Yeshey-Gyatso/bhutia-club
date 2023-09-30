@@ -9,7 +9,7 @@ import React, { useContext, useState } from 'react'
 import { useRecoilState } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
 import { Link, Element } from 'react-scroll'
-import NavP from './navbarPhone';
+import Navp from './navbarPhone';
 const Navbar = () => {
   const [language,setLanguage]=useRecoilState(languageAtom);
   console.log(language);
@@ -214,7 +214,7 @@ const Navbar = () => {
               </li>
 {/* ///////////phone nav bar here ///////// */}
               <li className='block md:hidden'>
-              <NavP />
+              <Navp/>
               </li>
             </ul>           
         </div>
