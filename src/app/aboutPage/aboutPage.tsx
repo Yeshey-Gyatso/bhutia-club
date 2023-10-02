@@ -25,7 +25,7 @@ const AboutPage = () => {
         <section className="max-w-4xl mx-auto p-4 bg-white rounded-lg shadow-md">
           <h1 className="text-3xl font-semibold mb-4">About Us</h1>
           <p className="text-gray-700">
-            Welcome to Your Organsiaation Name! We are a dedicated team of professionals passionate about delivering high-quality products and services to our customers.
+            Welcome to Bhutia Khayrab Yargay Tshogpo! We are a dedicated team of professionals passionate about delivering high-quality products and services to our customers.
           </p>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Our Mission</h2>
