@@ -30,7 +30,7 @@ const AboutPage = () => {
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Our Mission</h2>
           <p className="text-gray-700">
-            At Bhutia Khayrab Yargay Tshogpoe, our mission is to provide innovative solutions that meet our customers' needs. We strive for excellence in everything we do and are committed to making a positive impact on the world.
+            At Bhutia Khayrab Yargay Tshogpo, our mission is to provide innovative solutions that meet our customers' needs. We strive for excellence in everything we do and are committed to making a positive impact on the world.
           </p>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Our Vision</h2>
