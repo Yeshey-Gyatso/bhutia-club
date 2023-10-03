@@ -35,7 +35,7 @@ const AboutPage = () => {
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Our Vision</h2>
           <p className="text-gray-700">
-            Our team is comprised of experienced professionals who bring diverse skills and expertise to the table. We work collaboratively to achieve our goals and exceed our customers' expectations.
+            Our team is comprised of experienced professionals who bring diverse skills and expertise to the table. We work collaboratively achieve our goals and exceed our customers' expectations.
           </p>
         </section>
       </main>
