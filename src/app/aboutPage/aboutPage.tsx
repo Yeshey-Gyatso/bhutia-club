@@ -3,12 +3,13 @@ import logoT from '../public/logoT.png';
 import Image from 'next/image'
 import Navbar from '../components/navbar';
 import Link from 'next/link';
+import Link from 'next/link';
 const AboutPage = () => {
   return (
     <div>
         
          <div className=' flex flex-row justify-center items-center mt-10'>
-        <div className=' p-2 '>
+        <div className='p-2'>
 
         <Image 
               src={logoT} 
@@ -63,10 +64,21 @@ const AboutPage = () => {
                 </Link>  
           </div>
                  
+          <div className='flex justify-center items-center'>
+        <Link className='text-black bg-transparent px-6 py-3 
+                 my-8 mx-auto flex items-center rounded-md border
+                  border-black hover:scale-110 duration-300'
+                  href={"/"}
+                  >
+                  Home
+                </Link>
+        </div>
         </section>
         
       </main>
+      
       </div>
+      
     </div>
    
   )

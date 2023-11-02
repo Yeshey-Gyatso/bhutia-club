@@ -23,7 +23,7 @@ const PageSelector = () => {
 //just got the data
 
     return (
-    <div className="overflow-x-hidden ">
+    <div className="overflow-x-hidden">
       <RecoilRoot>
       <Navbar/>
       <Landing1/>
