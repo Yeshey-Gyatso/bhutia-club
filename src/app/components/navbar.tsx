@@ -118,6 +118,23 @@ const Navbar = () => {
             )
           }
 
+{//blog
+            language?(
+              <div className=' -mt-2'>
+                <h1><a href ="blog"   
+                className='cursor-pointer hover:text-gray-300 text-3xl'>ཆོ༹གང།</a></h1>   
+
+              </div>
+
+            ):(
+            <h1><a href = "blog" 
+              className='cursor-pointer
+             hover:text-gray-300 
+             text-lg font-serif'> Blog</a></h1>   
+
+            )
+          }
+
 
 {/* ?//////////VOCAB//////// */}
 
