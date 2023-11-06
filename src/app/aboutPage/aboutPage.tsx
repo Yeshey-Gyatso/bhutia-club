@@ -53,8 +53,16 @@ const AboutPage = () => {
               the Northern villages of Lachen and Lachung are called by the names of these
               villages.
           </p>
-
-          
+          <div className=' flex justify-center items-center'>
+          <Link className='text-black bg-transparent px-6 py-3 
+                 my-8 mx-auto flex items-center rounded-md border
+                  border-black hover:scale-110 duration-300'
+                  href={"/"}
+                  >
+                 home
+                </Link>  
+          </div>
+                 
         </section>
         
       </main>
