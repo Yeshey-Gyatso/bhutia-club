@@ -19,7 +19,7 @@ const About = () => {
   return (
     <div 
     
-    id='about'
+    
     className='
     h-screen w-full pt-4
     bg-gradient-to-b from-white via-blue-100 to-sky-500'>
