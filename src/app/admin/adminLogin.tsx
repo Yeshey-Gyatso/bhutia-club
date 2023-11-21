@@ -25,15 +25,15 @@ const AdminLogin = () => {
       return;
     }
   try {
-    // const result = await adminlogin(user);
-    console.log(result)
+    // const result = await adminlogin(user); get this from admnin services api call
+    // console.log(result)
     toast.success("Logged in successfully",{
         position:"bottom-center",
       });
 
         //redirect
         // context.setUser(result.user);
-        router.push("admin/courses")
+        router.push("admin/other")
        
          } catch (error:any) {
             console.log(error);
