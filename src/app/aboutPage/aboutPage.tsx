@@ -1,8 +1,6 @@
 import React from 'react'
 import logoT from '../public/logoT.png';
 import Image from 'next/image'
-import Navbar from '../components/navbar';
-import Link from 'next/link';
 import Link from 'next/link';
 const AboutPage = () => {
   return (
