@@ -2,8 +2,8 @@
 // import UserContext from '@/context/userContext';
 // import { adminlogin } from '@/services/adminServices';
 import { useRouter } from 'next/navigation';
-import React, { useContext, useState } from 'react'
-import toast, { Toaster } from 'react-hot-toast';
+import React, { useState } from 'react'
+import { toast } from 'react-hot-toast';
 
 const AdminLogin = () => {
 
@@ -19,7 +19,7 @@ const AdminLogin = () => {
     console.log(user);
 //   input validation
     if(user.username.trim()==="" || user.password.trim()===""){
-      toast.info("data cannot be empty!",{
+      toast.error("data cannot be empty!",{
         position:"top-center"
       });
       return;
