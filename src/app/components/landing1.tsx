@@ -101,7 +101,7 @@ const Landing1 = () => {
                        
                      </div>
                      <div className=' absolute inset-x-96 inset-y-64 pl-7 pt-4'>
-                     <Link to ='contact' spy={true} smooth={true} offset={-70} duration={500}  className='group
+                     {/* <Link to ='contact' spy={true} smooth={true} offset={-70} duration={500}  className='group
                       text-white w-fit px-6 py-3 my-2 flex 
                      items-center rounded-md  bg-black
                      shadow-md
@@ -113,7 +113,7 @@ const Landing1 = () => {
                         >
                         <GiMailbox size={40} className=' ml-1'/>
                         </span>
-                    </Link>
+                    </Link> */}
                      </div>
                      
 
