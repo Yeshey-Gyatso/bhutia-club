@@ -3,7 +3,7 @@
 // import { adminlogin } from '@/services/adminServices';
 import { useRouter } from 'next/navigation';
 import React, { useContext, useState } from 'react'
-import { toast } from 'react-toastify';
+import toast, { Toaster } from 'react-hot-toast';
 
 const AdminLogin = () => {
 
