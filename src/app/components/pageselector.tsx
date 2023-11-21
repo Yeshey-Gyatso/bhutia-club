@@ -33,10 +33,10 @@ const PageSelector = () => {
       <Contact/>
       <Page4/>
 
-      <div className=''>
+      {/* <div className=''>
       
-      </div>
-      <div  className=" ">
+      </div> */}
+      {/* <div  className=" ">
       <Landing2 />
       </div>
       <div className=''>
@@ -48,7 +48,7 @@ const PageSelector = () => {
       </div>
       <div className=' hidden'>
       <AboutPage/>
-      </div>
+      </div> */}
       </RecoilRoot>
     
   </div>
