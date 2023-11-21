@@ -27,13 +27,26 @@ const AdminLogin = () => {
   try {
     // const result = await adminlogin(user); get this from admnin services api call
     // console.log(result)
-    toast.success("Logged in successfully",{
-        position:"bottom-center",
-      });
+    if (user.username==="admin" && user.password==="qwer")
+    {
+        toast.success("Logged in successfully",{
+                position:"top-center",
+              });
+        router.push("admin/other")
+    }
+    else{
+        toast.error("Logged in error",{
+            position:"top-center",
+          });
+
+    }
+    // toast.success("Logged in successfully",{
+    //     position:"top-center",
+    //   });
 
         //redirect
         // context.setUser(result.user);
-        router.push("admin/other")
+        // router.push("admin/other")
        
          } catch (error:any) {
             console.log(error);
