@@ -27,6 +27,7 @@ const AdminLogin = () => {
   try {
     // const result = await adminlogin(user); get this from admnin services api call
     // console.log(result)
+
     if (user.username==="admin" && user.password==="qwer")
     {
         toast.success("Logged in successfully",{
@@ -71,7 +72,7 @@ const AdminLogin = () => {
                 <input 
                  type="name"
                  className='w-full p-3 rounded-2xl bg-gray-800 
-                 focus:ring-gray-400 border-gray-800' 
+                 focus:ring-gray-400 border-gray-800 text-white' 
                  placeholder='Enter your name here'
                  id='user_name'
                  onChange={(e)=>{
@@ -95,7 +96,9 @@ const AdminLogin = () => {
                 <input 
                  type="password"
                  className='w-full p-3 rounded-2xl bg-gray-800 
-                 focus:ring-gray-400 border-gray-800' 
+                 focus:ring-gray-400 border-gray-800
+                 text-white
+                 ' 
                  placeholder='Enter your password here'
                  id='user_password'
                  onChange={(e)=>{
