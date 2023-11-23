@@ -1,6 +1,8 @@
 import './globals.css'
-import type { Metadata } from 'next'
+import type { AppProps } from 'next/app'
 import { Inter } from 'next/font/google'
+import { appWithTranslation } from 'next-i18next'
+import { Metadata } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,17 +11,14 @@ export const metadata: Metadata = {
   description: 'Bhutia Website',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+const RootLayout: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <html lang="en">
       <body className={inter.className}>
-        
-        {children}
-        </body>
+        <Component {...pageProps} />
+      </body>
     </html>
   )
 }
+
+export default appWithTranslation(RootLayout)
