@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useRecoilValue } from 'recoil';
 import { authAtom } from '@/app/recoil/auth';
-import PannelContent from './pannelContent';
+
 
 const Pannel = () => {
   const adminSignedIn = useRecoilValue(authAtom);
