@@ -1,9 +1,10 @@
 import React from 'react'
-import Other from './other'
+
+import Pannel from './other'
 
 const OtherPage = () => {
   return (
-    <div><Other/></div>
+    <div><Pannel/></div>
   )
 }
 
