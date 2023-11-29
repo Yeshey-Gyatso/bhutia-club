@@ -1,13 +1,14 @@
 "use client";
-// import UserContext from '@/context/userContext';
-// import { adminlogin } from '@/services/adminServices';
+
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 import { toast } from 'react-hot-toast';
+import { authAtom } from '../recoil/auth';
+import { useRecoilState } from 'recoil';
 
 const AdminLogin = () => {
+  const [adminSignedIn,setadminSignedIn]=useRecoilState(authAtom);
 
-//   const context=useContext(UserContext);
   const router=useRouter();
   const [user,setUser]=useState({
     username:"",
@@ -29,11 +30,12 @@ const AdminLogin = () => {
     // console.log(result)
 
     if (user.username==="admin" && user.password==="qwer")
-    {
+    {setadminSignedIn(true)
         toast.success("Logged in successfully",{
                 position:"top-center",
               });
         router.push("admin/other")
+        
     }
     else{
         toast.error("Logged in error",{
@@ -41,13 +43,7 @@ const AdminLogin = () => {
           });
 
     }
-    // toast.success("Logged in successfully",{
-    //     position:"top-center",
-    //   });
-
-        //redirect
-        // context.setUser(result.user);
-        // router.push("admin/other")
+   
        
          } catch (error:any) {
             console.log(error);
