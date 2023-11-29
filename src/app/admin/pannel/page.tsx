@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Pannel from './other'
+import Pannel from './pannel'
 
 const OtherPage = () => {
   return (
