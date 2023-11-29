@@ -34,7 +34,7 @@ const AdminLogin = () => {
         toast.success("Logged in successfully",{
                 position:"top-center",
               });
-        router.push("admin/other")
+        router.push("admin/pannel")
         
     }
     else{
