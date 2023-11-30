@@ -1,11 +1,16 @@
-
+"use client"
+import { RecoilRoot } from 'recoil'
 import ContactUs from './contactUs'
 
 
 
-export default function Home() {
+export default function ContactUsPage() {
   return (<div>
-   <ContactUs/>
+    <RecoilRoot>
+      
+      <ContactUs/>
+      </RecoilRoot>
+   
   </div>
   )
 }

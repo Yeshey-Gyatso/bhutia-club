@@ -7,7 +7,7 @@ import logoT from '../public/logoT.png';
 import React, { useContext, useState } from 'react'
 import { useRecoilState } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
-import { Link, Element } from 'react-scroll'
+import Link from 'next/link';
 import MobileMenu from './mobilemenu';
 const Navbar = () => {
   const [language,setLanguage]=useRecoilState(languageAtom);
@@ -54,12 +54,12 @@ const Navbar = () => {
             {
               language?(
                 <div className=' -mt-2'> 
-                    <h1><Link to="home"  spy={true} smooth={true} offset={-70} duration={500} className=' cursor-pointer hover:text-gray-300 text-3xl '>ཁྱིམ།</Link></h1>   
+                    <h1><Link href="/home"   className=' cursor-pointer hover:text-gray-300 text-3xl '>ཁྱིམ།</Link></h1>   
 
                 </div>
 
               ):(
-            <h1><Link to="home"  spy={true} smooth={true} offset={-70} duration={500}  className=' cursor-pointer hover:text-gray-300
+            <h1><Link href="/home"    className=' cursor-pointer hover:text-gray-300
             
             text-lg font-serif'>Home</Link></h1>   
 
@@ -72,13 +72,13 @@ const Navbar = () => {
             language?
             (
               <div className=' -mt-2'>
-                  <h1><Link to='about' spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer hover:text-gray-300  text-3xl'>སྐོར་ལོ།</Link></h1>
+                  <h1><Link href='about'   className='cursor-pointer hover:text-gray-300  text-3xl'>སྐོར་ལོ།</Link></h1>
 
               </div>
 
             ):
             (
-            <h1><Link to ='about' spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer hover:text-gray-300  font-serif text-lg'>About</Link></h1>
+            <h1><Link href ='about'   className='cursor-pointer hover:text-gray-300  font-serif text-lg'>About</Link></h1>
 
             )
           }
@@ -88,12 +88,12 @@ const Navbar = () => {
           {
             language?(
               <div className=' -mt-2'>
-                <h1><Link to = "team" spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer hover:text-gray-300 text-3xl'>ཆོ༹གས་ཆུང།</Link></h1>   
+                <h1><Link href = "team"   className='cursor-pointer hover:text-gray-300 text-3xl'>ཆོ༹གས་ཆུང།</Link></h1>   
 
               </div>
 
             ):(
-            <h1><Link to = "team" spy={true} smooth={true} offset={-70} duration={500}  className='cursor-pointer
+            <h1><Link href= "team"   className='cursor-pointer
              hover:text-gray-300 
              text-lg font-serif'> Team</Link></h1>   
 
@@ -103,13 +103,13 @@ const Navbar = () => {
           {
             language?(
               <div className=' -mt-2'>
-                <h1><Link to = "contact" spy={true} smooth={true} offset={-70} duration={500}  
+                <h1><Link href= "contactUs"   
                 className='cursor-pointer hover:text-gray-300 text-3xl'>ཆོ༹གས་ཆུང།</Link></h1>   
 
               </div>
 
             ):(
-            <h1><Link to = "contact" spy={true} smooth={true} offset={-70} duration={500}
+            <h1><Link href = "contactUs" 
               className='cursor-pointer
              hover:text-gray-300 
              text-lg font-serif'> Contact</Link></h1>   

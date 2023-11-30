@@ -7,6 +7,7 @@ import Link from 'next/link';
 const ContactUs = () => {
   return (
     <div className=' bg-gray-200'>
+      <Navbar/>
       <div className=' '>
         
       </div>

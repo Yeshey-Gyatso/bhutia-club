@@ -3,7 +3,7 @@ import logoT from '../public/logoT.png';
 import Image from 'next/image'
 import Link from 'next/link';
 import Navbar from '../components/navbar';
-const AboutPage = () => {
+const About = () => {
   return (
     
     <div>
@@ -84,4 +84,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default About

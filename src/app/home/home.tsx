@@ -6,12 +6,11 @@ import Navbar from '../components/navbar'
 import Page1 from '../components/page1'
 import Team from '../components/team'
 import About from '../components/about'
-import Page4 from '../components/page4'
+
 import Contact from '../components/contactUs'
-const PageSelector = () => {
-  const [landing,setLanding]=useState(0);
-//   console.log(landing);
-//just got the data
+const Home = () => {
+  
+
 
     return (
     <div className="overflow-x-hidden">
@@ -22,11 +21,11 @@ const PageSelector = () => {
       <Page1/>
       <Team/>
       <Contact/>
-      <Page4/>
+      
      
     
   </div>
   )
 }
 
-export default PageSelector
+export default Home

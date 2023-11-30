@@ -1,9 +1,8 @@
 
-import PageSelector from './components/pageselector'
 
-export default function Home() {
-  return (<div>
-   <PageSelector/>
-  </div>
+import HomePage from './home/page'
+
+export default function RootApp() {
+  return (<HomePage/>
   )
 }

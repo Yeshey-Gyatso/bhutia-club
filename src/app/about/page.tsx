@@ -1,13 +1,13 @@
 "use client"
 import { RecoilRoot } from 'recoil'
 import { metadata } from '../layout'
-import AboutPage from './aboutPage'
+import About from './aboutPage'
 
 
-export default function Home() {
+export default function AboutPage() {
   return (
    <RecoilRoot>
-    <AboutPage/>
+    <About/>
     </RecoilRoot>
    
   
