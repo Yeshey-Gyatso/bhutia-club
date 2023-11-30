@@ -1,9 +1,11 @@
+"use client"
 import React from 'react'
 import Team from './team'
+import { RecoilRoot } from 'recoil'
 
 const TeamPage = () => {
   return (
-    <Team/>
+    <RecoilRoot><Team/></RecoilRoot>
   )
 }
 
