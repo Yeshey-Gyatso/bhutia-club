@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useRecoilValue } from 'recoil';
 import { authAtom } from '@/app/recoil/auth';
+import Link from 'next/link';
 
 
 const Pannel = () => {
@@ -22,6 +23,7 @@ const Pannel = () => {
         return <div>Team Content</div>;
       case 'Others':
         return <div>Others Content</div>;
+        
       default:
         return <div className='text-4xl'>Select a button to change the content</div>;
     }
@@ -63,6 +65,12 @@ const Pannel = () => {
           >
             Others
           </button>
+          <Link
+            href={"/home"}
+            className='p-4 rounded-lg w-1/2 bg-green-500 text-3xl text-center'
+          >
+            Home
+          </Link>
         </div>
         <div className='w-full h-screen flex justify-center items-center'>{renderContent()}</div>
       </div>
