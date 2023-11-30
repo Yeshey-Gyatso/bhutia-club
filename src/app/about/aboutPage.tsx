@@ -6,9 +6,9 @@ import Navbar from '../components/navbar';
 const About = () => {
   return (
     
-    <div>
+    <div className=' h-screen w-screen flex justify-center '>
         <Navbar/>
-         <div className=' flex flex-row justify-center items-center mt-10'>
+         <div className=' flex flex-row justify-center items-center pt-24 '>
         <div className='p-2'>
 
         <Image 
@@ -65,13 +65,7 @@ const About = () => {
           </div>
                  
           <div className='flex justify-center items-center'>
-        <Link className='text-black bg-transparent px-6 py-3 
-                 my-8 mx-auto flex items-center rounded-md border
-                  border-black hover:scale-110 duration-300'
-                  href={"/"}
-                  >
-                  Home
-                </Link>
+        
         </div>
         </section>
         

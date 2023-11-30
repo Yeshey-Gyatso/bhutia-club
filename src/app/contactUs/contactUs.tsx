@@ -6,7 +6,7 @@ import Navbar from '../components/navbar';
 import Link from 'next/link';
 const ContactUs = () => {
   return (
-    <div className=' bg-gray-200'>
+    <div className=' h-screen w-screen bg-gray-200 flex '>
       <Navbar/>
       <div className=' '>
         
