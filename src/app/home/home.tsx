@@ -1,13 +1,13 @@
 "use client"
 import React, { useState } from 'react'
-import Landing1 from './landing1'
-import Navbar from './navbar'
-import { RecoilRoot } from 'recoil'
-import Page1 from './page1'
-import Team from './team'
-import About from './about'
-import Page4 from './page4'
-import Contact from './contactUs'
+import Landing1 from '../components/landing1'
+import Navbar from '../components/navbar'
+
+import Page1 from '../components/page1'
+import Team from '../components/team'
+import About from '../components/about'
+import Page4 from '../components/page4'
+import Contact from '../components/contactUs'
 const PageSelector = () => {
   const [landing,setLanding]=useState(0);
 //   console.log(landing);
@@ -15,7 +15,7 @@ const PageSelector = () => {
 
     return (
     <div className="overflow-x-hidden">
-      <RecoilRoot>
+     
       <Navbar/>
       <Landing1/>
       <About/>
@@ -23,7 +23,7 @@ const PageSelector = () => {
       <Team/>
       <Contact/>
       <Page4/>
-      </RecoilRoot>
+     
     
   </div>
   )

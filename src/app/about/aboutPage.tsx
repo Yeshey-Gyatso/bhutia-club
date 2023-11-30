@@ -2,10 +2,12 @@ import React from 'react'
 import logoT from '../public/logoT.png';
 import Image from 'next/image'
 import Link from 'next/link';
+import Navbar from '../components/navbar';
 const AboutPage = () => {
   return (
+    
     <div>
-        
+        <Navbar/>
          <div className=' flex flex-row justify-center items-center mt-10'>
         <div className='p-2'>
 

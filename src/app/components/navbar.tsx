@@ -4,12 +4,10 @@ import {AiOutlineCaretDown,AiOutlineCaretUp} from "react-icons/ai";
 import {GrLanguage} from "react-icons/gr";
 import Flag from '../assets/flag.svg';
 import logoT from '../public/logoT.png';
-import { useRouter } from 'next/navigation';
 import React, { useContext, useState } from 'react'
 import { useRecoilState } from 'recoil';
 import { languageAtom } from '../recoil/atoms';
 import { Link, Element } from 'react-scroll'
-import Navp from './navbarPhone';
 import MobileMenu from './mobilemenu';
 const Navbar = () => {
   const [language,setLanguage]=useRecoilState(languageAtom);

@@ -101,7 +101,7 @@ const About = () => {
                 <br /><br />
                 </p>
                 <Link
-            href="aboutPage" // Replace "portfolio" with the actual ID of the target section
+            href="about" 
               className="group text-white w-fit 
               px-6 py-3 
               my-2 flex 
