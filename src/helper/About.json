@@ -1,23 +1,22 @@
 {
    "about": {
-      "title": {
+      "title1": {
         "en": "About Us",
         "bh": "À propos de nous"
       },
-      "content": {
+      "content1": {
+        "en": "Learn more about our company.",
+        "bh": "En savoir plus sur notre entreprise."
+      },
+      "title2": {
+        "en": "About Us",
+        "bh": "À propos de nous"
+      },
+      "content2": {
         "en": "Learn more about our company.",
         "bh": "En savoir plus sur notre entreprise."
       }
-    },
-    "contact": {
-      "title": {
-        "en": "Contact Us",
-        "bh": "Contactez-nous"
-      },
-      "content": {
-        "en": "Get in touch with us.",
-        "bh": "Prenez contact avec nous."
-      }
     }
+   
   }
   
