@@ -33,6 +33,9 @@ const Pannel = () => {
     <div className='h-screen w-screen'>
       <div className='flex flex-row'>
         <div className='h-screen flex flex-col gap-8 w-1/3 bg-gray-500 justify-center items-center'>
+          <div className=' relative'>
+                <h1 className=' text-white text-bold text-5xl'  >Select Section</h1>
+          </div>
           <button
             onClick={() => handleButtonClick('About')}
             className={`text-3xl cursor-pointer ${

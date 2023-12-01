@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import { toast } from 'react-hot-toast';
 import { authAtom } from '../recoil/auth';
 import { useRecoilState } from 'recoil';
+import Image from 'next/image';
 
 const AdminLogin = () => {
   const [adminSignedIn,setadminSignedIn]=useRecoilState(authAtom);
@@ -54,17 +55,25 @@ const AdminLogin = () => {
    }
 
   return (
-    <div className='grid grid-cols-12 justify-center'>
-        <div className='  col-span-4 col-start-5'>
-          <div className=' p-5'>
+    <div className='w-screen h-screen '>
+      <Image className=' opacity-50 -z-10'
+        src="/bg1.jpg"
+        alt="Background Image"
+        layout="fill"
+        objectFit="cover"
+        loading="lazy"
+      />
+        <div className='w-screen h-screen flex justify-center items-center '>
+          
+          <div className=' w-1/2 h-1/2 p-5 bg-black/40 rounded-xl'>
 
-            <h1 className=' text-3xl text-center'>ADMIN  Login here</h1>
-            <form action="#!" onSubmit={doLogin} className='mt-5'  >
+            <h1 className=' text-4xl text-white text-bold text-center'>ADMIN LOGIN HERE</h1>
+            <form action="#!" onSubmit={doLogin} className='mt-5 '  >
               {/* username */}
               <div className=' mt-5'>
                 <label htmlFor="user_name"
-                className='block text-sm font-medium mb-2 ps-1'
-                >username</label>
+                className='block text-xl font-medium mb-2 ps-1 text-white'
+                >Username</label>
                 <input 
                  type="name"
                  className='w-full p-3 rounded-2xl bg-gray-800 
@@ -87,7 +96,7 @@ const AdminLogin = () => {
               {/* password */}
               <div className=' mt-5'>
                 <label htmlFor="user_password"
-                className='block text-sm font-medium mb-2 ps-1'
+                className='block text-xl font-medium mb-2 ps-1 text-white'
                 >Password</label>
                 <input 
                  type="password"
@@ -108,16 +117,16 @@ const AdminLogin = () => {
                    
               </div>
 
-             <div className='flex justify-center gap-x-4 mt-4'>
+             <div className='flex justify-center items-center   mt-4'>
                     <button 
                     type='submit'
-                    className=' bg-blue-700 p-3 rounded-full
-                     hover:bg-blue-800 '>login</button>
+                    className='  border border-white bg-blue-200 p-4 rounded-3xl 
+                     hover:bg-blue-800 '>Login</button>
                      {/* <button className=' bg-orange-600 p-3 rounded-full
                      hover:bg-orange-800 '>Reset</button> */}
                 </div>
                     
-              {JSON.stringify(user)}
+              {/* {JSON.stringify(user)} */}
             </form>
           </div>
         </div>

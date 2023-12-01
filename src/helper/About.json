@@ -1,0 +1,23 @@
+{
+   "about": {
+      "title": {
+        "en": "About Us",
+        "bh": "À propos de nous"
+      },
+      "content": {
+        "en": "Learn more about our company.",
+        "bh": "En savoir plus sur notre entreprise."
+      }
+    },
+    "contact": {
+      "title": {
+        "en": "Contact Us",
+        "bh": "Contactez-nous"
+      },
+      "content": {
+        "en": "Get in touch with us.",
+        "bh": "Prenez contact avec nous."
+      }
+    }
+  }
+  
