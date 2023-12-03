@@ -1,5 +1,5 @@
-"use client"
-import React, { useState } from 'react'
+
+import React from 'react'
 import Landing1 from '../components/landing1'
 import Navbar from '../components/navbar'
 
@@ -14,16 +14,12 @@ const Home = () => {
 
     return (
     <div className="overflow-x-hidden">
-     
       <Navbar/>
       <Landing1/>
       <About/>
       <Page1/>
       <Team/>
-      <Contact/>
-      
-     
-    
+      <Contact/> 
   </div>
   )
 }
