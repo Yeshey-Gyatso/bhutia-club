@@ -8,6 +8,7 @@ import Team from '../components/team'
 import About from '../components/about'
 
 import Contact from '../components/contactUs'
+import Footer from '../components/footer'
 const Home = () => {
   
 
@@ -20,6 +21,7 @@ const Home = () => {
       <Page1/>
       <Team/>
       <Contact/> 
+      <Footer/>
   </div>
   )
 }
