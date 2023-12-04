@@ -15,12 +15,6 @@ export async function adminlogin(user:any){
 
     if (name === validAdminName && password === validAdminPassword) {
         console.log('Admin login successful');
-        const token=jwt.sign({
-            _id:user._id,
-            name:user.name
-        },process.env.JWT_KEY )
-
-        
         return true;
       } else {
         console.log('Admin login failed');

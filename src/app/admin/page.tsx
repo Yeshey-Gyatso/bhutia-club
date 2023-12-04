@@ -4,6 +4,7 @@ import AdminLogin from './adminLogin';
 
 export const metadata={
     title:"BKYT: Admin"
+    
 }; 
 
 const AdminPage = () => {

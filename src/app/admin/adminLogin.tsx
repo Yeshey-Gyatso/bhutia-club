@@ -30,6 +30,7 @@ const AdminLogin = () => {
   try {
     const result = await adminlogin(user); 
     console.log(result)
+    
     toast.success("Logged in successfully",{
       position:"top-center",
     });
