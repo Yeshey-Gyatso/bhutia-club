@@ -6,14 +6,15 @@
 //     const result = await fetch("/data/file.json")
 //     return result
 // }
-import jwt from 'jsonwebtoken';
+
 
 export async function adminlogin(user:any){
     const validAdminName = 'mellow';
+    
     const validAdminPassword = 'qwer';
-    const { name, password } = user;
-
-    if (name === validAdminName && password === validAdminPassword) {
+    const { username, password } = user;
+    console.log(username)
+    if (username === validAdminName && password === validAdminPassword) {
         return true;
       } else {
         

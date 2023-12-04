@@ -30,41 +30,35 @@ const AdminLogin = () => {
     const result = await adminlogin(user); 
     console.log(result)
     
-    result ? (
-      () => {
-        toast.success("Logged in successfully",{
-          position:"top-center",
-        });
-        const token=jwt.sign({
-          
-          name:user.username
-      },process.env.JWT_KEY )
-      console.log(token)
-        router.push("admin/pannel");
-      }
-     )() : (
-      () => {
-        toast.error("Logged in error",{
-          position:"top-center",
-        });
-      }
-     )();
-    
-   
-   
+    if (result) {
+      toast.success("Logged in successfully", {
+        position: "top-center",
+      });
 
+      // Check if JWT_KEY is defined before using it
+      if (process.env.JWT_KEY) {
+        const token = jwt.sign({
+          name: user.username,
+        }, process.env.JWT_KEY);
 
-    // 
-   
-       
-         } catch (error:any) {
-            console.log(error);
-              toast.error(error.response.data.message,{
-               position:"top-center",
-    });
+        console.log(token);
+        router.push("admin/panel");
+      } else {
+        console.error('JWT_KEY is not defined in the environment variables.');
+        // Handle the error appropriately
+      }
+    } else {
+      toast.error("Logged in error", {
+        position: "top-center",
+      });
     }
-   }
-
+  } catch (error: any) {
+    console.log(error);
+    toast.error(error.response?.data?.message || "Login error", {
+      position: "top-center",
+    });
+  }
+};
   return (
     <div className='w-screen h-screen '>
       <Image className=' opacity-50 -z-10'
