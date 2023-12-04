@@ -6,7 +6,7 @@
 //     const result = await fetch("/data/file.json")
 //     return result
 // }
-
+import jwt from 'jsonwebtoken';
 
 export async function adminlogin(user:any){
     const validAdminName = 'mellow';
