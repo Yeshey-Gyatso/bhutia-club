@@ -3,8 +3,7 @@
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 import { toast } from 'react-hot-toast';
-import { authAtom } from '../recoil/auth';
-import { useRecoilState } from 'recoil';
+import  jwt  from 'jsonwebtoken'; 
 import Image from 'next/image';
 import { adminlogin } from '@/services/adminService';
 
@@ -31,22 +30,31 @@ const AdminLogin = () => {
     const result = await adminlogin(user); 
     console.log(result)
     
-    toast.success("Logged in successfully",{
-      position:"top-center",
-    });
-      router.push("admin/pannel")
+    result ? (
+      () => {
+        toast.success("Logged in successfully",{
+          position:"top-center",
+        });
+        const token=jwt.sign({
+          
+          name:user.username
+      },process.env.JWT_KEY )
+      console.log(token)
+        router.push("admin/pannel");
+      }
+     )() : (
+      () => {
+        toast.error("Logged in error",{
+          position:"top-center",
+        });
+      }
+     )();
+    
+   
+   
 
 
-    // if (user.username==="admin" && user.password==="qwer")
-    // {
-      
-    // }
-    // else{
-    //     toast.error("Logged in error",{
-    //         position:"top-center",
-    //       });
-
-    // }
+    // 
    
        
          } catch (error:any) {

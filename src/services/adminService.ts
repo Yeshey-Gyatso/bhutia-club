@@ -14,10 +14,8 @@ export async function adminlogin(user:any){
     const { name, password } = user;
 
     if (name === validAdminName && password === validAdminPassword) {
-        console.log('Admin login successful');
         return true;
       } else {
-        console.log('Admin login failed');
         
         return false;
       }
