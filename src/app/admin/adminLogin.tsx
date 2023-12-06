@@ -36,22 +36,22 @@ const AdminLogin = () => {
       });
 
       // Check if JWT_KEY is defined before using it
-      if (process.env.JWT_KEY) {
-        const token = jwt.sign({
-          name: user.username,
-        }, process.env.JWT_KEY);
+      // if (process.env.JWT_KEY) {
+      //   const token = jwt.sign({
+      //     name: user.username,
+      //   }, process.env.JWT_KEY);
 
-        console.log(token);
-        router.push("admin/panel");
+        // console.log(token);
+        router.push("admin/pannsel");
       } else {
         console.error('JWT_KEY is not defined in the environment variables.');
         // Handle the error appropriately
       }
-    } else {
-      toast.error("Logged in error", {
-        position: "top-center",
-      });
-    }
+    // } else {
+    //   toast.error("Logged in error", {
+    //     position: "top-center",
+    //   });
+    // }
   } catch (error: any) {
     console.log(error);
     toast.error(error.response?.data?.message || "Login error", {

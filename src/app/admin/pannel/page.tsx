@@ -4,7 +4,7 @@ import Pannel from './pannel'
 
 const OtherPage = () => {
   return (
-    <div><Pannel/></div>
+    <Pannel/>
   )
 }
 

@@ -1,12 +1,10 @@
 "use client"
 import React, { useState } from 'react';
-import { useRecoilValue } from 'recoil';
-import { authAtom } from '@/app/recoil/auth';
+
 import Link from 'next/link';
 
 
 const Pannel = () => {
-  const adminSignedIn = useRecoilValue(authAtom);
   const [selectedButton, setSelectedButton] = useState<string | null>(null);
 
   const handleButtonClick = (buttonName: string) => {
@@ -29,7 +27,7 @@ const Pannel = () => {
     }
   };
 
-  return adminSignedIn ? (
+  return (
     <div className='h-screen w-screen'>
       <div className='flex flex-row'>
         <div className='h-screen flex flex-col gap-8 w-1/3 bg-gray-500 justify-center items-center'>
@@ -78,9 +76,10 @@ const Pannel = () => {
         <div className='w-full h-screen flex justify-center items-center'>{renderContent()}</div>
       </div>
     </div>
-  ) : (
-    <div>error page</div>
-  );
+  )
+  // ) : (
+  //   <div>error page</div>
+  // );
 };
 
 export default Pannel;
