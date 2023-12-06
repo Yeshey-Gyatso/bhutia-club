@@ -109,10 +109,10 @@ const Navbar = () => {
               </div>
 
             ):(
-            <h1><Link href = "contactUs" 
+            <div><Link href = "contactUs" 
               className='cursor-pointer
              hover:text-gray-300 
-             text-lg font-serif'> Contact</Link></h1>   
+             text-lg font-serif'> Contact</Link></div>   
 
             )
           }
@@ -120,16 +120,16 @@ const Navbar = () => {
 {//blog
             language?(
               <div className=' -mt-2'>
-                <div><a href ="blog"   
-                className='cursor-pointer hover:text-gray-300 text-3xl'>ཆོ༹གང།</a></div>   
+                <div><Link href ="blog"   
+                className='cursor-pointer hover:text-gray-300 text-3xl'>ཆོ༹གང།</Link></div>   
 
               </div>
 
             ):(
-            <div><a href = "blog" 
+            <div><Link href = "blog" 
               className='cursor-pointer
              hover:text-gray-300 
-             text-lg font-serif'> Blog</a></div>   
+             text-lg font-serif'> Blog</Link></div>   
 
             )
           }
@@ -141,13 +141,13 @@ const Navbar = () => {
             language?
             (
               <div className=' -mt-2'>
-                  <h1><a href='https://data-storage-sable.vercel.app/' className='cursor-pointer hover:text-gray-300  text-3xl text-fuchsia-800 font-bold'>BHUV</a></h1>
+                  <div><a href='https://data-storage-sable.vercel.app/' className='cursor-pointer hover:text-gray-300  text-3xl text-fuchsia-800 font-bold'>BHUV</a></div>
 
               </div>
 
             ):
             (
-            <h1><a href='https://data-storage-sable.vercel.app/' className='cursor-pointer hover:text-gray-300 text-lg text-fuchsia-800 font-bold font-serif '>Vocab</a></h1>
+            <div><a href='https://data-storage-sable.vercel.app/' className='cursor-pointer hover:text-gray-300 text-lg text-fuchsia-800 font-bold font-serif '>Vocab</a></div>
 
             )
           }
