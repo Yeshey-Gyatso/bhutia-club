@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import BlogCard from './blogcard'
 import Navbar from '../components/navbar'
@@ -6,7 +7,7 @@ const Blog = () => {
   return (
     <div >
       <Navbar/>
-<div className=' flex justify-center items-center h-full w-screen'>
+      <div className=' flex justify-center items-center h-full w-screen'>
       
       <div className=' flex flex-col p-4'> 
       <div className=' p-10'>
