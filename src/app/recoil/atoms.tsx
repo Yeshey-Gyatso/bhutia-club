@@ -1,19 +1,19 @@
-import { atom } from "recoil";
+import { atom, RecoilState, RecoilValue, Resetter, SetterOrUpdater } from "recoil";
 
-const localStorageEffect = (key: string) => ({setSelf, onSet}) => {
- const savedValue = localStorage.getItem(key)
- if (savedValue != null) {
-   setSelf(JSON.parse(savedValue));
- }
- onSet((newValue: any, _: any, isReset: any) => {
-   isReset
-     ? localStorage.removeItem(key)
-     : localStorage.setItem(key, JSON.stringify(newValue));
- });
+const localStorageEffect = (key: string) => ({ setSelf, onSet }: { setSelf: SetterOrUpdater<any>; onSet: (newValue: any) => void }) => {
+  const savedValue = localStorage.getItem(key);
+
+  if (savedValue != null) {
+    setSelf(JSON.parse(savedValue));
+  }
+
+  onSet((newValue: any) => {
+    localStorage.setItem(key, JSON.stringify(newValue));
+  });
 };
 
 export const languageAtom = atom({
- key:"language",
- default:false,
- effects_UNSTABLE: [localStorageEffect('language')],
+  key: "language",
+  default: false,
+  effects_UNSTABLE: [localStorageEffect('language')],
 });
