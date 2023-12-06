@@ -42,7 +42,7 @@ const AdminLogin = () => {
       //   }, process.env.JWT_KEY);
 
         // console.log(token);
-        router.push("admin/pannsel");
+        router.push("admin/pannel");
       } else {
         console.error('JWT_KEY is not defined in the environment variables.');
         // Handle the error appropriately
