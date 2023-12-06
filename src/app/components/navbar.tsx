@@ -72,13 +72,13 @@ const Navbar = () => {
             language?
             (
               <div className=' -mt-2'>
-                  <h1><Link href='about'   className='cursor-pointer hover:text-gray-300  text-3xl'>སྐོར་ལོ།</Link></h1>
+                  <div><Link href='about'   className='cursor-pointer hover:text-gray-300  text-3xl'>སྐོར་ལོ།</Link></div>
 
               </div>
 
             ):
             (
-            <h1><Link href ='about'   className='cursor-pointer hover:text-gray-300  font-serif text-lg'>About</Link></h1>
+            <div><Link href ='about'   className='cursor-pointer hover:text-gray-300  font-serif text-lg'>About</Link></div>
 
             )
           }
@@ -88,14 +88,14 @@ const Navbar = () => {
           {
             language?(
               <div className=' -mt-2'>
-                <h1><Link href = "team"   className='cursor-pointer hover:text-gray-300 text-3xl'>ཆོ༹གས་ཆུང།</Link></h1>   
+                <div><Link href = "team"   className='cursor-pointer hover:text-gray-300 text-3xl'>ཆོ༹གས་ཆུང།</Link></div>   
 
               </div>
 
             ):(
-            <h1><Link href= "team"   className='cursor-pointer
+            <div><Link href= "team"   className='cursor-pointer
              hover:text-gray-300 
-             text-lg font-serif'> Team</Link></h1>   
+             text-lg font-serif'> Team</Link></div>   
 
             )
           }
@@ -103,8 +103,8 @@ const Navbar = () => {
           {
             language?(
               <div className=' -mt-2'>
-                <h1><Link href= "contactUs"   
-                className='cursor-pointer hover:text-gray-300 text-3xl'>ཆོ༹གས་ཆུང།</Link></h1>   
+                <div><Link href= "contactUs"   
+                className='cursor-pointer hover:text-gray-300 text-3xl'>ཆོ༹གས་ཆུང།</Link></div>   
 
               </div>
 

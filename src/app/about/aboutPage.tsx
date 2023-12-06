@@ -36,7 +36,7 @@ const About = () => {
               language?(<h1>About Us in bhutia</h1>):(<h1>About Us</h1>)
             }
             </h1>
-          <p className="text-gray-700 text-sm">
+          <div className="text-gray-700 text-sm">
             {
               language ? (
                   <p>in bhutia</p>
@@ -46,16 +46,16 @@ const About = () => {
             }
            
           
-          </p>
+          </div>
 
-          <h2 className="text-lg font-semibold mt-8 mb-4">
+          <div className="text-lg font-semibold mt-8 mb-4">
             {
               language?(<h2>About Denjongke in bhutia</h2>):(<h2>About Denjongke</h2>)
             }
             
             
-            </h2>
-          <p className="text-gray-700 text-sm">
+            </div>
+          <div className="text-gray-700 text-sm">
             {
               language?(<p>bhutia-  Denjongke is a Tibetic (Tournadre 2008: 283) language, spoken in the formerly
               independent kingdom of Sikkim, which is now a state of India. One of the most
@@ -101,7 +101,7 @@ const About = () => {
               villages.</p>)
             }
                       
-          </p>
+          </div>
           <div className=' flex justify-center items-center'>
           <Link className='text-black bg-transparent px-6 py-3 
                  my-8 mx-auto flex items-center rounded-md border

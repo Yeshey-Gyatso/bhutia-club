@@ -8,7 +8,6 @@ export default function HomeLayout({ children }: {
   }){
     return (<div>
         <RecoilRoot>
-        <Navbar/>
         <div>{children}</div>
         </RecoilRoot>
         
