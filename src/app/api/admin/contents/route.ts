@@ -1,32 +1,20 @@
+// pages/api/about.js
+import fs from 'fs';
+import { join } from 'path';
 
-   import { getData, updateData } from "@/services/adminService";
-import { NextResponse } from "next/server";
-import { join } from "path";
-
-   export async function GET(req:Request, res:NextResponse) {
-     if (req.method === 'GET') {
-        const dataDirectory = join(process.cwd(), 'about.json');
-       const data = getData();
-    //    res.status(200).json(data.posts);
-    return NextResponse.json(data);
-    
-     } else {
-        return getResponseMessage("error in getting data !!" ,404,false);
-     }
-   }
-
-   export async function POST(req:Request, res:NextResponse) {
-    if (req.method === 'POST') {
-      const newPost = req.body;
-      const data = getData();
-      data.posts.push(newPost);
-      updateData(data);
-      return NextResponse.json(newPost);
-    } else {
-        return getResponseMessage("error in getting data !!" ,404,false);
-    }
+export default function handler(req, res) {
+  if (req.method === 'GET') {
+    const dataDirectory = join(process.cwd(), 'about.json');
+    const rawData = fs.readFileSync(dataDirectory);
+    const data = JSON.parse(rawData);
+    res.status(200).json(data);
+  } else if (req.method === 'POST') {
+    const newData = req.body;
+    const stringifiedData = JSON.stringify(newData, null, 2);
+    const dataDirectory = join(process.cwd(), 'about.json');
+    fs.writeFileSync(dataDirectory, stringifiedData);
+    res.status(200).json(newData);
+  } else {
+    res.status(405).end(); // Method Not Allowed
   }
-
-function getResponseMessage(arg0: string, arg1: number, arg2: boolean) {
-    throw new Error("Function not implemented.");
 }

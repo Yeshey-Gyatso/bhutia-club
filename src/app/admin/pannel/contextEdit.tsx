@@ -1,7 +1,7 @@
 "use client"
     import { useEffect, useState } from 'react';
-
-    export default function Home() {
+    import axios from 'axios';
+    export default function AboutPannel() {
       const [about, setAbout] = useState({ title: '', description: '' });
 
       useEffect(() => {

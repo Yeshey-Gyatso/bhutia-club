@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 
 import Link from 'next/link';
+import AboutPannel from './contextEdit';
 
 
 const Pannel = () => {
@@ -14,7 +15,7 @@ const Pannel = () => {
   const renderContent = () => {
     switch (selectedButton) {
       case 'About':
-        return <div>About Content</div>;
+        return <div><AboutPannel/></div>;
       case 'Contact':
         return <div>Contact Content</div>;
       case 'Team':
