@@ -11,7 +11,7 @@ const About = () => {
   return (
     
     <div className=' h-screen w-screen flex justify-center '>
-       
+        <Navbar/>
          <div className=' flex flex-row justify-center items-center pt-24 '>
         <div className='p-2'>
 
