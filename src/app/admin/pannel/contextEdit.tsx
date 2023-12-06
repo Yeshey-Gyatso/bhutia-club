@@ -1,24 +1,34 @@
-"use client"
-    import { useEffect, useState } from 'react';
-    import axios from 'axios';
-    export default function AboutPannel() {
-      const [about, setAbout] = useState({ title: '', description: '' });
+import React, { useEffect, useState } from 'react';
 
-      useEffect(() => {
-        async function fetchAbout() {
-          const response = await fetch('/api/admin/contents');
-          const about = await response.json();
-          setAbout(about);
+const AboutComponent = () => {
+  const [aboutData, setAboutData] = useState({ title: '', description: '' });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/api/admin/contents');
+        
+        if (!response.ok) {
+          throw new Error(`Request failed with status: ${response.status}`);
         }
 
-        fetchAbout();
-      }, []);
+        const data = await response.json();
+        setAboutData(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        // Handle the error appropriately
+      }
+    };
 
-      return (
-        <div>
-          <h1>{about.title}</h1>
-          <p>{about.description}</p>
-        </div>
-      );
-    }
-   
+    fetchData();
+  }, []); // Empty dependency array means this effect runs once when the component mounts
+
+  return (
+    <div>
+      <h1>{aboutData.title}</h1>
+      <p>{aboutData.description}</p>
+    </div>
+  );
+};
+
+export default AboutComponent;
