@@ -6,7 +6,7 @@ import { join } from 'path';
 export async function GET(req:Request, res:NextResponse) {
   if (req.method === 'GET') {
     const dataDirectory = join(process.cwd(), 'about.json');
-    const rawData = fs.readFileSync(dataDirectory);
+    const rawData = fs.readFileSync(dataDirectory, 'utf-8');
     const data = JSON.parse(rawData);
     return NextResponse.json(data)
   } else {
