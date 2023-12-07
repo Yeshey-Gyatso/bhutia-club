@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 
 import Link from 'next/link';
-import AboutPannel from './contextEdit';
+import AboutPannel from './aboutPannel';
+
 
 
 const Pannel = () => {
