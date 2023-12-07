@@ -33,8 +33,14 @@ const AboutComponent = () => {
 
   return (
     <div className=' '>
-      <h1>{aboutData.title}</h1>
-      <p>{aboutData.description}</p>
+      <h1>{aboutData.title1}</h1>
+      <p>{aboutData.description1}</p>
+      <h1>{aboutData.title2}</h1>
+      <p>{aboutData.description2}</p>
+      <h1>{aboutData.btitle1}</h1>
+      <p>{aboutData.bdescription1}</p>
+      <h1>{aboutData.btitle2}</h1>
+      <p>{aboutData.bdescription2}</p>
     </div>
   );
 };
