@@ -18,15 +18,15 @@ export async function GET(req:Request, res:NextResponse) {
 export async function POST(req: Request, res: NextResponse) {
   if (req.method === 'POST') {
     try {
-      const { title1, description1,title2, description2,
-      btitle1, bdescription1,btitle2, bdescription2 } = await req.json();
+      const { title1, description1, title2, description2,
+      btitle1, bdescription1, btitle2, bdescription2 } = await req.json();
 
       const dataDirectory = join(process.cwd(), 'about.json');
 
       // Create a new data object without price and imageLink
       const newData = {
-        title1, description1,title2, description2,
-      btitle1, bdescription1,btitle2, bdescription2
+        title1, description1, title2, description2,
+      btitle1, bdescription1, btitle2, bdescription2
       };
 
       // Write the new data to the file, replacing the old content
