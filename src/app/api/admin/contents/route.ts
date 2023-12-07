@@ -15,14 +15,32 @@ export async function GET(req:Request, res:NextResponse) {
 }
 
 
-export async function POST(req:Request, res:NextResponse) {
+export async function POST(req: Request, res: NextResponse) {
   if (req.method === 'POST') {
-    const newData = req.body;
-    const stringifiedData = JSON.stringify(newData, null, 2);
-    const dataDirectory = join(process.cwd(), 'about.json');
-    fs.writeFileSync(dataDirectory, stringifiedData);
-        return NextResponse.json(newData);
+    try {
+      const { title, description } = await req.json();
+
+      const dataDirectory = join(process.cwd(), 'about.json');
+
+      // Create a new data object without price and imageLink
+      const newData = {
+        title,
+        description,
+      };
+
+      // Write the new data to the file, replacing the old content
+      fs.writeFileSync(dataDirectory, JSON.stringify(newData, null, 2));
+
+      // Return the new data or any other response as needed
+      return NextResponse.json(newData, { status: 201 });
+    } catch (error) {
+      console.error(error);
+      return NextResponse.json({
+        message: 'Failed to create courses',
+        status: false,
+      });
+    }
   } else {
-   return NextResponse.error(); 
+    return NextResponse.error();
   }
 }
