@@ -20,7 +20,7 @@ const AboutComponent = () => {
 
   const updateAboutData = async () => {
     try {
-      const response = await fetch('/api/admin/contents', {
+      const response = await fetch('https://bhutia-literary-club.vercel.app/api/admin/contents', {
         method: 'PUT',  // Use PUT instead of GET for updating data
         headers: {
           'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ const AboutComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/admin/contents', {
+        const response = await fetch('https://bhutia-literary-club.vercel.app/api/admin/contents', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
