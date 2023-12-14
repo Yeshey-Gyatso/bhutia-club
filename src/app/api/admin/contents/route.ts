@@ -70,12 +70,12 @@ export async function PUT(req: Request, res: NextResponse) {
       // Update the existing data with new values
       existingData.title1 = title1;
       existingData.description1 = description1;
-      existingData.title1 = title2;
-      existingData.description1 = description2;
+      existingData.title2 = title2;
+      existingData.description2 = description2;
       existingData.btitle1 = btitle1;
       existingData.bdescription1 = bdescription1;
-      existingData.btitle1 = btitle2;
-      existingData.bdescription1 = bdescription2;
+      existingData.btitle2 = btitle2;
+      existingData.bdescription2 = bdescription2;
 
       // Write the updated data back to the file
       fs.writeFileSync(dataDirectory, JSON.stringify(existingData, null, 2));

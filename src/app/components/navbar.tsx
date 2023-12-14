@@ -228,6 +228,7 @@ const Navbar = () => {
                   )}
                 </div>   
               </li>
+              
 {/* ///////////phone nav bar here ///////// */}
               
             </ul>  

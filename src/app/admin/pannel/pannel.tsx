@@ -72,10 +72,12 @@ const Pannel = () => {
             href={"/home"}
             className='p-4 rounded-lg w-1/2 bg-green-500 text-3xl text-center'
           >
-            Home
+          
+            SignOut
+          
           </Link>
         </div>
-        <div className='w-full h-screen flex justify-center items-center'>{renderContent()}</div>
+        <div className='w-full h-screen '>{renderContent()}</div>
       </div>
     </div>
   )
