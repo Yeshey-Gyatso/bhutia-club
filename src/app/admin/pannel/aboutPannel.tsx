@@ -2,6 +2,7 @@
 import Switcher from '@/app/components/switcher';
 import { languageAtom } from '@/app/recoil/atoms';
 import React, { useEffect, useState } from 'react';
+import toast from 'react-hot-toast';
 import { useRecoilValue } from 'recoil';
 
 const AboutComponent = () => {
@@ -19,7 +20,7 @@ const AboutComponent = () => {
 
   const updateAboutData = async () => {
     try {
-      const response = await fetch('https://bhutia-literary-club.vercel.app/api/admin/contents', {
+      const response = await fetch('/api/admin/contents', {
         method: 'PUT',  // Use PUT instead of GET for updating data
         headers: {
           'Content-Type': 'application/json',
@@ -29,6 +30,11 @@ const AboutComponent = () => {
 
       if (!response.ok) {
         throw new Error(`Request failed with status: ${response.status}`);
+      }
+      else{
+        toast.success("Updated Successfully", {
+          position: "top-center",
+        });
       }
 
       console.log('Data updated successfully');
@@ -41,7 +47,7 @@ const AboutComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://bhutia-literary-club.vercel.app/api/admin/contents', {
+        const response = await fetch('/api/admin/contents', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -132,9 +138,12 @@ const AboutComponent = () => {
         </div>
 
            {/* Repeat similar input fields for other properties if needed */}
+        <div className=' relative pl-5'>
         <button onClick={updateAboutData} className="mt-4 p-2 bg-blue-500 text-white rounded-md">
           Update Data
       </button>
+        </div>
+        
     </div>
 
     );
