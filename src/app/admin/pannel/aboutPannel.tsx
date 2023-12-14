@@ -80,20 +80,20 @@ const AboutComponent = () => {
        
   <div className='h-full w-full'>
     <section className="h-full w-full p-4 bg-white rounded-lg shadow-md">
-      <h1 className="text-lg font-semibold mb-4">
+      <div className="text-lg font-semibold mb-4">
         <input
           type="text"
           value={language ? aboutData.btitle1 : aboutData.title1}
-          onChange={(e) => handleInputChange('btitle1', e.target.value)}
+          onChange={(e) => language ? handleInputChange('btitle1',e.target.value) : handleInputChange('title1',e.target.value)}
           className="w-full p-2 border border-gray-300 rounded-md"
         />
-      </h1>
+      </div>
       <div className="text-gray-700 text-sm">
         <textarea
          rows={6} 
          cols={50}
           value={language ? aboutData.bdescription1 : aboutData.description1}
-          onChange={(e) => handleInputChange('bdescription1', e.target.value)}
+         onChange={(e) => language ? handleInputChange('bdescription1',e.target.value) : handleInputChange('description1',e.target.value)}
           className="w-full p-2 border border-gray-300 rounded-md"
         />
       </div>
@@ -103,7 +103,7 @@ const AboutComponent = () => {
         
           type="text"
           value={language ? aboutData.btitle2 : aboutData.title2}
-          onChange={(e) => handleInputChange('btitle2', e.target.value)}
+          onChange={(e) => language ? handleInputChange('btitle2',e.target.value) : handleInputChange('title2',e.target.value)}
           className="w-full p-2 border border-gray-300 rounded-md"
         />
       </div>
@@ -112,7 +112,7 @@ const AboutComponent = () => {
         rows={15} 
         cols={50}
           value={language ? aboutData.bdescription2 : aboutData.description2}
-          onChange={(e) => handleInputChange('bdescription2', e.target.value)}
+          onChange={(e) => language ? handleInputChange('bdescription2',e.target.value) : handleInputChange('description2',e.target.value)}
           className="w-full p-2 border border-gray-300 rounded-md"
         />
       </div>
