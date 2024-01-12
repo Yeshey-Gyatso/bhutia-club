@@ -32,7 +32,7 @@ const AboutComponent = () => {
         throw new Error(`Request failed with status: ${response.status}`);
       }
       else{
-        toast.success("Updated Successfully", {
+        toast.success("Updated Successfullyy", {
           position: "top-center",
         });
       }
